@@ -1,0 +1,7 @@
+assets/bower_components
+assets/node_modules
+
+.idea/modules.xml
+.idea/selecto.iml
+.idea/workspace.xml
+.idea/

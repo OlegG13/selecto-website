@@ -1,0 +1,22 @@
+//Project variables and mixins
+@import "core/variables.scss";
+@import "core/mixins.scss";
+//Project Reset
+@import "core/reset.scss";
+
+
+/*
+--------------------------------------------------
+Project Components
+--------------------------------------------------
+*/
+@import "core/base.scss";
+@import "icons/sprite.scss";
+@import "icons/icons.scss";
+@import "core/page.scss";
+@import "header/logo";
+@import "header/header";
+@import "header/main-nav";
+@import "header/mobile-menu-btn";
+@import "hero/hero";
+@import "header/mobile-menu";

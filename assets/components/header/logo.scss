@@ -1,0 +1,37 @@
+.logo {
+  display: block;
+  width: 128px;
+  &__bg {
+    &--dark {
+      color: $theme-main-color;
+      fill: $theme-main-color;
+    }
+    &--white {
+      color: #FFFFFF;
+      fill: #FFFFFF;
+    }
+  }
+  &__circle {
+    &--white {
+      color: #FFFFFF;
+      fill: #FFFFFF;
+    }
+    &--dark {
+      color: $theme-main-color;
+      fill: $theme-main-color;
+    }
+  }
+  &__letter {
+    &--white {
+      color: #FFFFFF;
+      fill: #FFFFFF;
+    }
+    &--dark {
+      color: $theme-main-color;
+      fill: $theme-main-color;
+    }
+  }
+  &__link {
+    display: block;
+  }
+}

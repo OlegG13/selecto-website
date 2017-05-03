@@ -1,0 +1,136 @@
+.menu {
+  &--open {
+    display: block;
+    transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+  }
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  transform-style: flat;
+  backface-visibility: hidden;
+  background: $theme-main-color;
+  display: none;
+  color: #fff;
+  z-index: 776;
+  &__flex {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__primary {
+    // TODO переделать ховер на js
+    &:hover &__link:not(:hover) {
+      color: #909090;
+    }
+    &__item {
+      display: block;
+      &--sm {
+        .menu__primary__link__name {
+          display: inline-block;
+          color: white;
+          //font-size: rem-calc(14px);
+          //line-height: rem-calc(25px);
+          outline: none;
+          transition: opacity .3s linear;
+          //@include breakpoint(large) {
+          //  font-size: rem-calc(15px);
+          //  line-height: rem-calc(30px);
+          //}
+          //@include breakpoint(xxlarge) {
+          //  font-size: rem-calc(16px);
+          //  line-height: rem-calc(40px);
+          //}
+          &:hover, &:focus {
+            color: darken(#fff, 40%);
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &__light {
+      color: white;
+      opacity: .3;
+      //font-family: $secondary-font;
+      //font-size: rem-calc(12px);
+      font-weight: 400;
+      //@include breakpoint(medium) {
+      //  font-size: rem-calc(16px);
+      //}
+      //@include breakpoint(large) {
+      //  font-size: rem-calc(18px);
+      //}
+    }
+    &__link {
+      //font-size: rem-calc(30px);
+      //line-height: rem-calc(50px);
+      font-weight: 700;
+      outline: none;
+      color: #fff;
+      display: inline-block;
+      position: relative;
+      transition: color .3s linear;
+      //@include breakpoint(medium) {
+      //  font-size: rem-calc(40px);
+      //  line-height: rem-calc(60px);
+      //}
+      //@include breakpoint(large) {
+      //  font-size: rem-calc(50px);
+      //  line-height: rem-calc(70px);
+      //  margin-bottom: 15px;
+      //}
+      //@include breakpoint(xlarge) {
+      //  margin-bottom: 0;
+      //}
+      //@include breakpoint(xxlarge) {
+      //  font-size: rem-calc(60px);
+      //  line-height: rem-calc(85px);
+      //}
+      &:focus {
+        outline: none;
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+        &:after {
+          transform: scaleX(1);
+        }
+        .menu__primary__link__num {
+          opacity: 1;
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1100%;
+        right: -1110%;
+        bottom: 16px;
+        height: 3px;
+        background-color: white;
+        border-radius: 1px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .6s linear;
+      }
+      &__name {
+        display: inline-block;
+      }
+      &__num {
+        position: absolute;
+        bottom: 14px;
+        left: -37px;
+        display: inline-block;
+        transition: opacity .3s linear;
+        line-height: normal;
+        //@include breakpoint(large) {
+        //  bottom: 18px;
+        //  left: -50px;
+        //}
+      }
+    }
+  }
+}

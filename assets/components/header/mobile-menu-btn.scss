@@ -1,0 +1,42 @@
+.mobile-menu-btn {
+  display: none;
+  //display: block;
+  cursor: pointer;
+  @media (max-width: 980px) {
+    display: block;
+  }
+  &__inner {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 20px;
+  }
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: background-color 0.35s, transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0) translateZ(0);
+    &--top {
+      top: 0;
+      &-active {
+        transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 10);
+      }
+    }
+    &--mid {
+      top: 8px;
+      &-active {
+        display: none;
+      }
+    }
+    &--bot {
+      top: 16px;
+      &-active {
+        transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, -6);
+      }
+    }
+  }
+}
