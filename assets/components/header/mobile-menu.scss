@@ -1,4 +1,6 @@
 .menu {
+  opacity: 0;
+  transition: transform 1s ease 1s;
   &--open {
     display: block;
     transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);
@@ -32,18 +34,18 @@
         .menu__primary__link__name {
           display: inline-block;
           color: white;
-          //font-size: rem-calc(14px);
-          //line-height: rem-calc(25px);
+          font-size: 14px;
+          line-height: 25px;
           outline: none;
           transition: opacity .3s linear;
-          //@include breakpoint(large) {
-          //  font-size: rem-calc(15px);
-          //  line-height: rem-calc(30px);
-          //}
-          //@include breakpoint(xxlarge) {
-          //  font-size: rem-calc(16px);
-          //  line-height: rem-calc(40px);
-          //}
+          @media (min-width: $screen-md-min)  {
+            font-size: 15px;
+            line-height: 30px;
+          }
+          @media (min-width: $screen-lg-min)  {
+            font-size: 16px;
+            line-height: 40px;
+          }
           &:hover, &:focus {
             color: darken(#fff, 40%);
             opacity: 1;
@@ -55,40 +57,40 @@
       color: white;
       opacity: .3;
       //font-family: $secondary-font;
-      //font-size: rem-calc(12px);
+      font-size: 12px;
       font-weight: 400;
-      //@include breakpoint(medium) {
-      //  font-size: rem-calc(16px);
-      //}
-      //@include breakpoint(large) {
-      //  font-size: rem-calc(18px);
-      //}
+      @media (min-width: $screen-sm-min)  {
+         font-size: 16px;
+      }
+      @media (min-width: $screen-md-min)  {
+        font-size: 18px;
+      }
     }
     &__link {
-      //font-size: rem-calc(30px);
-      //line-height: rem-calc(50px);
+      font-size: 30px;
+      line-height: 50px;
       font-weight: 700;
       outline: none;
       color: #fff;
       display: inline-block;
       position: relative;
       transition: color .3s linear;
-      //@include breakpoint(medium) {
-      //  font-size: rem-calc(40px);
-      //  line-height: rem-calc(60px);
-      //}
-      //@include breakpoint(large) {
-      //  font-size: rem-calc(50px);
-      //  line-height: rem-calc(70px);
-      //  margin-bottom: 15px;
-      //}
-      //@include breakpoint(xlarge) {
-      //  margin-bottom: 0;
-      //}
-      //@include breakpoint(xxlarge) {
-      //  font-size: rem-calc(60px);
-      //  line-height: rem-calc(85px);
-      //}
+      @media (min-width: $screen-sm-min)  {
+        font-size: 40px;
+        line-height: 60px;
+      }
+      @media (min-width: $screen-md-min)  {
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: $screen-lg-min)  {
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-lg-min)  {
+        font-size: 60px;
+        line-height: 85px;
+      }
       &:focus {
         outline: none;
         color: #fff;
@@ -126,10 +128,10 @@
         display: inline-block;
         transition: opacity .3s linear;
         line-height: normal;
-        //@include breakpoint(large) {
-        //  bottom: 18px;
-        //  left: -50px;
-        //}
+        @media (min-width: $screen-md-min)  {
+          bottom: 18px;
+          left: -50px;
+        }
       }
     }
   }

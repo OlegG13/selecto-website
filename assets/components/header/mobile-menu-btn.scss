@@ -1,8 +1,7 @@
 .mobile-menu-btn {
   display: none;
-  //display: block;
   cursor: pointer;
-  @media (max-width: 980px) {
+  @media (max-width: $screen-lg-max) {
     display: block;
   }
   &__inner {

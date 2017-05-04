@@ -1,0 +1,18 @@
+.main-article {
+  padding: 155px 0;
+  &__subtitle {
+    text-align: center;
+    line-height: 1.5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $theme-secondary-color;
+  }
+  &__title {
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: 200;
+    line-height: 4.75rem;
+    margin-bottom: 50px;
+  }
+}

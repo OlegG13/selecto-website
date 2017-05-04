@@ -1,5 +1,5 @@
 .main-nav {
-  @media (max-width: 980px) {
+  @media (max-width: $screen-lg-max) {
     display: none;
   }
   &__items {

@@ -31,4 +31,21 @@
     color: #FFFFFF;
     flex: 0 0 auto;
   }
+  &__article {
+    &--white {
+      background-color: $article-white-bg;
+    }
+    &--grey {
+      background-color: $article-grey-bg;
+    }
+    &--dark {
+      background-color: $article-dark-bg;
+      & .main-article__subtitle {
+        color: #F5F5F5;
+      }
+      & .main-article__title {
+        color: #FFFFFF;
+      }
+    }
+  }
 }

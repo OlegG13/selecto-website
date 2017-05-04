@@ -3,8 +3,6 @@
 @import "core/mixins.scss";
 //Project Reset
 @import "core/reset.scss";
-
-
 /*
 --------------------------------------------------
 Project Components
@@ -14,9 +12,16 @@ Project Components
 @import "icons/sprite.scss";
 @import "icons/icons.scss";
 @import "core/page.scss";
+
 @import "header/logo";
 @import "header/header";
 @import "header/main-nav";
 @import "header/mobile-menu-btn";
 @import "hero/hero";
 @import "header/mobile-menu";
+/*
+--------------------------------------------------
+Main page Components
+--------------------------------------------------
+*/
+@import "main-page/articles/main-article";
