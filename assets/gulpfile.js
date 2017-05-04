@@ -82,7 +82,7 @@ gulp.task('css', function () {
           /* Extraction images from css urls */
           imgs.forEach(function (e) {
             if (fileName.indexOf(e) > 0)
-              distUrl = '../_img/' + fileName;
+              distUrl = '../img/' + fileName;
           });
 
           return distUrl;
@@ -126,7 +126,7 @@ gulp.task('cssbuild', function () {
           /* Extraction images from css urls */
           imgs.forEach(function (e) {
             if (fileName.indexOf(e) > 0)
-              distUrl = '../_img/' + fileName;
+              distUrl = '../img/' + fileName;
           });
 
           return distUrl;
@@ -190,7 +190,7 @@ gulp.task('img', function () {
   var bowerFonts = mainBowerFiles(['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.bmp']);
 
   return gulp.src(bowerFonts)
-      .pipe(gulp.dest('../_img'))
+      .pipe(gulp.dest('../img'))
 });
 
 
@@ -203,7 +203,7 @@ gulp.task('sprite', function () {
         imgName: 'sprite.png',
         cssName: 'sprite.scss'
       }))
-      .pipe(gulp.dest('../_img'))
+      .pipe(gulp.dest('../img'))
       .pipe(gulp.dest('components/icons/'));
 
 });
