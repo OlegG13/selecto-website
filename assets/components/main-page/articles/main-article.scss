@@ -1,18 +1,61 @@
 .main-article {
+  font-size: 16px;
+  font-size: 0.862533693vw;
   padding: 155px 0;
+  //TODO Не зменшувати розмір таймла меньше 40пкс
+  @media (max-width: $screen-lg-max) {
+    font-size: 16px;
+    font-size: 1.33333333vw;
+    padding: 120px 0;
+  }
+  @media (max-width: $screen-md-max) {
+    font-size: 16px;
+    font-size: 1.612903225vw;
+    padding: 100px 0;
+  }
+  @media (max-width: $screen-sm-max) {
+    font-size: 16px;
+    font-size: 2.083333333vw;
+    padding: 80px 0;
+  }
+  @media (max-width: $screen-xs-max) {
+    font-size: 16px;
+    font-size: 3.33333333vw;
+    padding: 50px 0;
+  }
   &__subtitle {
     text-align: center;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 1rem;
+    text-transform: uppercase;
     color: $theme-secondary-color;
   }
   &__title {
+    font-size: 3.75em;
     text-align: center;
-    font-size: 3.75rem;
+    line-height: 1.26666667;
     font-weight: 200;
-    line-height: 4.75rem;
     margin-bottom: 50px;
+  }
+  &__container {
+    font-size: 1rem;
+  }
+  &__paragraph {
+    font-size: 1rem;
+    line-height: 2.25;
+    color: $base-font-color;
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  &__count-up {
+    text-align: center;
+  }
+  &__footer {
+    margin-top: 70px;
+    text-align: center;
   }
 }

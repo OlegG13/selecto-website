@@ -12,6 +12,7 @@ Project Components
 @import "icons/sprite.scss";
 @import "icons/icons.scss";
 @import "core/page.scss";
+@import "buttons/buttons";
 
 @import "header/logo";
 @import "header/header";
@@ -25,3 +26,4 @@ Main page Components
 --------------------------------------------------
 */
 @import "main-page/articles/main-article";
+@import "main-page/count-up/count-up";

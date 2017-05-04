@@ -17,6 +17,7 @@ $theme-third-color:               #F5F5F5;
 $base-font-family:                'Montserrat', sans-serif;
 $base-font-color:                 #101517;
 $base-font-color-secondary:       #000;
+$base-font-color-third:           #616F75;
 $base-font-size:                  16px;
 $base-line-height:                1.6;
 
@@ -51,4 +52,9 @@ $screen-xs-min:                   479px;
 $article-white-bg:                #fff;
 $article-grey-bg:                 #F5F5F5;
 $article-dark-bg:                 #101517;
+
+// Buttons
+$main-btn-bg:                     $theme-secondary-color;
+$main-btn-bg-hover:               $theme-secondary-color;
+$main-btn-color:                  #fff;
 

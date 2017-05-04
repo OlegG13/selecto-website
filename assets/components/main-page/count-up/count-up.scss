@@ -1,0 +1,59 @@
+.count-up {
+  display: inline-block;
+  color: $base-font-color;
+  &__list {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+  }
+  &__item {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0 40px;
+    @media (max-width: $screen-sm-max) {
+      padding: 0 20px;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding: 0 10px;
+      &:first-child {
+        padding: 0 10px 0 0;
+      }
+      &:last-child {
+        padding: 0 0 0 10px;
+      }
+    }
+    &--projects {}
+    &--years {}
+    &--persons {}
+    &--offices {}
+  }
+  &__inner {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  &__number {
+    font-size: 5.625rem;
+    @media (max-width: $screen-sm-max) {
+      font-size: 3.75rem;
+    }
+    @media (max-width: $screen-xs-max) {
+      font-size: 2.3rem;
+    }
+    font-weight: 200;
+    letter-spacing: -6px;
+    line-height: 1.06666667;
+  }
+  &__ico {
+    font-size: 1.75rem;
+    font-weight: 200;
+    margin-left: 13px;
+  }
+  &__name {
+    display: block;
+    color: $base-font-color-third;
+    font-weight: 300;
+    line-height: 1.1875;
+  }
+}

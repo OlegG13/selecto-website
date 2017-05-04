@@ -1,3 +1,38 @@
 .btn {
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
 
+.btn-lg {
+  padding: 15px 10px;
+}
+
+.btn-md {
+
+}
+
+.btn-sm {
+
+}
+
+.btn-main {
+  @extend .btn;
+  @extend .btn-lg;
+  width: 235px;
+  text-align: center;
+  background: $main-btn-bg;
+  border-radius: 28px;
+  font-size: 0;
+  &__title {
+    color: $main-btn-color;
+    font-size: 1.125rem;
+    line-height: 1.44444444;
+    font-weight: 500;
+  }
+  &:hover {
+    background: $main-btn-bg-hover;
+  }
 }
