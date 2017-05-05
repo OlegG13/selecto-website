@@ -1,0 +1,22 @@
+.footer {
+  font-weight: 400;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  &__item {
+    &--cr {
+      color: #87898a;
+    }
+    &--menu {
+      @media (max-width: $screen-lg-max) {
+        display: none;
+      }
+    }
+    &--cos {
+
+    }
+  }
+  &__link {
+    @include main-link;
+  }
+}

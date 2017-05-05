@@ -1,0 +1,15 @@
+.footer-nav {
+  &__list {
+    font-size: 0;
+  }
+  &__item {
+    font-size: 1rem;
+    display: inline-block;
+    &:not(last-child) {
+      margin-left: 25px;
+    }
+  }
+  &__link {
+    @include main-link;
+  }
+}

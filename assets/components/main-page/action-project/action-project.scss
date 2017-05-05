@@ -1,0 +1,15 @@
+.action-project {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  padding: 195px 0 181px;
+  cursor: pointer;
+  display: block;
+  @media (max-width: $screen-sm-max) {
+    padding: 60px 0 60px;
+  }
+  &__title {
+    font-size: 2rem;
+    line-height: 1.21875;
+  }
+}

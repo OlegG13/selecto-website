@@ -24,6 +24,15 @@ Project Components
 
 /*
 --------------------------------------------------
+Footer Components
+--------------------------------------------------
+*/
+@import "footer/footer";
+@import "footer/footer-nav";
+@import "footer/footer-soc";
+
+/*
+--------------------------------------------------
 Main page Components
 --------------------------------------------------
 */
@@ -34,3 +43,4 @@ Main page Components
 @import "main-page/latest-projects/latest-projects";
 @import "main-page/brands/brands";
 @import "main-page/review/review";
+@import "main-page/action-project/action-project";
