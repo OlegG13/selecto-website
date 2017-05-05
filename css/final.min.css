@@ -795,6 +795,20 @@ Footer Components
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__item {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
 .footer__item--cr {
   color: #87898a;
 }

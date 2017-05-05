@@ -240,12 +240,12 @@ gulp.task("svg", function () {
             {removeDimensions: true},
             {removeViewBox: false},
             {removeStyleElement: true},
-            // {cleanupListOfValues: {
-            //   floatPrecision: 0,
-            //   leadingZero: true,
-            //   defaultPx: true,
-            //   convertToPx: true
-            // }},
+            {cleanupListOfValues: {
+              floatPrecision: 0,
+              leadingZero: true,
+              defaultPx: true,
+              convertToPx: true
+            }},
             {removeAttrs: {attrs: ["data-name"]}}
           ]
         })
@@ -255,14 +255,14 @@ gulp.task("svg", function () {
       }))
       .pipe(svgStore({fileName: "svg-sprite.svg", inlineSvg: true}))
       .pipe(cheerio({
-        run:           function ($, file) {
-          $('svg').css('display', 'none');
-          // $('[fill]').removeAttr('fill');
+        run: function ($, file) {
+            $('svg').css('display', 'none');
+            //$('[fill]').removeAttr('fill');
         },
         parserOptions: {xmlMode: true}
       }))
       .pipe(renameFile({
-        extname: ".tpl"
+        extname: ".svg"
       }))
       .pipe(gulp.dest(svgSpriteDest));
 });

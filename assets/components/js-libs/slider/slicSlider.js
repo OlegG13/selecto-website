@@ -3,7 +3,6 @@
 	$.slickSlider = {
 
 		getCols: function(slide){
-			console.log();
 			var breakpoints = [768,992,1200];
 			var cols = slide ? slide.split(',') : false;
 
