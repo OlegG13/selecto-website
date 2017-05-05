@@ -14,7 +14,8 @@ var gulp           = require('gulp'),
     svgStore       = require('gulp-svgstore'),
     cheerio        = require('gulp-cheerio'),
     concat         = require('gulp-concat'),
-    runSequence    = require('run-sequence');
+    runSequence    = require('run-sequence'),
+    rucksack       = require('gulp-rucksack');
 
 
 var scssSrc = 'components/**/*.scss';
@@ -36,13 +37,14 @@ gulp.task('default', ['watch']);
 
 /* Call at first start, after changes in bower.json or in gulp.js */
 gulp.task('build', function (cb) {
-  runSequence('svg', 'font', 'img', 'sprite', 'cssbuild', 'libs', 'jsbuild', cb);
+  runSequence('svg', 'font', 'img', 'sprite', 'cssbuild', 'libs', 'jsbuild', 'rucksack', cb);
 });
 
 
 /* Watch command */
-gulp.task('watch', ['css', 'js'], function () {
+gulp.task('watch', ['css', 'js', 'rucksack'], function () {
   gulp.watch(scssSrc, ['css']);
+  gulp.watch(cssDist, ['rucksack']);
   gulp.watch(jsSrc, ['js']);
   gulp.watch(svgSpriteSrc + "**/*.svg", ['svg']);
 });
@@ -61,6 +63,7 @@ gulp.task('css', function () {
       }).on('error', sass.logError))
       .pipe(addsrc.append(bowerCss))
       .pipe(concat('final.min.css'))
+      .pipe(rucksack())
       .pipe(modifyCssUrls({
         'modify': function (url, filePath) {
           var distUrl = url,
@@ -105,6 +108,7 @@ gulp.task('cssbuild', function () {
       }).on('error', sass.logError))
       .pipe(addsrc.append(bowerCss))
       .pipe(concat('final.min.css'))
+      .pipe(rucksack())
       .pipe(modifyCssUrls({
         'modify': function (url, filePath) {
           var distUrl = url,
@@ -140,6 +144,12 @@ gulp.task('cssbuild', function () {
       .pipe(gulp.dest(cssDist));
 });
 
+/* gulp-rucksack */
+gulp.task('rucksack', function() {
+    return gulp.src(cssDist)
+            .pipe(rucksack())
+            .pipe(gulp.dest(cssDist));
+});
 
 /* JS production file packaging */
 gulp.task('js', function () {

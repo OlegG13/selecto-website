@@ -1,6 +1,6 @@
 ;(function($){
 
-	$.mlsSlider = {
+	$.slickSlider = {
 
 		getCols: function(slide){
 			console.log();

@@ -1,0 +1,28 @@
+.slider {
+  position: relative;
+  max-width: 915px;
+  margin: 0 auto;
+  &__inner {
+   padding: 0 125px;
+    @media (max-width: $screen-sm-max) {
+      padding: 0 45px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #101517;
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+}

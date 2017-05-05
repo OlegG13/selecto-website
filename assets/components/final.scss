@@ -13,6 +13,7 @@ Project Components
 @import "icons/icons.scss";
 @import "core/page.scss";
 @import "buttons/buttons";
+@import "js-libs/slider/slider";
 
 @import "header/logo";
 @import "header/header";
@@ -20,6 +21,7 @@ Project Components
 @import "header/mobile-menu-btn";
 @import "hero/hero";
 @import "header/mobile-menu";
+
 /*
 --------------------------------------------------
 Main page Components
@@ -30,3 +32,5 @@ Main page Components
 @import "main-page/info-table/info-table";
 @import "main-page/technology-list/technology-list";
 @import "main-page/latest-projects/latest-projects";
+@import "main-page/brands/brands";
+@import "main-page/review/review";
