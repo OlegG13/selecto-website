@@ -1259,21 +1259,20 @@ Main page Components
   right: 8px;
   bottom: 0;
   top: 150px;
-  background-position: 0 0;
+  background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .latest-projects__img--violet {
-  background-image: url("../img/msFit.png");
+  background-image: url("../img/img-1.jpg");
 }
 
 .latest-projects__img--green {
-  background-image: url("../img/sproutThere.png");
+  background-image: url("../img/img-2.jpg");
 }
 
 .latest-projects__img--blue {
-  background-image: url("../img/life4me.png");
+  background-image: url("../img/img-3.jpg");
 }
 
 .brands__title {
