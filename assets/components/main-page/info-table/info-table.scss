@@ -41,6 +41,7 @@
   &__icon {
     color: $theme-secondary-color;
     fill: $theme-secondary-color;
+    display: inline-block;
     &--enterprise {
       height: 66px;
     }

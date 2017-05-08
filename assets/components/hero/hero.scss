@@ -2,44 +2,28 @@
   //height: 718px;
   &__title {
     color: #FFFFFF;
-
     font-weight: 200;
     line-height: 5rem;
     position: relative;
     padding-bottom: 153px;
-
     font-size: responsive 2.5rem 3.75rem;
     font-range: 980px 1280px;
-
-
-    //font-size: 3.75rem;
-
-    //@media (max-width: $screen-md-max) {
-    //  font-size: 2.5rem;
-    //  padding-bottom: 70px;
-    //  line-height: 5rem;
-    //}
-    //@media (max-width: $screen-sm-max) {
-    //  font-size: 2.5rem;
-    //  padding-bottom: 70px;
-    //  line-height: 3.33333333rem;
-    //}
-    //@media (max-width: $screen-xs-max) {
-    //  font-size: 1.9rem;
-    //  padding-bottom: 60px;
-    //  line-height: 2.5rem;
-    //}
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 105px;
-      height: 4px;
-      background-color: $theme-secondary-color;
-      bottom: 45px;
-      left: 50%;
-      margin-left: -52px;
+    @media (max-width: $screen-sm-max) {
+      padding-bottom: 100px;
     }
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 65px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    display: block;
+    width: 105px;
+    height: 4px;
+    background-color: $theme-secondary-color;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -52px;
   }
   &__container {
     text-align: center;
