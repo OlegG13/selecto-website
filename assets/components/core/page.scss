@@ -2,13 +2,14 @@
   &__wrap {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    //height: 100%;
   }
   &__content {
     flex: 1 0 auto;
   }
   &__top {
     position: relative;
+    background-color: $theme-main-color;
     & .particles-js-canvas-el {
       position: absolute;
       top: 0;
@@ -23,8 +24,9 @@
     margin: 0 auto;
   }
   &__header {
-    background-color: $theme-main-color;
     color: #FFFFFF;
+    position: relative;
+    z-index: 1;
     &--menu-open {
       position: fixed;
       z-index: 777;

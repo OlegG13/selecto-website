@@ -3,11 +3,11 @@
   &__title {
     color: #FFFFFF;
     font-weight: 200;
-    line-height: 5rem;
+    line-height: 1.33333333;
     position: relative;
     padding-bottom: 153px;
-    font-size: responsive 2.5rem 3.75rem;
-    font-range: 980px 1280px;
+    font-size: responsive 1.9rem 3.75rem;
+    font-range: 480px 1280px;
     @media (max-width: $screen-sm-max) {
       padding-bottom: 100px;
     }

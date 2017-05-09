@@ -6,20 +6,27 @@ var menu = (function () {
         $menuMidLine = $menuBtn.find('.mobile-menu-btn__line--mid'),
         $menuBotLine = $menuBtn.find('.mobile-menu-btn__line--bot'),
         $header = $('.page__header'),
-        isOpen = false;
+        isOpen = false,
+        screenWidth = 0;
+
+    function screenW() {
+        screenWidth = screen.width;
+    }
+
+    $( window ).on("resize", function() {
+        screenW();
+    }).resize();
 
     function openMenu() {
-        console.log("Open!");
         _reverseStatus();
         $menuTopLine.addClass('mobile-menu-btn__line--top-active');
         $menuMidLine.addClass('mobile-menu-btn__line--mid-active');
         $menuBotLine.addClass('mobile-menu-btn__line--bot-active');
-        $header.addClass('page__header--menu-open');
+        $header.css(width, screenWidth).addClass('page__header--menu-open');
         $menuFrame.addClass('menu--open');
     }
 
     function closeMenu() {
-        console.log("Close!");
         _reverseStatus();
 
         $menuTopLine.removeClass('mobile-menu-btn__line--top-active');

@@ -13,8 +13,7 @@
     top: 50%;
     transform: translate(0, -50%);
     width: 40px;
-    height: 40px;
-    background-color: #101517;
+    padding: 20px 0;
     &--left {
       left: 0;
     }
@@ -23,6 +22,15 @@
     }
     &--hidden {
       display: none;
+    }
+  }
+  &__icon {
+    font-size: 0;
+    display: block;
+    color: #878a8b;
+    fill: #878a8b;
+    &--left {
+      transform: rotate(180deg);
     }
   }
 }

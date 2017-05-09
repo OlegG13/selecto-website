@@ -271,6 +271,7 @@ body {
   line-height: 1.6;
   background-color: #fff;
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* =Simple animation up */
@@ -331,7 +332,6 @@ body {
 .page__wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .page__content {
@@ -340,6 +340,7 @@ body {
 
 .page__top {
   position: relative;
+  background-color: #161C26;
 }
 
 .page__top .particles-js-canvas-el {
@@ -357,8 +358,9 @@ body {
 }
 
 .page__header {
-  background-color: #161C26;
   color: #FFFFFF;
+  position: relative;
+  z-index: 1;
 }
 
 .page__header--menu-open {
@@ -464,8 +466,7 @@ body {
   top: 50%;
   transform: translate(0, -50%);
   width: 40px;
-  height: 40px;
-  background-color: #101517;
+  padding: 20px 0;
 }
 
 .slider__arrow--left {
@@ -478,6 +479,17 @@ body {
 
 .slider__arrow--hidden {
   display: none;
+}
+
+.slider__icon {
+  font-size: 0;
+  display: block;
+  color: #878a8b;
+  fill: #878a8b;
+}
+
+.slider__icon--left {
+  transform: rotate(180deg);
 }
 
 .logo {
@@ -620,10 +632,10 @@ body {
 .hero__title {
   color: #FFFFFF;
   font-weight: 200;
-  line-height: 5rem;
+  line-height: 1.33333333;
   position: relative;
   padding-bottom: 153px;
-  font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
+  font-size: calc(1.9rem + 1.85 * ((100vw - 30rem) / 50));
 }
 
 @media screen and (min-width: 1280px) {
@@ -632,9 +644,9 @@ body {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 480px) {
   .hero__title {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -1236,6 +1248,7 @@ Main page Components
   flex-basis: 33.33333%;
   width: 100%;
   position: relative;
+  transition: all 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -1249,6 +1262,10 @@ Main page Components
   .latest-projects__item {
     flex-basis: 100%;
   }
+}
+
+.latest-projects__item:hover {
+  transform: scale(1.05);
 }
 
 .latest-projects__card {
@@ -1294,15 +1311,15 @@ Main page Components
 }
 
 .latest-projects__img--violet {
-  background-image: url("../img/img-1.jpg");
+  background-image: url("../img/msfit.jpg");
 }
 
 .latest-projects__img--green {
-  background-image: url("../img/img-2.jpg");
+  background-image: url("../img/sprout.jpg");
 }
 
 .latest-projects__img--blue {
-  background-image: url("../img/img-3.jpg");
+  background-image: url("../img/life4me.jpg");
 }
 
 .brands__title {
