@@ -1114,6 +1114,12 @@ Main page Components
   flex-grow: 1;
 }
 
+@media (min-width: 1201px) {
+  .info-table__cell {
+    flex-basis: 33.3333%;
+  }
+}
+
 .info-table__cell:not(:first-child):before {
   content: "";
   position: absolute;
@@ -1214,11 +1220,23 @@ Main page Components
 
 .latest-projects__item {
   padding: 0 8px 0 8px;
-  flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 0;
+  flex-basis: 33.33333%;
   width: 100%;
   position: relative;
+}
+
+@media (max-width: 992px) {
+  .latest-projects__item {
+    flex-basis: 50%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-projects__item {
+    flex-basis: 100%;
+  }
 }
 
 .latest-projects__card {
@@ -1404,6 +1422,109 @@ Main page Components
 .action-project__title {
   font-size: 2rem;
   line-height: 1.21875;
+}
+
+.latest-article__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -46px;
+}
+
+@media (max-width: 992px) {
+  .latest-article__list {
+    margin: -30px -46px 0 -46px;
+  }
+}
+
+.latest-article__item {
+  padding: 0 46px;
+  flex-basis: 33.3333%;
+  max-width: 476px;
+  padding-bottom: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .latest-article__item {
+    flex-basis: 50%;
+    max-width: none;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .latest-article__item {
+    flex-basis: 100%;
+  }
+}
+
+.latest-article__item:before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  bottom: -26px;
+  left: -26px;
+  right: -26px;
+  display: none;
+  opacity: 0;
+  background: #fff;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .latest-article__item:hover:before {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.latest-article__head {
+  margin-bottom: 31px;
+  display: block;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.latest-article__photo-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 61%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.latest-article__img {
+  display: inline-block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: inherit;
+}
+
+.latest-article__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 11px;
+}
+
+.latest-article__link {
+  color: #101517;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.latest-article__desc {
+  color: #2b2935;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  opacity: 0.7;
 }
 
 /* Slider */

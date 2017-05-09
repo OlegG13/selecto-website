@@ -11,6 +11,10 @@
     background-color: #FFFFFF;
     text-align: center;
     flex-grow: 1;
+    @media (min-width: $screen-lg-min) {
+      flex-basis: 33.3333%;
+    }
+
     &:not(:first-child) {
       &:before {
         content: "";
