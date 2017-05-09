@@ -7,6 +7,16 @@
   &__content {
     flex: 1 0 auto;
   }
+  &__top {
+    position: relative;
+    & .particles-js-canvas-el {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
   &__container {
     max-width: $site-max-width;
     padding: 0 $site-gutter;
