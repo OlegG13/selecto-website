@@ -1244,6 +1244,7 @@ Main page Components
   font-size: 16px;
   font-weight: 300;
   opacity: 0.9;
+  line-height: 1.875;
 }
 
 .technology-list__items {
@@ -1642,6 +1643,146 @@ Main page Components
   transform: translate(-50%, -50%);
   width: 100%;
   max-height: inherit;
+}
+
+.overview-case {
+  padding: 122px 0 160px 0;
+}
+
+.overview-case__content {
+  font-size: 0;
+  margin: 0 -20px;
+}
+
+.overview-case__desc {
+  display: inline-block;
+  width: 57%;
+  padding: 0 20px;
+  font-size: 1rem;
+  margin-bottom: 70px;
+  vertical-align: top;
+}
+
+@media (max-width: 992px) {
+  .overview-case__desc {
+    width: 100%;
+  }
+}
+
+.overview-case__prop {
+  display: inline-block;
+  width: 43%;
+  padding: 0 20px;
+  font-size: 1rem;
+  vertical-align: top;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 992px) {
+  .overview-case__prop {
+    width: 100%;
+  }
+}
+
+.overview-case__title {
+  font-size: calc(2rem + 0.75 * ((100vw - 61.25rem) / 18.75));
+  line-height: 2.14;
+  font-weight: 200;
+  color: #101517;
+}
+
+@media screen and (min-width: 1280px) {
+  .overview-case__title {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .overview-case__title {
+    font-size: 2rem;
+  }
+}
+
+.overview-case__info {
+  font-weight: 300;
+  line-height: 2;
+}
+
+.case-prop {
+  line-height: 2;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.case-prop__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.case-prop__name {
+  color: #616F75;
+  font-weight: 300;
+  display: table-cell;
+  width: 120px;
+  padding-right: 10px;
+}
+
+.case-prop__value {
+  font-weight: 400;
+  display: table-cell;
+}
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.masonry__item--lg {
+  flex-basis: 57.1%;
+}
+
+@media (max-width: 480px) {
+  .masonry__item--lg {
+    flex-basis: 100%;
+  }
+}
+
+.masonry__item--sm {
+  flex-basis: 39.8%;
+}
+
+@media (max-width: 480px) {
+  .masonry__item--sm {
+    flex-basis: 100%;
+  }
+}
+
+.masonry__half-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.masonry__large {
+  font-size: 0;
+}
+
+@media (max-width: 480px) {
+  .masonry__large {
+    margin-bottom: 20px;
+  }
+}
+
+.masonry__small {
+  font-size: 0;
+}
+
+@media (max-width: 480px) {
+  .masonry__small {
+    margin-bottom: 20px;
+  }
 }
 
 /* Slider */

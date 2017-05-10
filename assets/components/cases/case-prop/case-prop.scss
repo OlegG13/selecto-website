@@ -1,0 +1,22 @@
+.case-prop {
+  line-height: 2;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  &__item {
+    &:not(:last-child) {
+      padding-bottom: 32px;
+    }
+  }
+  &__name {
+    color: $base-font-color-third;
+    font-weight: 300;
+    display: table-cell;
+    width: 120px;
+    padding-right: 10px;
+  }
+  &__value {
+    font-weight: 400;
+    display: table-cell;
+  }
+}
