@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    &--white {
+      padding: 38px 0;
+    }
   }
   &__logo {
     font-size: 0;

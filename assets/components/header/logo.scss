@@ -1,36 +1,67 @@
 .logo {
   display: block;
   width: 128px;
-  &__bg {
-    &--dark {
-      color: $theme-main-color;
+  &--dark {
+    & .logo__bg {
+      background: rgb(29, 31, 33);
       fill: $theme-main-color;
+      color: $theme-main-color;
     }
-    &--white {
+    & .logo__circle {
+      color: #FFFFFF;
+      fill: #FFFFFF;
+    }
+    & .logo__letter {
       color: #FFFFFF;
       fill: #FFFFFF;
     }
   }
-  &__circle {
-    &--white {
-      color: #FFFFFF;
-      fill: #FFFFFF;
+  &--white, &--menu {
+    & .logo__bg {
+      background: #fff !important;
+      fill: #fff !important;
+      color: #fff !important;
     }
-    &--dark {
-      color: $theme-main-color;
-      fill: $theme-main-color;
+    & .logo__circle {
+      color: $theme-main-color !important;
+      fill: $theme-main-color !important;
     }
-  }
-  &__letter {
-    &--white {
-      color: #FFFFFF;
-      fill: #FFFFFF;
-    }
-    &--dark {
-      color: $theme-main-color;
-      fill: $theme-main-color;
+    & .logo__letter {
+      color: $theme-main-color !important;
+      fill: $theme-main-color !important;
     }
   }
+
+  //&__bg {
+  //  &--dark {
+  //    color: $theme-main-color;
+  //    fill: $theme-main-color;
+  //  }
+  //  &--white {
+  //    color: #FFFFFF;
+  //    fill: #FFFFFF;
+  //  }
+  //}
+  //&__circle {
+  //  &--white {
+  //    color: #FFFFFF;
+  //    fill: #FFFFFF;
+  //  }
+  //  &--dark {
+  //    color: $theme-main-color;
+  //    fill: $theme-main-color;
+  //  }
+  //}
+  //&__letter {
+  //  &--white {
+  //    color: #FFFFFF;
+  //    fill: #FFFFFF;
+  //  }
+  //  &--dark {
+  //    color: $theme-main-color;
+  //    fill: $theme-main-color;
+  //  }
+  //}
   &__link {
     display: block;
   }

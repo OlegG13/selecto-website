@@ -4,9 +4,19 @@
   &:hover {
     color: $main-nav-link-hover;
     text-decoration: $main-nav-link-dec-hover;
+    cursor: pointer;
   }
 }
 
+@mixin main-dark-link {
+  color: $main-nav-dark-link;
+  text-decoration: $main-nav-dark-link-dec;
+  &:hover {
+    color: $main-nav-dark-link-hover;
+    text-decoration: $main-nav-dark-link-dec-hover;
+    cursor: pointer;
+  }
+}
 //vertical alignment
 @mixin absolute-center-translate {
   position: absolute;

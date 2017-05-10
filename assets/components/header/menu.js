@@ -5,7 +5,9 @@ var menu = (function () {
         $menuTopLine = $menuBtn.find('.mobile-menu-btn__line--top'),
         $menuMidLine = $menuBtn.find('.mobile-menu-btn__line--mid'),
         $menuBotLine = $menuBtn.find('.mobile-menu-btn__line--bot'),
+        $menuAllLine = $menuBtn.find('.mobile-menu-btn__line'),
         $header = $('.page__header'),
+        $logo = $('.logo'),
         isOpen = false,
         screenWidth = 0;
 
@@ -17,22 +19,31 @@ var menu = (function () {
         screenW();
     }).resize();
 
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closeMenu();
+        }
+    });
+
     function openMenu() {
         _reverseStatus();
         $menuTopLine.addClass('mobile-menu-btn__line--top-active');
         $menuMidLine.addClass('mobile-menu-btn__line--mid-active');
         $menuBotLine.addClass('mobile-menu-btn__line--bot-active');
-        $header.css(width, screenWidth).addClass('page__header--menu-open');
+        $menuAllLine.removeClass('mobile-menu-btn__line--dark');
+        $logo.addClass('logo--menu');
+        $header.css("width", screenWidth).addClass('page__header--menu-open');
         $menuFrame.addClass('menu--open');
     }
 
     function closeMenu() {
         _reverseStatus();
-
         $menuTopLine.removeClass('mobile-menu-btn__line--top-active');
         $menuMidLine.removeClass('mobile-menu-btn__line--mid-active');
         $menuBotLine.removeClass('mobile-menu-btn__line--bot-active');
-        $header.removeClass('page__header--menu-open');
+        $menuAllLine.addClass('mobile-menu-btn__line--dark');
+        $logo.removeClass('logo--menu');
+        $header.css("width", "auto").removeClass('page__header--menu-open');
         $menuFrame.removeClass('menu--open');
     }
     
