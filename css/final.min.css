@@ -1023,6 +1023,10 @@ Main page Components
   color: #486CFF;
 }
 
+.main-article__subtitle--green {
+  color: #62a544;
+}
+
 .main-article__title {
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
@@ -1613,6 +1617,31 @@ Main page Components
   font-weight: 300;
   line-height: 28px;
   opacity: 0.7;
+}
+
+/*
+--------------------------------------------------
+Main page Components
+--------------------------------------------------
+*/
+
+.hero-cases {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 36%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.hero-cases__img {
+  display: inline-block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: inherit;
 }
 
 /* Slider */
