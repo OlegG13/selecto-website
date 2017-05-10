@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 --------------------------------------------------
 Reset and normalize default browser styles
@@ -1783,6 +1785,81 @@ Main page Components
   .masonry__small {
     margin-bottom: 20px;
   }
+}
+
+.design-proc__title {
+  font-size: 4rem;
+  font-weight: 200;
+  line-height: 1.46;
+  color: #101517;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.design-proc__short-info {
+  max-width: 710px;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 91px;
+}
+
+.design-proc__full-info {
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  font-size: 0;
+}
+
+.design-proc__desc {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  padding-right: 120px;
+}
+
+.design-proc__sub-title {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.9375;
+  color: #616F75;
+}
+
+.design-proc__content {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.design-proc__lists {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  font-size: 0rem;
+}
+
+.design-proc__lists-item {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+.design-proc__list-item {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.71;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.design-proc__list-item:before {
+  content: "—";
+  display: inline-block;
+  padding-right: 5px;
 }
 
 /* Slider */

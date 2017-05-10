@@ -1,0 +1,70 @@
+.design-proc {
+  &__title {
+    font-size: 4rem;
+    font-weight: 200;
+    line-height: 1.46;
+    color: $base-font-color;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  &__short-info {
+    max-width: 710px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 91px;
+  }
+  &__full-info {
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    font-size: 0;
+  }
+  &__desc {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding-right: 120px;
+  }
+  &__sub-title {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 2.9375;
+    color: $base-font-color-third;
+  }
+  &__content {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.71;
+  }
+  &__lists {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 0rem;
+  }
+  &__lists-item {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 1rem;
+   }
+  &__list {
+    //padding-left: 16px;
+  }
+  &__list-item {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-bottom: 20px;
+    position: relative;
+    &:before {
+      content: "—";
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
+}
