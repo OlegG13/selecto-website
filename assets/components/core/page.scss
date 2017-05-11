@@ -75,5 +75,33 @@
     &--no-padding {
       padding: 0 0;
     }
+    /* Cases articles */
+    &--ui-design {
+      padding: 96px 0 134px;
+      @media (max-width: $screen-md-max) {
+        padding: 48px 0 67px;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 32px 0 45px;
+      }
+    }
+    &--landing {
+      padding: 119px 0 139px;
+      @media (max-width: $screen-md-max) {
+        padding: 60px 0 70px;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 40px 0 47px;
+      }
+    }
+    &--development, &--result {
+      padding: 120px 0;
+      @media (max-width: $screen-md-max) {
+        padding: 60px 0;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 40px 0 40px;
+      }
+    }
   }
 }
