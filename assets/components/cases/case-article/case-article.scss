@@ -8,7 +8,9 @@
 
     font-size: responsive 2.8rem 4rem;
     font-range: 980px 1280px;
-
+    &--white {
+      color: #fff;
+    }
   }
   &__desc {
     font-weight: 300;
@@ -18,5 +20,13 @@
     max-width: 710px;
     margin: 0 auto;
     margin-bottom: 47px;
+    &--white {
+      color: #fff;
+    }
+  }
+  &__content {
+    &--center {
+      text-align: center;
+    }
   }
 }

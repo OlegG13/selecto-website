@@ -1,6 +1,9 @@
 .count-up {
   display: inline-block;
   color: $base-font-color;
+  &--white {
+    color: #fff;
+  }
   &__list {
     display: inline-block;
     vertical-align: top;
