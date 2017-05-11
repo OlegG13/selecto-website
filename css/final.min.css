@@ -1729,7 +1729,7 @@ Main page Components
   text-align: center;
   max-width: 710px;
   margin: 0 auto;
-  margin-bottom: 104px;
+  margin-bottom: 47px;
 }
 
 .overview-case {
@@ -2043,6 +2043,10 @@ Main page Components
   padding-right: 5px;
 }
 
+.chess-list {
+  padding-top: 57px;
+}
+
 .chess-list__item {
   display: flex;
   align-items: center;
@@ -2180,6 +2184,10 @@ Main page Components
 
 .chess-list__footer-title--green {
   color: #4e9031;
+}
+
+.project-view {
+  text-align: center;
 }
 
 /* Slider */
