@@ -1787,6 +1787,11 @@ Main page Components
   }
 }
 
+.design-proc {
+  font-size: 0;
+  margin-bottom: 18px;
+}
+
 .design-proc__title {
   font-size: 4rem;
   font-weight: 200;
@@ -1803,6 +1808,12 @@ Main page Components
   line-height: 2;
   text-align: center;
   margin-bottom: 91px;
+  font-size: 1rem;
+}
+
+.design-proc__item {
+  font-size: 1rem;
+  margin-bottom: 120px;
 }
 
 .design-proc__full-info {
