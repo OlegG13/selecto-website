@@ -103,5 +103,17 @@
         padding: 40px 0 40px;
       }
     }
+    &--photo {
+      font-size: 0;
+    }
+    &--review {
+      padding: 120px 0 97px;
+      @media (max-width: $screen-md-max) {
+        padding: 60px 0 50px;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 40px 0 43px;
+      }
+    }
   }
 }
