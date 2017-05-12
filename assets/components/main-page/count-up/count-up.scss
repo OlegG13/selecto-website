@@ -14,8 +14,9 @@
     display: inline-block;
     text-align: center;
     padding: 0 40px;
+    vertical-align: top;
     @media (max-width: $screen-sm-max) {
-      padding: 0 20px;
+      padding: 0 10px;
     }
     @media (max-width: $screen-xs-max) {
       padding: 0 10px;
@@ -53,8 +54,8 @@
     @media (max-width: $screen-xs-max) {
       font-size: 2.3rem;
     }
-    //font-weight: 200;
-    font-family: $base-font-family-light;
+    font-weight: 200;
+    //font-family: $base-font-family-light;
     letter-spacing: -6px;
     line-height: 1.06666667;
   }
@@ -62,11 +63,16 @@
     font-size: 1.75rem;
     font-weight: 200;
     margin-left: 13px;
+    line-height: 1.06666667;
   }
   &__name {
     display: block;
     color: $base-font-color-third;
     font-weight: 300;
     line-height: 1.1875;
+    @media (max-width: $screen-sm-max) {
+      max-width: 120px;
+      padding-bottom: 10px;
+    }
   }
 }

@@ -5,6 +5,9 @@
   padding-bottom: 36%;
   max-height: 100%;
   text-align: center;
+  &--bottom {
+    padding-bottom: 28%;
+  }
   &__img {
     display: inline-block !important;
     position: absolute;

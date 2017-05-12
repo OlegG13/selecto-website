@@ -1,4 +1,11 @@
 .brands {
+  margin-top: 155px;
+  @media (max-width: $screen-md-max) {
+    margin-top: 75px;
+  }
+  @media (max-width: $screen-sm-max) {
+    margin-top: 50px;
+  }
   &__title {
     font-size: 20px;
     font-weight: 500;

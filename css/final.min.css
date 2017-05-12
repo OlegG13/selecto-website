@@ -289,7 +289,7 @@ html {
 }
 
 body {
-  font-family: "GothamPro";
+  font-family: "Montserrat", sans-serif;
   color: #101517;
   line-height: 1.6;
   background-color: #fff;
@@ -518,19 +518,26 @@ body {
 }
 
 .btn,
-.btn-main {
+.btn-main,
+.btn-transparent {
   display: inline-block;
   text-decoration: none;
 }
 
 .btn:hover,
-.btn-main:hover {
+.btn-main:hover,
+.btn-transparent:hover {
   text-decoration: none;
 }
 
 .btn-lg,
 .btn-main {
   padding: 15px 10px;
+}
+
+.btn-md,
+.btn-transparent {
+  padding: 13px 10px;
 }
 
 .btn-main {
@@ -550,6 +557,39 @@ body {
 
 .btn-main:hover {
   background: #486CFF;
+}
+
+.btn-transparent {
+  width: 290px;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid #838586;
+}
+
+.btn-transparent__title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn-transparent--inline {
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .btn-transparent--inline {
+    margin: 0 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-transparent--inline + .btn-transparent--inline {
+    margin-top: 20px;
+  }
 }
 
 .slider {
@@ -682,7 +722,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "GothamPro-Medium";
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -763,7 +803,7 @@ body {
 
 .hero__title {
   color: #FFFFFF;
-  font-family: "GothamPro-Light";
+  font-weight: 200;
   line-height: 1.33333333;
   position: relative;
   padding-bottom: 153px;
@@ -1114,7 +1154,7 @@ Main page Components
   text-align: center;
   line-height: 1.5;
   letter-spacing: 2px;
-  font-family: "GothamPro-Medium";
+  font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
   color: #486CFF;
@@ -1128,7 +1168,7 @@ Main page Components
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
   line-height: 1.26666667;
-  font-family: "GothamPro-Light";
+  font-weight: 200;
   margin-bottom: 50px;
 }
 
@@ -1154,7 +1194,7 @@ Main page Components
   color: #101517;
   margin: 0 auto;
   max-width: 768px;
-  text-align: justify;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -1187,11 +1227,12 @@ Main page Components
   display: inline-block;
   text-align: center;
   padding: 0 40px;
+  vertical-align: top;
 }
 
 @media (max-width: 768px) {
   .count-up__item {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -1230,7 +1271,7 @@ Main page Components
 
 .count-up__number {
   font-size: 5.625rem;
-  font-family: "GothamPro-Light";
+  font-weight: 200;
   letter-spacing: -6px;
   line-height: 1.06666667;
 }
@@ -1251,6 +1292,7 @@ Main page Components
   font-size: 1.75rem;
   font-weight: 200;
   margin-left: 13px;
+  line-height: 1.06666667;
 }
 
 .count-up__name {
@@ -1258,6 +1300,13 @@ Main page Components
   color: #616F75;
   font-weight: 300;
   line-height: 1.1875;
+}
+
+@media (max-width: 768px) {
+  .count-up__name {
+    max-width: 120px;
+    padding-bottom: 10px;
+  }
 }
 
 .info-table {
@@ -1334,7 +1383,7 @@ Main page Components
 
 .info-table__title {
   font-size: 20px;
-  font-family: "GothamPro-Medium";
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 96px;
   color: #000000;
@@ -1463,6 +1512,22 @@ Main page Components
 
 .latest-projects__img--blue {
   background-image: url("../img/life4me.jpg");
+}
+
+.brands {
+  margin-top: 155px;
+}
+
+@media (max-width: 992px) {
+  .brands {
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands {
+    margin-top: 50px;
+  }
 }
 
 .brands__title {
@@ -1736,6 +1801,10 @@ Main page Components
   text-align: center;
 }
 
+.hero-cases--bottom {
+  padding-bottom: 28%;
+}
+
 .hero-cases__img {
   display: inline-block !important;
   position: absolute;
@@ -1786,6 +1855,13 @@ Main page Components
 
 .case-article__content--center {
   text-align: center;
+}
+
+.case-article__footer {
+  margin-top: 75px;
+  text-align: center;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .overview-case {
