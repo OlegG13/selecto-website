@@ -1,0 +1,83 @@
+.similar-case {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    flex-basis: 50%;
+    max-width: 50%;
+    &:nth-child(2n+1) {
+      padding-right: 20px;
+    }
+    &:nth-child(2n+2) {
+      padding-left: 20px;
+    }
+    @media (max-width: $screen-sm-max) {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding: 0;
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+    }
+    &--roundlaw {
+      & .similar-case__inner {
+        background-color: #603f1d;
+        background-image: url(../img/round-law-similar.png );
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: contain;
+      }
+    }
+    &--life {
+      & .similar-case__inner {
+        background-color: #3c55bc;
+        background-image: url(../img/life4fit-similar.png);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: contain;
+      }
+    }
+  }
+  &__inner {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 55%;
+    max-height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+  &__head {
+    position: absolute;
+    top: 13.8%;
+    left: 5.9%;
+  }
+  &__name {
+    font-size: 38px;
+    font-weight: 200;
+    line-height: 44px;
+    margin-bottom: 9px;
+  }
+  &__platform {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 32px;
+  }
+  &__footer {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 32px;
+    position: absolute;
+    bottom: 43px;
+    left: 5.9%;
+  }
+}

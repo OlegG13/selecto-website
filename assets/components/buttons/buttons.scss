@@ -51,6 +51,9 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #ffffff;
+    &--black {
+      color: #101517;
+    }
   }
   &--inline {
     margin: 0 20px;
@@ -61,7 +64,6 @@
       margin: 0 auto;
       & + & {
         margin-top: 20px;
-
       }
     }
   }

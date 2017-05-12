@@ -517,6 +517,10 @@ body {
   }
 }
 
+.page__article--similar {
+  padding: 107px 0 102px;
+}
+
 .btn,
 .btn-main,
 .btn-transparent {
@@ -573,6 +577,10 @@ body {
   line-height: 32px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.btn-transparent__title--black {
+  color: #101517;
 }
 
 .btn-transparent--inline {
@@ -2459,6 +2467,100 @@ Main page Components
   line-height: 2.57;
   color: #101517;
   opacity: 0.6;
+}
+
+.similar-case__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .similar-case__list {
+    flex-direction: column;
+  }
+}
+
+.similar-case__item {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.similar-case__item:nth-child(2n+1) {
+  padding-right: 20px;
+}
+
+.similar-case__item:nth-child(2n+2) {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .similar-case__item {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .similar-case__item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}
+
+.similar-case__item--roundlaw .similar-case__inner {
+  background-color: #603f1d;
+  background-image: url("../img/round-law-similar.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+
+.similar-case__item--life .similar-case__inner {
+  background-color: #3c55bc;
+  background-image: url("../img/life4fit-similar.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+
+.similar-case__inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%;
+  max-height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.similar-case__head {
+  position: absolute;
+  top: 13.8%;
+  left: 5.9%;
+}
+
+.similar-case__name {
+  font-size: 38px;
+  font-weight: 200;
+  line-height: 44px;
+  margin-bottom: 9px;
+}
+
+.similar-case__platform {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+.similar-case__footer {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 32px;
+  position: absolute;
+  bottom: 43px;
+  left: 5.9%;
 }
 
 /* Slider */
