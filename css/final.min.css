@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../fonts/GothamPro.eot?") format("eot"), url("../fonts/GothamPro.otf") format("opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro.svg#GothamPro") format("svg");
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url("../fonts/GothamPro-Bold.eot?") format("eot"), url("../fonts/GothamPro-Bold.otf") format("opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+}
+
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url("../fonts/GothamPro-Light.eot?") format("eot"), url("../fonts/GothamPro-Light.otf") format("opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.svg#GothamPro-Light") format("svg");
+}
+
+@font-face {
+  font-family: 'GothamPro-Medium';
+  src: url("../fonts/GothamPro-Medium.eot?") format("eot"), url("../fonts/GothamPro-Medium.otf") format("opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
+}
+
 /*
 --------------------------------------------------
 Reset and normalize default browser styles
@@ -269,7 +289,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "GothamPro";
   color: #101517;
   line-height: 1.6;
   background-color: #fff;
@@ -662,7 +682,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: "GothamPro-Medium";
   letter-spacing: 1px;
   line-height: 1.5;
 }
@@ -743,7 +763,7 @@ body {
 
 .hero__title {
   color: #FFFFFF;
-  font-weight: 200;
+  font-family: "GothamPro-Light";
   line-height: 1.33333333;
   position: relative;
   padding-bottom: 153px;
@@ -1094,7 +1114,7 @@ Main page Components
   text-align: center;
   line-height: 1.5;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-family: "GothamPro-Medium";
   font-size: 1rem;
   text-transform: uppercase;
   color: #486CFF;
@@ -1108,7 +1128,7 @@ Main page Components
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
   line-height: 1.26666667;
-  font-weight: 200;
+  font-family: "GothamPro-Light";
   margin-bottom: 50px;
 }
 
@@ -1210,7 +1230,7 @@ Main page Components
 
 .count-up__number {
   font-size: 5.625rem;
-  font-weight: 200;
+  font-family: "GothamPro-Light";
   letter-spacing: -6px;
   line-height: 1.06666667;
 }
@@ -1314,7 +1334,7 @@ Main page Components
 
 .info-table__title {
   font-size: 20px;
-  font-weight: 500;
+  font-family: "GothamPro-Medium";
   letter-spacing: 1px;
   line-height: 96px;
   color: #000000;

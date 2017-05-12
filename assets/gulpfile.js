@@ -79,7 +79,7 @@ gulp.task('css', function () {
           /* Extraction fonts from css urls */
           fonts.forEach(function (e) {
             if (fileName.indexOf(e) > 0)
-              distUrl = '../_font/' + fileName;
+              distUrl = '../fonts/' + fileName;
           });
 
           /* Extraction images from css urls */
@@ -124,7 +124,7 @@ gulp.task('cssbuild', function () {
           /* Extraction fonts from css urls */
           fonts.forEach(function (e) {
             if (fileName.indexOf(e) > 0)
-              distUrl = '../_font/' + fileName;
+              distUrl = '../fonts/' + fileName;
           });
 
           /* Extraction images from css urls */
@@ -191,7 +191,7 @@ gulp.task('font', function () {
   var bowerFonts = mainBowerFiles(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2']);
 
   return gulp.src(bowerFonts)
-      .pipe(gulp.dest('../_font'))
+      .pipe(gulp.dest('../fonts'))
 });
 
 

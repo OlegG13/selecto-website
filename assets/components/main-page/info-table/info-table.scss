@@ -58,7 +58,9 @@
   }
   &__title {
     font-size: 20px;
-    font-weight: 500;
+    //font-weight: 500;
+    font-family: $base-font-family-medium;
+
     letter-spacing: 1px;
     line-height: 96px;
     color: #000000;
