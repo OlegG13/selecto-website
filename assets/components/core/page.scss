@@ -119,4 +119,13 @@
       padding: 107px 0 102px;
     }
   }
+  &__contact-info {
+    padding: 88px 0 42px;
+    padding: 4.583vw 0 2.1875vw;
+    @media (max-width: $screen-lg-max) {
+      padding: 40px 0 20px;
+    }
+
+    background-color: $article-dark-bg;
+  }
 }

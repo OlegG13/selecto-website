@@ -1,0 +1,36 @@
+.contact-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+  @media (max-width: $screen-sm-max) {
+    flex-direction: column;
+  }
+  &__item {
+    text-align: center;
+    @media (max-width: $screen-sm-max) {
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.375;
+    margin-bottom: 21px;
+  }
+  &__list {
+    display: block;
+  }
+  &__info {
+    display: block;
+    padding: 13px 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}

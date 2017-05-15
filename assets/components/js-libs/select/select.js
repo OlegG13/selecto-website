@@ -14,21 +14,26 @@ var select = (function () {
         $dropDown.slideUp(300);
     }
 
-    function selectSelect(event) {
+    function selectSelect() {
         var selectItemTitle = this.innerHTML;
+        var selectItemVal = this.getAttribute("data-select-val");
+        $selectInput.val(selectItemVal);
         $selectBtn.html(selectItemTitle);
-
         closeSelect();
     }
 
     $selectBtn.on('click', function () {
         openSelect();
+        console.log(this);
     });
 
     $dropDownItem.on('click', selectSelect);
 
-    return {
-        open: openSelect,
-        close: closeSelect
-    }
+    $(document).mouseup(function (e){
+        if (!$select.is(e.target)
+            && $select.has(e.target).length === 0) {
+            closeSelect()
+        }
+    });
+
 })();
