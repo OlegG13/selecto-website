@@ -6,7 +6,8 @@
     "slick-carousel": "1.5.8",
     "scrollmagic": "2.0.5",
     "countUp.js": "1.8.5",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "gsap": "1.19.1"
   },
   "overrides": {
     "jquery": {

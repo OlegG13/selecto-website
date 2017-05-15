@@ -15,6 +15,7 @@ Project Components
 @import "core/page.scss";
 @import "buttons/buttons";
 @import "js-libs/slider/slider";
+@import "core/single-page";
 
 @import "header/logo";
 @import "header/header";
@@ -62,3 +63,9 @@ Main page Components
 @import "cases/development-net/development-net";
 @import "cases/case-review/case-review";
 @import "cases/similar-case/similar-case";
+/*
+--------------------------------------------------
+Main page Components
+--------------------------------------------------
+*/
+@import "contact/contact";

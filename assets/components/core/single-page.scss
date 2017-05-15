@@ -1,0 +1,17 @@
+.single-page {
+
+  margin: 127px 0 134px;
+  margin: 6.61vw 0 7vw;
+
+  &__top {
+    font-size: responsive 2.5rem 3.75rem;
+    font-range: 980px 1280px;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  &__title {
+    line-height: 1.25;
+    font-weight: 200;
+    font-size: 1em;
+  }
+}

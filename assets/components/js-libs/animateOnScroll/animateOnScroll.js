@@ -33,8 +33,7 @@
             var headerScene = new ScrollMagic.Scene({
                 triggerElement: header, // trigger CSS animation when header is in the middle of the viewport
                 offset: -100 // offset triggers the animation 95px earlier than middle of the viewport, adjust to your liking
-            })
-                .setClassToggle('#slide0'+num, 'is-active') // set class to active slide
+            }).setClassToggle('#slide0'+num, 'is-active') // set class to active slide
                 //.addIndicators() // add indicators (requires plugin), use for debugging
                 //.setTween(tween)
                 //.setPin("#target")
@@ -45,12 +44,35 @@
                         setTimeout(peopleCount.start.bind(peopleCount), 1600);
                         setTimeout(officesCount.start.bind(officesCount), 1900);
                     }
-                })
-                .addTo(controller);
+                }).addTo(controller);
         });
     }
+})();
+
+/* New scroll animate */
+/*
+;(function() {
+
+    var slide1 = document.getElementById("slide01");
+    var slide2 = document.getElementById("slide02");
+    var slide3 = document.getElementById("slide03");
+
+    var controller = new ScrollMagic.Controller();
+
+    //var topHead = TweenMax.to("slide1", 0.5, {backgroundColor: "black"});
 
 
+    var scene1 = new ScrollMagic.Scene({triggerElement: slide1})
+        .setClassToggle('#slide01', 'is-active')
+        .addTo(controller);
 
+        scene1 = new ScrollMagic.Scene({triggerElement: slide2})
+        .setClassToggle('#slide02', 'is-active')
+        .addTo(controller);
+
+        scene1 = new ScrollMagic.Scene({triggerElement: slide3})
+        .setClassToggle('#slide03', 'is-active')
+        .addTo(controller);
 
 })();
+*/
