@@ -110,8 +110,30 @@
                                     <label for="name" class="material__label">Company</label>
                                 </div>
                                 <div class="field__box">
-                                    <input id="budget" name="budget" class="material__field" type="text">
-                                    <label for="email" class="material__label">Budget (optional)</label>
+                                    <!--<input id="budget" name="budget" class="material__field" type="text">-->
+                                    <div class="select">
+                                        <input type="text" class="select__input" value="" name="budget" id="budget">
+                                        <div class="select__title">
+                                            <span>Budget (optional)</span>
+                                        </div>
+                                        <ul class="select__drop">
+                                           <li class="select__item" data-select-val="1">
+                                               Budget (optional)
+                                           </li>
+                                            <li class="select__item" data-select-val="2">
+                                                Budget (optional)
+                                            </li>
+                                            <li class="select__item" data-select-val="2">
+                                                Budget (optional)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--<select class="chosen-select" name="budget" id="budget">-->
+                                        <!--<option value="" disabled selected>Budget (optional)</option>-->
+                                        <!--<option value="1">1k $</option>-->
+                                        <!--<option value="2">more 1k $</option>-->
+                                        <!--<option value="3">Unlimited</option>-->
+                                    <!--</select>-->
                                 </div>
                                 <div class="field__box field__box--full">
                                     <textarea id="message" data-adaptheight class="material__field" name="message" rows="3" cols="40"></textarea>
