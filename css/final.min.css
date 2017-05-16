@@ -598,6 +598,7 @@ body {
   background: #486CFF;
   border-radius: 28px;
   font-size: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .btn-main__title {
@@ -608,7 +609,7 @@ body {
 }
 
 .btn-main:hover {
-  background: #486CFF;
+  background: #274eeb;
 }
 
 .btn-transparent {
