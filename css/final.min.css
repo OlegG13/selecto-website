@@ -2950,6 +2950,8 @@ select {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
