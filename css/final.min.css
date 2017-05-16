@@ -536,7 +536,7 @@ body {
 }
 
 .page__contact-item {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 60px 0;
   padding: 3.125vw 0 3.125vw;
 }
@@ -3014,6 +3014,10 @@ select {
   font-weight: 200;
   line-height: 2.1363;
   color: #262431;
+}
+
+.contact-item__container--center {
+  text-align: center;
 }
 
 .offices {

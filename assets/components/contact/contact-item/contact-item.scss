@@ -11,4 +11,9 @@
     line-height: 2.1363;
     color: #262431;
   }
+  &__container {
+    &--center {
+      text-align: center;
+    }
+  }
 }
