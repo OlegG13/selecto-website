@@ -1,0 +1,14 @@
+.contact-item {
+  &__head {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: responsive 2rem 2.75rem;
+    font-range: 980px 1280px;
+  }
+  &__title {
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 2.1363;
+    color: #262431;
+  }
+}
