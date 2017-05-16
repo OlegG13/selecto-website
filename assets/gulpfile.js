@@ -77,10 +77,10 @@ gulp.task('css', function () {
           fileName = url.substring(pathEnd);
 
           /* Extraction fonts from css urls */
-          fonts.forEach(function (e) {
-            if (fileName.indexOf(e) > 0)
-              distUrl = '../fonts/' + fileName;
-          });
+          // fonts.forEach(function (e) {
+          //   if (fileName.indexOf(e) > 0)
+          //     distUrl = '../svg/' + fileName;
+          // });
 
           /* Extraction images from css urls */
           imgs.forEach(function (e) {
@@ -190,8 +190,8 @@ gulp.task('libs', function () {
 gulp.task('font', function () {
   var bowerFonts = mainBowerFiles(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2']);
 
-  return gulp.src(bowerFonts)
-      .pipe(gulp.dest('../fonts'))
+  // return gulp.src(bowerFonts)
+  //     .pipe(gulp.dest('../fonts'))
 });
 
 

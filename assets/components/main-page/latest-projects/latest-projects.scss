@@ -1,24 +1,36 @@
 .latest-projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -8px 0 -8px;
+  margin: -16px -8px 0 -8px;
+  justify-content: center;
   &__item {
-    padding: 0 8px 0 8px;
-    //flex-grow: 1;
+    padding: 16px 8px 0 8px;
     flex-shrink: 1;
-    flex-basis: 33.33333%;
-    width: 100%;
+    flex-basis: 472px;
+    max-width: 100%;
     position: relative;
-    @media (max-width: $screen-md-max) {
-      flex-basis: 50%;
-      margin-bottom: 16px;
-    }
-    @media (max-width: $screen-sm-max) {
-      flex-basis: 100%;
-    }
-    transition: all 0.3s;
+    top: 0;
+    transition: all 0.4s;
     &:hover {
-      transform: scale(1.05);
+      top: -10px;
+      & .latest-projects__icon {
+        display: inline-block;
+        opacity: 1;
+        transform: translateX(20px);
+      }
+      & .latest-projects__card--violet {
+        background-color: #7a57e0;
+        box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
+      }
+      & .latest-projects__card--green {
+        background-color: #62a544;
+        box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
+
+      }
+      & .latest-projects__card--blue {
+        background-color: #4f71fb;
+        box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
+      }
     }
   }
   &__card {
@@ -27,6 +39,10 @@
     text-decoration: none;
     color: #fff;
     padding: 40px;
+    transition: all 0.4s;
+    @media (max-width: $screen-sm-max) {
+      padding: 20px;
+    }
     &--violet {
       background-color: #7250D5;
     }
@@ -38,9 +54,23 @@
     }
   }
   &__title {
+    font-size: 0;
+    vertical-align: middle;
+  }
+  &__name {
     font-size: 2.75rem;
     line-height: 1.22727273;
     font-weight: 200;
+    vertical-align: middle;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    background: url("../svg/arrow.svg");
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.4s;
   }
   &__subtitle {
     font-size: 0.875rem;
@@ -52,20 +82,21 @@
     left: 8px;
     right: 8px;
     bottom: 0;
-    top: 150px;
-    background-position: 0 100%;
+    top: 135px;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     &--violet {
-      //background-image: url(/img/msFit.png);
       background-image: url(/img/msfit.jpg);
     }
     &--green {
-      //background-image: url(/img/sproutThere.png);
       background-image: url(/img/sprout.jpg);
     }
     &--blue {
-      //background-image: url(/img/life4me.png);
       background-image: url(/img/life4me.jpg);
+    }
+    @media (max-width: $screen-xs-max) {
+      background-position: 0 100%;
+      top: 135px
     }
   }
 }
