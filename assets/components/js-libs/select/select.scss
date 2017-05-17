@@ -29,12 +29,20 @@
       border-style: solid;
       border-width: 7px 6px 0 6px;
       border-color: #616f75 transparent transparent transparent;
+      transition: 0.4s ease-in-out;
+    }
+    &--active {
+      border-bottom-color: $theme-secondary-color;
+      &:after {
+        border-width: 0 6px 7px 6px;
+        border-color: transparent transparent $theme-secondary-color transparent;
+      }
     }
   }
   &__drop {
     display: none;
     position: absolute;
-    top: 0;
+    top: 100%;
     width: 100%;
     background-color: #fff;
     z-index: 999;
@@ -48,7 +56,7 @@
     color: #616f75;
     cursor: pointer;
     &:hover {
-      color: #101517;
+      color: $theme-secondary-color;
     }
   }
 

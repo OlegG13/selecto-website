@@ -8,10 +8,12 @@ var select = (function () {
 
     function openSelect() {
         $dropDown.slideDown(300);
+        $selectBtn.addClass("select__title--active");
     }
 
     function closeSelect() {
         $dropDown.slideUp(300);
+        $selectBtn.removeClass("select__title--active");
     }
 
     function selectSelect() {

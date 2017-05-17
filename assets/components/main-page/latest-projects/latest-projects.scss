@@ -86,13 +86,13 @@
     background-position: 100% 100%;
     background-repeat: no-repeat;
     &--violet {
-      background-image: url(/img/msfit.jpg);
+      background-image: url(/img/msfit.png);
     }
     &--green {
-      background-image: url(/img/sprout.jpg);
+      background-image: url(/img/sprout.png);
     }
     &--blue {
-      background-image: url(/img/life4me.jpg);
+      background-image: url(/img/life4me.png);
     }
     @media (max-width: $screen-xs-max) {
       background-position: 0 100%;

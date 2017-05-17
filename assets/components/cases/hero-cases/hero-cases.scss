@@ -5,8 +5,19 @@
   padding-bottom: 36%;
   max-height: 100%;
   text-align: center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &--bottom {
     padding-bottom: 28%;
+  }
+  &--sprout {
+    background-image: url("../img/sprout-hero.jpg");
+  }
+  &--sprout-bot {
+    background-image: url("../img/sprout-big-photo.jpg");
   }
   &__img {
     display: inline-block !important;
