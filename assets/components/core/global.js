@@ -119,7 +119,6 @@
         particlesJS("slide01", options);
     }
 
-
 })(jQuery);
 
 

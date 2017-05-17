@@ -2,6 +2,9 @@
   &__list {
     display: flex;
     align-items: baseline;
+    @media (max-width: $screen-sm-max) {
+      justify-content: center;
+    }
   }
   &__item {
     &:not(:first-child) {
