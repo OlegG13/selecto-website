@@ -10,7 +10,7 @@
   &__item {
     position: relative;
     top: 0;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
     flex-basis: 50%;
     width: 50%;
 
@@ -80,7 +80,7 @@
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
     @media (max-width: $screen-xs-max) {
       padding-bottom: 90%;
     }
@@ -115,7 +115,7 @@
     display: inline-block;
     vertical-align: middle;
     opacity: 0;
-    transition: all 0.4s ease-in-out 0.4s;
+    transition: all 0.2s ease-in-out 0.1s;
   }
   &__platform {
     font-size: 14px;

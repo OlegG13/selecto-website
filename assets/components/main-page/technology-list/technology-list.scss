@@ -1,4 +1,7 @@
 .technology-list {
+  /*animation*/
+  opacity: 0;
+  transform: translateY(45px);
   &__items {
     display: flex;
     justify-content: center;

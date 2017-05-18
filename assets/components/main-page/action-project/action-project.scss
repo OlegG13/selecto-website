@@ -5,6 +5,12 @@
   padding: 195px 0 181px;
   padding: 10.15625vw 0 9.42708333vw;
 
+  &--main {
+    /*animation*/
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
   cursor: pointer;
   display: block;
   position: relative;
@@ -19,9 +25,8 @@
     height: 16px;
     background: url(../svg/arrow.svg);
     display: inline-block;
-    vertical-align: middle;
     opacity: 0;
-    transition: all 0.4s ease-in-out 0.4s;
+    transition: all 0.2s ease-in-out 0.1s;
     vertical-align: middle;
   }
   &:hover {

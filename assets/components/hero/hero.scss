@@ -3,6 +3,11 @@
   &__title {
     color: #FFFFFF;
     font-weight: 200;
+
+    /*animation*/
+    opacity: 0;
+    transform: translateY(45px);
+
     //font-family: $base-font-family-light;
 
     line-height: 1.33333333;
@@ -26,6 +31,10 @@
     bottom: 45px;
     left: 50%;
     margin-left: -52px;
+
+    /*animation*/
+    opacity: 0;
+    transform: translateY(45px);
   }
   &__container {
     text-align: center;

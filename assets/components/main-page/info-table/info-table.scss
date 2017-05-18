@@ -3,6 +3,11 @@
   box-shadow: 0 22px 24px 0 #EDEDED;
   display: flex;
   flex-wrap: nowrap;
+
+  /*animation*/
+  opacity: 0;
+  transform: translateY(45px);
+
   @media (max-width: $screen-md-max) {
     flex-wrap: wrap;
   }
@@ -59,7 +64,8 @@
   &__title {
     font-size: 20px;
     font-weight: 500;
-    //font-family: $base-font-family-medium;
+    //
+    // font-family: $base-font-family-medium;
 
     letter-spacing: 1px;
     line-height: 96px;

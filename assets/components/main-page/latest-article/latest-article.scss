@@ -1,6 +1,10 @@
 .latest-article {
   max-width: 1341px;
   margin: 0 auto;
+
+  /*animation*/
+  opacity: 0;
+  transform: translateY(45px);
   &__list {
     display: flex;
     flex-wrap: wrap;

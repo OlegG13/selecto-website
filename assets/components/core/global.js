@@ -115,8 +115,8 @@
     };
 
 
-    if (document.getElementById("slide01") !== null) {
-        particlesJS("slide01", options);
+    if (document.getElementById("particlesJS") !== null) {
+        particlesJS("particlesJS", options);
     }
 
 })(jQuery);

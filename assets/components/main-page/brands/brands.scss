@@ -26,6 +26,11 @@
     text-align: center;
     width: 33.3333%;
     padding-top: 115px;
+
+    /*animation*/
+    opacity: 0;
+    transform: translateY(45px);
+
     @media (max-width: $screen-sm-max) {
       padding-top: 65px;
     }
