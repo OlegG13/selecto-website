@@ -1,21 +1,3 @@
-// var count = (function () {
-//
-//     var $counter = $('[data-count]');
-//
-//     function init() {
-//         return $counter.each(function () {
-//             console.log($(this))
-//         })
-//     }
-//
-//     return {
-//         init: init
-//     }
-//
-// })();
-
-
-
 if (document.getElementById("projects") !== null) {
     var project = {
         useEasing : true,
@@ -25,7 +7,7 @@ if (document.getElementById("projects") !== null) {
         count: 60,
         id: "projects"
     };
-    var projectCount = new CountUp(project.id, 10, project.count, 0, 2.5, project);
+    var projectCount = new CountUp(project.id, 0, project.count, 0, 2.5, project);
 }
 if (document.getElementById("years") !== null) {
     var years = {
@@ -47,7 +29,7 @@ if (document.getElementById("people") !== null) {
         count: 50,
         id: "people"
     };
-    var peopleCount = new CountUp(people.id, 10, people.count, 0, 2.5, people);
+    var peopleCount = new CountUp(people.id, 0, people.count, 0, 2.5, people);
 }
 if (document.getElementById("offices") !== null) {
     var offices = {
