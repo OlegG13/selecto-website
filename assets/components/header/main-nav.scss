@@ -19,6 +19,22 @@
     //font-family:  $base-font-family-medium;
     letter-spacing: 1px;
     line-height: 1.5;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 2px;
+      margin-top: 4px;
+      left: 0;
+      top: 100%;
+      background-color: $theme-secondary-color;
+      transition: 0.2s ease-in-out;
+    }
+    &:hover:after {
+      width: 100%;
+    }
     &--white {
       @include main-dark-link;
     }

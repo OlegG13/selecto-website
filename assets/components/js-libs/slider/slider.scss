@@ -14,6 +14,8 @@
     transform: translate(0, -50%);
     width: 40px;
     padding: 20px 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
     &--left {
       left: 0;
     }
@@ -23,12 +25,26 @@
     &--hidden {
       display: none;
     }
+    &:hover {
+      & .slider__icon {
+        color: $theme-secondary-color;
+        fill:  $theme-secondary-color;
+      }
+      & .slider__icon--right {
+        transform: translate(20%, 0%);
+      }
+      & .slider__icon--left {
+        transform: translate(-20%, 0%) rotate(180deg);
+      }
+    }
   }
   &__icon {
     font-size: 0;
     display: block;
     color: #878a8b;
     fill: #878a8b;
+    transform: translate(0%, 0%);
+    transition: 0.2s ease-in-out;
     &--left {
       transform: rotate(180deg);
     }
