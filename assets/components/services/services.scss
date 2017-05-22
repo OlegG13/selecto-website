@@ -1,0 +1,72 @@
+.services {
+  &__section {
+    padding: 160px 0 215px;
+    background-color: #f5f5f5;
+    @media (max-width: $screen-md-max) {
+      padding: 55px 0 73px;
+    }
+    @media (max-width: $screen-sm-max) {
+      padding: 27px 0 36px;
+    }
+    &--technology {
+      padding: 65px 0;
+      background-color: #101517;
+    }
+  }
+  &__container {
+    max-width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    //flex-basis: 655px;
+    //flex-shrink: 0;
+    //flex-grow: 0;
+    margin-right: 15%;
+    @media (max-width: $screen-lg-max) {
+      margin-right: 10%;
+    }
+    @media (max-width: $screen-md-max) {
+      margin-right: 5%;
+    }
+  }
+  &__title {
+    font-size: responsive 2rem 3.75rem;
+    font-range: 980px 1280px;
+    font-weight: 300;
+    line-height: 1.266;
+    margin-bottom: 54px;
+    color: #000000;
+    position: relative;
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 105px;
+      height: 4px;
+      left: 0;
+      bottom: -20px;
+      background-color: $theme-secondary-color;
+    }
+  }
+  &__desc {
+    font-weight: 300;
+    color: #101517;
+    line-height: 1.875;
+    font-size: 1rem;
+  }
+  &__list {
+    flex-basis: 373px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 17px;
+    @media (max-width: $screen-sm-max) {
+      flex-basis: inherit;
+    }
+  }
+}

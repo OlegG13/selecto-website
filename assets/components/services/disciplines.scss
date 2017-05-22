@@ -1,0 +1,26 @@
+.disciplines {
+  background-color: #FFFFFF;
+  box-shadow: 0 22px 24px 0 #EDEDED;
+  padding: 20px 68px;
+  &__title {
+    line-height: 4;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  &__list {
+    font-size: 1rem;
+    line-height: 2.625;
+  }
+  &__item {
+
+  }
+  &__count {
+    color: #486CFF;
+    padding-right: 14px;
+  }
+  &__name {
+    color: #101517;
+  }
+}
