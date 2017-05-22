@@ -606,7 +606,7 @@ body {
 
 .btn-md,
 .btn-transparent {
-  padding: 13px 10px;
+  padding: 11px 10px;
 }
 
 .btn-main {
@@ -630,7 +630,7 @@ body {
 }
 
 .btn-transparent {
-  width: 290px;
+  width: 250px;
   text-align: center;
   border-radius: 100px;
   border: 1px solid #838586;
@@ -643,10 +643,31 @@ body {
   line-height: 32px;
   text-transform: uppercase;
   color: #ffffff;
+  vertical-align: middle;
 }
 
 .btn-transparent__title--black {
   color: #101517;
+}
+
+.btn-transparent__icon {
+  display: inline-block;
+  fill: #fff;
+  color: #fff;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.btn-transparent__icon--appstore {
+  width: 28px;
+  height: 35px;
+  background: url("../svg/appstore.svg");
+}
+
+.btn-transparent__icon--playmarket {
+  width: 30px;
+  height: 33px;
+  background: url("../svg/playmarket.svg");
 }
 
 .btn-transparent--inline {
@@ -1517,6 +1538,10 @@ Main page Components
   color: #62a544;
 }
 
+.main-article__subtitle--violet {
+  color: #8859e3;
+}
+
 .main-article__title {
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
@@ -2277,6 +2302,14 @@ Main page Components
   background-image: url("../img/sprout-big-photo.jpg");
 }
 
+.hero-cases--msfit {
+  background-image: url("../img/msfit-hero.jpg");
+}
+
+.hero-cases--msfit-bot {
+  background-image: url("../img/msfit-big-photo.jpg");
+}
+
 .hero-cases__img {
   display: inline-block !important;
   position: absolute;
@@ -2654,7 +2687,6 @@ Main page Components
 .chess-list__item {
   display: flex;
   align-items: center;
-  max-width: 845px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -2726,6 +2758,10 @@ Main page Components
   margin-bottom: 30px;
 }
 
+.chess-list__item--tab:not(:last-child) {
+  margin-bottom: 100px;
+}
+
 @media (min-width: 481px) {
   .chess-list__desc {
     flex-basis: 402px;
@@ -2788,6 +2824,18 @@ Main page Components
 
 .chess-list__footer-title--green {
   color: #4e9031;
+}
+
+.chess-list__footer-title--blue {
+  color: #609fef;
+}
+
+.chess-list__footer-title--pink {
+  color: #d34edb;
+}
+
+.chess-list__footer-title--violet {
+  color: #716296;
 }
 
 .project-view {
@@ -2896,6 +2944,10 @@ Main page Components
   font-weight: 400;
   line-height: 1.2;
   color: #61aa3e;
+}
+
+.development-net__title--pink {
+  color: #d34edb;
 }
 
 .case-review {

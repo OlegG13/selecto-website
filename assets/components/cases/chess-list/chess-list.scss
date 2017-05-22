@@ -3,7 +3,7 @@
   &__item {
     display: flex;
     align-items: center;
-    max-width: 845px;
+    //max-width: 845px;
     margin: 0 auto;
     justify-content: center;
     @media (max-width: $screen-xs-max) {
@@ -51,6 +51,11 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+    &--tab {
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+    }
   }
   &__desc {
     @media (min-width: $screen-xs-min) {
@@ -97,6 +102,15 @@
     }
     &--green {
       color: #4e9031;
+    }
+    &--blue {
+      color: #609fef;
+    }
+    &--pink {
+      color: #d34edb;
+    }
+    &--violet {
+      color: #716296;
     }
   }
 }

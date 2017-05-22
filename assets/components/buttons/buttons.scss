@@ -11,7 +11,7 @@
 }
 
 .btn-md {
-  padding: 13px 10px;
+  padding: 11px 10px;
 }
 
 .btn-sm {
@@ -41,7 +41,7 @@
 .btn-transparent {
   @extend .btn;
   @extend .btn-md;
-  width: 290px;
+  width: 250px;
   text-align: center;
   border-radius: 100px;
   border: 1px solid #838586;
@@ -52,8 +52,26 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #ffffff;
+    vertical-align: middle;
     &--black {
       color: #101517;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    fill: #fff;
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 14px;
+    &--appstore {
+      width: 28px;
+      height: 35px;
+      background: url(../svg/appstore.svg);
+    }
+    &--playmarket {
+      width: 30px;
+      height: 33px;
+      background: url(../svg/playmarket.svg);
     }
   }
   &--inline {
