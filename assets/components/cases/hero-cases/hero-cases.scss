@@ -5,10 +5,18 @@
   padding-bottom: 36%;
   max-height: 100%;
   text-align: center;
+
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  &--not-fixed {
+    background-attachment: inherit;
+  }
+  &--about {
+    background-image: url("../img/selecto-photo.jpg");
+    padding-bottom: 32%;
+  }
 
   &--bottom {
     padding-bottom: 28%;

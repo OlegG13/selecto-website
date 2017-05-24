@@ -15,60 +15,6 @@ body {
   line-height: $base-line-height;
   background-color: #fff;
   height: 100%;
+  font-weight: 300;
   //overflow-x: hidden;
-}
-
-
-/* =Simple animation up */
-
-.fadeIn {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.slideInUp {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0);
-}
-
-.is-active .slideInUp {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.is-active .fadeIn {
-  visibility: visible;
-  opacity: 1;
-}
-
-.slideInUp.slideInUp2 {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
-.slideInUp.slideInUp3 {
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-
-.slideInUp.slideInUp4 {
-  -webkit-transition-delay: 0.9s;
-  transition-delay: 0.9s;
-}
-
-.slideInUp.slideInUp5 {
-  -webkit-transition-delay: 1.2s;
-  transition-delay: 1.2s;
-}
-
-.slideInUp.slideInUp6 {
-  -webkit-transition-delay: 1.5s;
-  transition-delay: 1.5s;
 }

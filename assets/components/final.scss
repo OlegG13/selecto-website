@@ -2,6 +2,7 @@
 @import "core/variables.scss";
 @import "core/mixins.scss";
 @import "core/fonts";
+@import "helpers/columns";
 //Project Reset
 @import "core/reset.scss";
 /*
@@ -84,7 +85,7 @@ Services page Components
 @import "services/technology";
 /*
 --------------------------------------------------
-Services page Components
+Blog page Components
 --------------------------------------------------
 */
 @import "blog/blog-tools";
@@ -94,3 +95,9 @@ Services page Components
 @import "blog/blog-article.scss";
 @import "blog/blog-tags";
 @import "blog/pagination";
+/*
+--------------------------------------------------
+About Us page Components
+--------------------------------------------------
+*/
+@import "about-us/map";

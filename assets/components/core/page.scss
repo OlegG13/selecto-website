@@ -79,6 +79,12 @@
       & .main-article__title {
         color: #FFFFFF;
       }
+      &__quote {
+        color: #FFFFFF;
+      }
+      & > * {
+        color: #FFFFFF;
+      }
     }
     &--sm {
       padding: 85px 0;

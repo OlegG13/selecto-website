@@ -31,6 +31,26 @@
                     setTimeout(peopleCount.start.bind(peopleCount), 700);
                     setTimeout(officesCount.start.bind(officesCount), 1000);
                 }
+                if (element.getAttribute("data-animation") === 'ourSolution') {
+                    setTimeout(projectCount.start.bind(projectCount), 100);
+                    setTimeout(yearsCount.start.bind(yearsCount), 400);
+                    setTimeout(countryCount.start.bind(countryCount), 700);
+                    setTimeout(officesCount.start.bind(officesCount), 1000);
+                }
+                if (element.getAttribute("data-animation") === 'lifeCount') {
+                    setTimeout(joinedLifeCount.start.bind(joinedLifeCount), 100);
+                    setTimeout(platformsLifeCount.start.bind(platformsLifeCount), 400);
+                    setTimeout(peopleLifeCount.start.bind(peopleLifeCount), 700);
+                    setTimeout(publicationsLifeCount.start.bind(publicationsLifeCount), 1000);
+                }
+                if (element.getAttribute("data-animation") === 'msfitCount') {
+                    setTimeout(joinedMsfitCount.start.bind(joinedMsfitCount), 100);
+                    setTimeout(platformsMsfitCount.start.bind(platformsMsfitCount), 400);
+                    //setTimeout(peopleMsfitCount.start.bind(peopleMsfitCount), 700);
+                    setTimeout(publicationsMsfitCount.start.bind(publicationsMsfitCount), 1000);
+                }
+
+
             });
             //scene.addIndicators();
 
@@ -62,7 +82,16 @@
                     blogHead: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--blog", "offset": 0, "reverse": false } } }',
                     blog: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--blog", "offset": 100, "reverse": false } } }',
                     startProject: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".action-project", "offset": -250, "reverse": false } } }',
-                    footer: '{"tween": { "duration": 0.5, "options": { "y": 0 } }, "scene": { "options": { "triggerElement": ".footer", "offset": -550, "reverse": false } } }'
+                    footer: '{"tween": { "duration": 0.5, "options": { "y": 0 } }, "scene": { "options": { "triggerElement": ".footer", "offset": -550, "reverse": false } } }',
+
+                    aboutSelecto: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--about", "offset": -200, "reverse": false } } }',
+                    columns: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--about", "offset": 0, "reverse": false } } }',
+                    ourSolution: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--map", "offset": 869, "reverse": false } } }',
+                    mapTitle: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--map", "offset": -200, "reverse": false } } }',
+                    principlesTitle: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--map", "offset": -200, "reverse": false } } }',
+
+                    lifeCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
+                    msfitCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }'
 
                 };
 
