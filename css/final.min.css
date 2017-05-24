@@ -413,6 +413,12 @@ body {
   color: #FFFFFF;
 }
 
+.page__hero--header-photo {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
 .page__footer {
   background-color: #101517;
   color: #FFFFFF;
@@ -586,16 +592,46 @@ body {
   }
 }
 
+.page__blog-tools {
+  background-color: #101517;
+  padding: 30px 0;
+  margin-bottom: 110px;
+}
+
+.page__blog-articles {
+  margin-bottom: 58px;
+}
+
+.page__pagination {
+  margin-bottom: 127px;
+  text-align: center;
+}
+
+.page__header-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/about-us.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 .btn,
 .btn-main,
-.btn-transparent {
+.btn-transparent,
+.btn-tag,
+.blog-tags__link {
   display: inline-block;
   text-decoration: none;
 }
 
 .btn:hover,
 .btn-main:hover,
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-tag:hover,
+.blog-tags__link:hover {
   text-decoration: none;
 }
 
@@ -607,6 +643,12 @@ body {
 .btn-md,
 .btn-transparent {
   padding: 11px 10px;
+}
+
+.btn-sm,
+.btn-tag,
+.blog-tags__link {
+  padding: 3px 21px;
 }
 
 .btn-main {
@@ -685,6 +727,13 @@ body {
   .btn-transparent--inline + .btn-transparent--inline {
     margin-top: 20px;
   }
+}
+
+.btn-tag,
+.blog-tags__link {
+  border: 1px solid #e2e5e6;
+  color: #0061ff;
+  border-radius: 16px;
 }
 
 .slider {
@@ -3877,6 +3926,188 @@ Services page Components
 
 .technology__img--angular {
   opacity: 0.4;
+}
+
+/*
+--------------------------------------------------
+Services page Components
+--------------------------------------------------
+*/
+
+.blog-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-nav {
+  font-size: 0;
+}
+
+.blog-nav__item {
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.blog-nav__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.blog-nav__link {
+  color: #bac0c3;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.blog-nav__link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  margin-top: 4px;
+  left: 0;
+  top: 100%;
+  background-color: #486CFF;
+  transition: 0.2s ease-in-out;
+}
+
+.blog-nav__link:hover:after {
+  width: 100%;
+}
+
+.blog-nav__link--active {
+  color: #fff;
+}
+
+.blog-search__element {
+  position: relative;
+}
+
+.blog-articles__list {
+  font-size: 0;
+  vertical-align: top;
+  margin: 0 -4%;
+}
+
+.blog-articles__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33333%;
+  max-width: 510px;
+  padding: 0 4%;
+  font-size: 1rem;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 992px) {
+  .blog-articles__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-articles__item {
+    width: 100%;
+  }
+}
+
+.blog-article__top {
+  display: block;
+  text-decoration: none;
+}
+
+.blog-article__top:hover .blog-article__title {
+  color: #486CFF;
+}
+
+.blog-article__frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 61%;
+  max-height: 100%;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.blog-article__img {
+  display: inline-block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: inherit;
+}
+
+.blog-article__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 11px;
+  color: #1d1f21;
+}
+
+.blog-article__desc {
+  color: #2b2935;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+
+.blog-tags__list {
+  font-size: 0;
+}
+
+.blog-tags__item {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.blog-tags__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination__list {
+  font-size: 0;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 12px;
+}
+
+.pagination__link {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: inline-block;
+  color: #9f9f9f;
+  text-decoration: none;
+}
+
+.pagination__link--active {
+  padding: 0 15px;
+  border-radius: 19px;
+  color: #fff;
+  background-color: #486CFF;
+}
+
+.pagination__separate {
+  font-size: 1.5rem;
+  color: #9f9f9f;
 }
 
 /* Slider */

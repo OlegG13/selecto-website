@@ -82,3 +82,15 @@ Services page Components
 @import "services/services";
 @import "services/disciplines";
 @import "services/technology";
+/*
+--------------------------------------------------
+Services page Components
+--------------------------------------------------
+*/
+@import "blog/blog-tools";
+@import "blog/blog-nav";
+@import "blog/blog-search";
+@import "blog/blog-articles";
+@import "blog/blog-article.scss";
+@import "blog/blog-tags";
+@import "blog/pagination";

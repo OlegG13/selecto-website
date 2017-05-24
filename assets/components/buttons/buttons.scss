@@ -15,7 +15,7 @@
 }
 
 .btn-sm {
-
+    padding: 3px 21px;
 }
 
 .btn-main {
@@ -86,4 +86,12 @@
       }
     }
   }
+}
+
+.btn-tag {
+  @extend .btn;
+  @extend .btn-sm;
+  border: 1px solid #e2e5e6;
+  color: #0061ff;
+  border-radius: 16px;
 }

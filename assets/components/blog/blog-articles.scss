@@ -1,0 +1,24 @@
+.blog-articles {
+  &__list {
+    font-size: 0;
+    vertical-align: top;
+    //margin: 0 -62px;
+    margin: 0 -4%;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33333%;
+    max-width: 510px;
+    //padding: 0 62px;
+    padding: 0 4%;
+    font-size: 1rem;
+    margin-bottom: 55px;
+    @media (max-width: $screen-md-max) {
+      width: 50%;
+    }
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+}

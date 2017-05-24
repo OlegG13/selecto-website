@@ -1,0 +1,17 @@
+.blog-tags {
+
+  &__list {
+    font-size: 0;
+  }
+  &__item {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  &__link {
+    @extend .btn-tag;
+  }
+}

@@ -51,6 +51,11 @@
   &__hero {
     background-color: $theme-main-color;
     color: #FFFFFF;
+    &--header-photo {
+      position: relative;
+      z-index: 1;
+      background-color: transparent;
+    }
   }
   &__footer {
     background-color: $article-dark-bg;
@@ -160,5 +165,27 @@
         padding: 30px 0 60px;
       }
     }
+  }
+  &__blog-tools {
+    background-color: #101517;
+    padding: 30px 0;
+    margin-bottom: 110px;
+  }
+  &__blog-articles {
+    margin-bottom: 58px;
+  }
+  &__pagination {
+    margin-bottom: 127px;
+    text-align: center;
+  }
+  &__header-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/about-us.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 }
