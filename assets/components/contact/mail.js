@@ -8,7 +8,7 @@ app.dom.$contact_form = $('.js-popup__content__form');
 function sendMail($form) {
     var formData = $form.serializeObject();
     //var $spinner = $form.find('.fa-spinner').addClass('is-show');
-    fetch('../php/mail.php', {
+    fetch('/php/mail.php', {
             method: 'POST',
             headers: {
             'Accept': 'application/json',
@@ -17,18 +17,20 @@ function sendMail($form) {
             body: JSON.stringify(formData)
         }).then(res => {
         //$spinner.removeClass('is-show');
-        if (res.ok) {
-        TweenMax.fromTo(app.dom.$alert, 0.3, {
-                display: 'none',
-                y: '-100%',
-                opacity: 0,
-                className: '-=alert--danger'
-            }, {display: 'block', y: '0%', opacity: 1, className: '+=alert--success'});
-            app.dom.$alert.html('Success');
-            setTimeout(() => {
-                TweenMax.to(app.dom.$alert, 0.3, {y: '-100%', opacity: 0});
-            }, 3000);
-        } else {
+            if (res.ok) {
+                TweenMax.fromTo(app.dom.$alert, 0.3, {
+                    display: 'none',
+                    y: '-100%',
+                    opacity: 0,
+                    className: '-=alert--danger'
+                }, {display: 'block', y: '0%', opacity: 1, className: '+=alert--success'});
+
+                app.dom.$alert.html('Success');
+
+                setTimeout(() => {
+                    TweenMax.to(app.dom.$alert, 0.3, {y: '-100%', opacity: 0});
+                }, 3000);
+            } else {
             TweenMax.fromTo(app.dom.$alert, 0.3, {
                 display: 'none',
                 y: '-100%',
