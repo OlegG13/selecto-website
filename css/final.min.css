@@ -1881,7 +1881,7 @@ Main page Components
   max-width: 100%;
   position: relative;
   top: 0;
-  transition: all 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .latest-projects__item:hover {
@@ -1915,7 +1915,7 @@ Main page Components
   text-decoration: none;
   color: #fff;
   padding: 40px;
-  transition: all 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 @media (max-width: 768px) {
