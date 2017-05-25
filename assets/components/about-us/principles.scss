@@ -1,0 +1,45 @@
+.principles {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (max-width: $screen-md-max) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    flex-basis: 382px;
+    text-align: center;
+    padding: 0 10px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    @media (max-width: $screen-md-max) {
+      max-width: 382px;
+    }
+  }
+  &__top {
+    margin-bottom: 18px;
+  }
+  &__icon {
+    display: inline-block;
+    &--healthy {
+      @include sprite($principles-1);
+    }
+    &--strong {
+      @include sprite($principles-2);
+    }
+    &--continuous {
+      @include sprite($principles-3);
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    line-height: 1.375;
+    margin-bottom: 36px;
+  }
+  &__desc {
+    font-size: 0.875rem;
+    line-height: 2;
+  }
+}

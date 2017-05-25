@@ -208,7 +208,7 @@ gulp.task('img', function () {
 gulp.task('sprite', function () {
 
   // Generate our spritesheet
-  return gulp.src('components/icons/img/**/*.png')
+  return gulp.src('components/icons/img/**/*.jpg')
       .pipe(sprite({
         imgName: 'sprite.png',
         cssName: 'sprite.scss'
