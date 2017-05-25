@@ -1,0 +1,126 @@
+.cases-list {
+  font-size: 0;
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 160px 0 190px;
+    color: #ffffff;
+    //max-width: 845px;
+    margin: 0 auto;
+    justify-content: center;
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
+    &--msfit {
+      background-color: $ms-fit;
+    }
+    &--sprout {
+      background-color: $sprout;
+    }
+    &--life {
+      background-color: $life;
+    }
+    &--dope {
+      background-color: $dope;
+    }
+    &:nth-child(2n+2) {
+      & .cases-list__desc {
+        order: 1;
+      }
+      & .cases-list__photo {
+        order: 2;
+        margin-left: 28px;
+        @media (max-width: $screen-sm-max) {
+          margin-left: 15px;
+        }
+        @media (max-width: $screen-xs-max) {
+          margin-left: 0;
+        }
+      }
+    }
+    &:nth-child(2n+1) {
+      & .cases-list__desc {
+        order: 2;
+        margin-left: 40px;
+        @media (max-width: $screen-sm-max) {
+          margin-left: 10px;
+        }
+        @media (max-width: $screen-xs-max) {
+          margin-left: 0;
+          order: 1;
+        }
+      }
+      & .cases-list__photo {
+        order: 1;
+        margin-right: 40px;
+        @media (max-width: $screen-sm-max) {
+          margin-right: 10px;
+        }
+        @media (max-width: $screen-xs-max) {
+          margin-right: 0;
+          order: 2;
+        }
+      }
+    }
+    &--tab {
+      &:not(:last-child) {
+        margin-bottom: 100px;
+      }
+    }
+  }
+  &__desc {
+    @media (min-width: $screen-xs-min) {
+      flex-basis: 573px;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.375;
+    margin-bottom: 25px;
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+    }
+  }
+  &__info {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 44px;
+    @media (max-width: $screen-xs-max) {
+      text-align: justify;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 15px;
+    font-size: 0;
+  }
+  &__footer-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #a5724d;
+    &--brown {
+      color: #4f331f;
+    }
+    &--green {
+      color: #4e9031;
+    }
+    &--blue {
+      color: #609fef;
+    }
+    &--pink {
+      color: #d34edb;
+    }
+    &--violet {
+      color: #716296;
+    }
+  }
+}

@@ -4,25 +4,25 @@
         return trim(strip_tags($var));
     }
 
-require 'PHPMailerAutoload.php';
-$mail = new PHPMailer;
-$mail->Host='smtp.mailgun.org';
-$mail->Port='25';
-$mail->Username   = 'postmaster@selectoglobal.com'; // SMTP account username
-$mail->Password   = 'a62b1a08314e0b6ce524369287769444';
-$mail->SMTPKeepAlive = true;
-$mail->Mailer = "smtp";
-$mail->IsSMTP(); // telling the class to use SMTP
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->CharSet = 'utf-8';
-$mail->SMTPDebug  = 0;
+        require 'PHPMailerAutoload.php';
+        $mail = new PHPMailer;
+        $mail->Host='smtp.mailgun.org';
+        $mail->Port='25';
+        $mail->Username   = 'postmaster@selectoglobal.com'; // SMTP account username
+        $mail->Password   = 'a62b1a08314e0b6ce524369287769444';
+        $mail->SMTPKeepAlive = true;
+        $mail->Mailer = "smtp";
+        $mail->IsSMTP(); // telling the class to use SMTP
+        $mail->SMTPAuth   = true;                  // enable SMTP authentication
+        $mail->CharSet = 'utf-8';
+        $mail->SMTPDebug  = 0;
 
-$mail->setFrom('postmaster@selectoglobal.com', 'Site contact form');
-$mail->addAddress('oleg.gubich@gmail.com');
+        $mail->setFrom('postmaster@selectoglobal.com', 'Site contact form');
+        $mail->addAddress('y.mamonchuk@selectoglobal.com');
 
-    $req = json_decode(file_get_contents('php://input'), true);
-    if(isset($req['name']) && isset($req['email']))
-    {
+        $req = json_decode(file_get_contents('php://input'), true);
+        if(isset($req['name']) && isset($req['email']))
+        {
         //$message = json_encode($codeMail);
         if (!empty($req['name'])) $name = $req['name'];
         if (!empty($req['email'])) $email = $req['email'];
