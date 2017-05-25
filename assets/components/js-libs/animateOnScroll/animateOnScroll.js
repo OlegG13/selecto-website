@@ -46,8 +46,15 @@
                 if (element.getAttribute("data-animation") === 'msfitCount') {
                     setTimeout(joinedMsfitCount.start.bind(joinedMsfitCount), 100);
                     setTimeout(platformsMsfitCount.start.bind(platformsMsfitCount), 400);
-                    //setTimeout(peopleMsfitCount.start.bind(peopleMsfitCount), 700);
+                    setTimeout(peopleMsfitCount.start.bind(peopleMsfitCount), 700);
                     setTimeout(publicationsMsfitCount.start.bind(publicationsMsfitCount), 1000);
+                }
+
+                if (element.getAttribute("data-animation") === 'sproutCount') {
+                    setTimeout(joinedSproutCount.start.bind(joinedSproutCount), 100);
+                    setTimeout(platformsSproutCount.start.bind(platformsSproutCount), 400);
+                    setTimeout(peopleSproutCount.start.bind(peopleSproutCount), 700);
+                    setTimeout(publicationsSproutCount.start.bind(publicationsSproutCount), 1000);
                 }
 
 
@@ -91,7 +98,8 @@
                     principlesTitle: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--map", "offset": -200, "reverse": false } } }',
 
                     lifeCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
-                    msfitCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }'
+                    msfitCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
+                    sproutCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }'
 
                 };
 

@@ -153,3 +153,53 @@ if (document.getElementById("publications-msfit") !== null) {
     };
     var publicationsMsfitCount = new CountUp(publicationsMsfit.id, 0, publicationsMsfit.count, 0, 2.5, publicationsMsfit);
 }
+
+/* Cases  Sprout */
+
+if (document.getElementById("joined-sprout") !== null) {
+    var joinedSprout = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        count: 150,
+        id: "joined-sprout"
+    };
+    var joinedSproutCount = new CountUp(joinedSprout.id, 0, joinedSprout.count, 0, 2.5, joinedSprout);
+}
+
+if (document.getElementById("platforms-sprout") !== null) {
+    var platformsSprout = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        count: 3,
+        id: "platforms-sprout"
+    };
+    var platformsSproutCount = new CountUp(platformsSprout.id, 0, platformsSprout.count, 0, 2.5, platformsSprout);
+}
+
+if (document.getElementById("people-sprout") !== null) {
+    var peopleSprout = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        count: 2.5,
+        id: "people-sprout"
+    };
+    var peopleSproutCount = new CountUp(peopleSprout.id, 0, peopleSprout.count, 0, 2.5, peopleSprout);
+}
+
+if (document.getElementById("publications-sprout") !== null) {
+    var publicationsSprout = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        count: 5,
+        id: "publications-sprout"
+    };
+    var publicationsSproutCount = new CountUp(publicationsSprout.id, 0, publicationsSprout.count, 0, 2.5, publicationsSprout);
+}
