@@ -1,0 +1,24 @@
+.cases-tags {
+  font-size: 0;
+  margin-bottom: 25px;
+  &__item {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    margin-bottom: 8px;
+  }
+  &__link {
+    padding: 8px 22px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 16px;
+  }
+
+}

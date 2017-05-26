@@ -609,7 +609,8 @@ body {
 .btn-main,
 .btn-transparent,
 .btn-tag,
-.blog-tags__link {
+.blog-tags__link,
+.btn-cases {
   display: inline-block;
   text-decoration: none;
 }
@@ -618,7 +619,8 @@ body {
 .btn-main:hover,
 .btn-transparent:hover,
 .btn-tag:hover,
-.blog-tags__link:hover {
+.blog-tags__link:hover,
+.btn-cases:hover {
   text-decoration: none;
 }
 
@@ -721,6 +723,36 @@ body {
   border: 1px solid #e2e5e6;
   color: #0061ff;
   border-radius: 16px;
+}
+
+.btn-cases {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  padding: 14px 32px;
+  font-size: 0;
+}
+
+.btn-cases__name {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.btn-cases_icon {
+  width: 16px;
+  height: 16px;
+  background: url("../svg/arrow.svg");
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
 }
 
 .slider {
@@ -2320,7 +2352,7 @@ Main page Components
 
 /*
 --------------------------------------------------
-Main page Components
+Cases page Components
 --------------------------------------------------
 */
 
@@ -3250,12 +3282,12 @@ Main page Components
 }
 
 .cases-list__item:nth-child(2n+2) .cases-list__desc {
-  order: 1;
+  order: 2;
 }
 
 .cases-list__item:nth-child(2n+2) .cases-list__photo {
-  order: 2;
-  margin-left: 28px;
+  order: 1;
+  margin-right: 200px;
 }
 
 @media (max-width: 768px) {
@@ -3271,8 +3303,8 @@ Main page Components
 }
 
 .cases-list__item:nth-child(2n+1) .cases-list__desc {
-  order: 2;
-  margin-left: 40px;
+  order: 1;
+  margin-right: 40px;
 }
 
 @media (max-width: 768px) {
@@ -3284,13 +3316,13 @@ Main page Components
 @media (max-width: 480px) {
   .cases-list__item:nth-child(2n+1) .cases-list__desc {
     margin-left: 0;
-    order: 1;
+    order: 2;
   }
 }
 
 .cases-list__item:nth-child(2n+1) .cases-list__photo {
-  order: 1;
-  margin-right: 40px;
+  order: 2;
+  margin-left: 40px;
 }
 
 @media (max-width: 768px) {
@@ -3302,7 +3334,7 @@ Main page Components
 @media (max-width: 480px) {
   .cases-list__item:nth-child(2n+1) .cases-list__photo {
     margin-right: 0;
-    order: 2;
+    order: 1;
   }
 }
 
@@ -3323,10 +3355,22 @@ Main page Components
 }
 
 .cases-list__title {
-  font-size: 2rem;
-  font-weight: 200;
-  line-height: 1.375;
-  margin-bottom: 25px;
+  font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
+  font-weight: 300;
+  line-height: 1.26667;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .cases-list__title {
+    font-size: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .cases-list__title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3336,8 +3380,8 @@ Main page Components
 }
 
 .cases-list__info {
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 2;
   margin-bottom: 44px;
 }
@@ -3383,6 +3427,33 @@ Main page Components
 
 .cases-list__footer-title--violet {
   color: #716296;
+}
+
+.cases-tags {
+  font-size: 0;
+  margin-bottom: 25px;
+}
+
+.cases-tags__item {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
+
+.cases-tags__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.cases-tags__link {
+  padding: 8px 22px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
 }
 
 /*
