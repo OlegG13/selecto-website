@@ -67,8 +67,8 @@
   }
   &__name {
     display: block;
-    color: $base-font-color-third;
-    font-weight: 300;
+    //color: $base-font-color-third;
+    //font-weight: 300;
     line-height: 1.1875;
     @media (max-width: $screen-sm-max) {
       max-width: 120px;

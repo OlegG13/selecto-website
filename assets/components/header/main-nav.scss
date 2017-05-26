@@ -6,7 +6,7 @@
     font-size: 0;
   }
   &__item {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     display: inline-block;
     &:not(:last-child) {
       margin-right: 25px;
@@ -15,7 +15,7 @@
   &__link {
     @include main-link;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     //font-family:  $base-font-family-medium;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -37,6 +37,15 @@
     }
     &--white {
       @include main-dark-link;
+    }
+    &--active {
+      cursor: text;
+      &:after {
+        width: 100%;
+      }
+      &:hover {
+        cursor: text;
+      }
     }
   }
 }

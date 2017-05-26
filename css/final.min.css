@@ -364,7 +364,7 @@ body {
 .page__header {
   color: #FFFFFF;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page__header--main {
@@ -389,7 +389,7 @@ body {
 
 .page__hero--header-photo {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: transparent;
 }
 
@@ -398,7 +398,7 @@ body {
   color: #FFFFFF;
   flex: 0 0 auto;
   border-top: 1px solid #2e3538;
-  padding: 55px 0 68px;
+  padding: 55px 0 55px;
 }
 
 .page__section {
@@ -600,9 +600,74 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../img/about-us.jpg");
+  overflow: hidden;
+}
+
+.page__header-img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  animation-name: imageAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+}
+
+.page__header-img--first {
+  background-image: url("../img/about-us.jpg");
+}
+
+.page__header-img--second {
+  background-image: url("../img/test-1.jpg");
+  animation-delay: 10s;
+}
+
+.page__header-img--third {
+  background-image: url("../img/test-2.jpg");
+  animation-delay: 20s;
+}
+
+.page__header-img--fourth {
+  background-image: url("../img/test-3.jpg");
+  animation-delay: 30s;
+}
+
+.page__header-img--fifth {
+  background-image: url("../img/test-4.jpg");
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+    animation-timing-function: ease-out;
+    transform: scale(1.2);
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 .btn,
@@ -730,13 +795,13 @@ body {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-radius: 100px;
-  padding: 14px 32px;
+  padding: 12px 32px;
   font-size: 0;
 }
 
 .btn-cases__name {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -921,7 +986,7 @@ body {
 
 .logo {
   display: block;
-  width: 128px;
+  width: 100px;
 }
 
 .logo--dark .logo__bg {
@@ -990,7 +1055,7 @@ body {
 }
 
 .main-nav__item {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   display: inline-block;
 }
 
@@ -1002,7 +1067,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.5;
   position: relative;
@@ -1040,6 +1105,18 @@ body {
   color: #101517;
   text-decoration: none;
   cursor: pointer;
+}
+
+.main-nav__link--active {
+  cursor: text;
+}
+
+.main-nav__link--active:after {
+  width: 100%;
+}
+
+.main-nav__link--active:hover {
+  cursor: text;
 }
 
 .mobile-menu-btn {
@@ -1123,6 +1200,12 @@ body {
   }
 }
 
+@media (min-width: 1921px) {
+  .hero__title {
+    font-size: 4.375rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero__title {
     padding-bottom: 100px;
@@ -1157,9 +1240,21 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  padding-bottom: 51%;
   max-height: 100%;
   text-align: center;
+  padding-bottom: 95%;
+}
+
+@media (min-width: 1921px) {
+  .hero__container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .hero__container {
+    padding-bottom: 51%;
+  }
 }
 
 .hero__inner {
@@ -1359,7 +1454,6 @@ Footer Components
   display: flex;
   flex-wrap: nowrap;
   /*animation*/
-  transform: translateY(45px);
   justify-content: space-between;
 }
 
@@ -1414,6 +1508,7 @@ Footer Components
 .footer-nav__link {
   color: #FFFFFF;
   text-decoration: none;
+  color: #87898a;
   position: relative;
 }
 
@@ -1423,21 +1518,8 @@ Footer Components
   cursor: pointer;
 }
 
-.footer-nav__link:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 2px;
-  margin-top: 4px;
-  left: 0;
-  top: 100%;
-  background-color: #486CFF;
-  transition: 0.2s ease-in-out;
-}
-
-.footer-nav__link:hover:after {
-  width: 100%;
+.footer-nav__link:hover {
+  color: #fff;
 }
 
 .footer-soc__list {
@@ -1615,7 +1697,7 @@ Main page Components
   text-align: center;
   line-height: 1.26666667;
   font-weight: 200;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1634,7 +1716,7 @@ Main page Components
   font-size: 1rem;
   font-weight: 300;
   line-height: 2;
-  max-width: 746px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 147px;
@@ -1759,8 +1841,6 @@ Main page Components
 
 .count-up__name {
   display: block;
-  color: #616F75;
-  font-weight: 300;
   line-height: 1.1875;
 }
 
@@ -4058,7 +4138,7 @@ Services page Components
 }
 
 .services__container {
-  max-width: 1210px;
+  max-width: 1110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -4089,7 +4169,7 @@ Services page Components
 
 .services__title {
   font-size: calc(2rem + 1.75 * ((100vw - 61.25rem) / 18.75));
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.266;
   margin-bottom: 54px;
   color: #000000;
@@ -4112,10 +4192,10 @@ Services page Components
   content: "";
   display: inline-block;
   position: absolute;
-  width: 105px;
-  height: 4px;
+  width: 70px;
+  height: 3px;
   left: 0;
-  bottom: -20px;
+  bottom: -24px;
   background-color: #486CFF;
 }
 
@@ -4142,20 +4222,21 @@ Services page Components
 .disciplines {
   background-color: #FFFFFF;
   box-shadow: 0 22px 24px 0 #EDEDED;
-  padding: 20px 68px;
+  padding: 20px 68px 30px 68px;
 }
 
 .disciplines__title {
-  line-height: 4;
+  line-height: 57px;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 20px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .disciplines__list {
   font-size: 1rem;
-  line-height: 2.625;
+  line-height: 38px;
 }
 
 .disciplines__count {
@@ -4434,7 +4515,7 @@ About Us page Components
 }
 
 .principles__desc {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 2;
 }
 

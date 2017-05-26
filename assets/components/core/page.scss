@@ -32,7 +32,7 @@
   &__header {
     color: #FFFFFF;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     &--main {
       /*animation*/
@@ -53,7 +53,7 @@
     color: #FFFFFF;
     &--header-photo {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       background-color: transparent;
     }
   }
@@ -62,7 +62,7 @@
     color: #FFFFFF;
     flex: 0 0 auto;
     border-top: 1px solid #2e3538;
-    padding: 55px 0 68px;
+    padding: 55px 0 55px;
   }
   &__section {
     &--white {
@@ -194,8 +194,71 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../img/about-us.jpg");
+    overflow: hidden;
+  }
+  &__header-img {
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    opacity: 0;
+    z-index: 1;
+    animation-name: imageAnimation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    animation-duration: 50s;
+
+    &--first {
+      background-image: url("../img/about-us.jpg");
+    }
+    &--second {
+      background-image: url("../img/test-1.jpg");
+      animation-delay: 10s;
+    }
+    &--third {
+      background-image: url("../img/test-2.jpg");
+      animation-delay: 20s;
+    }
+    &--fourth {
+      background-image: url("../img/test-3.jpg");
+      animation-delay: 30s;
+    }
+    &--fifth {
+      background-image: url("../img/test-4.jpg");
+      animation-delay: 40s;
+    }
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in
+  }
+
+  5% {
+    opacity: 1
+  }
+
+  20% {
+    opacity: 1
+  }
+
+  25% {
+    opacity: 0;
+    animation-timing-function: ease-out;
+    transform: scale(1.2);
+  }
+
+  to {
+    opacity: 0
   }
 }

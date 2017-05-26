@@ -15,6 +15,9 @@
     padding-bottom: 153px;
     font-size: responsive 1.9rem 3.75rem;
     font-range: 480px 1280px;
+    @media (min-width: $screen-xxl-min) {
+      font-size: 4.375rem;
+    }
     @media (max-width: $screen-sm-max) {
       padding-bottom: 100px;
     }
@@ -40,14 +43,19 @@
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
+    @media (min-width: $screen-xxl-min) {
+      max-width: 640px;
+    }
     padding: 0 20px;
-
     position: relative;
     display: block;
     width: 100%;
-    padding-bottom: 51%;
     max-height: 100%;
     text-align: center;
+    padding-bottom: 95%;
+    @media (max-width: $screen-xxl-max) {
+      padding-bottom: 51%;
+    }
   }
   &__inner {
     display: inline-block!important;
