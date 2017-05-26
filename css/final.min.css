@@ -797,6 +797,36 @@ body {
   border-radius: 100px;
   padding: 12px 32px;
   font-size: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.btn-cases:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  left: 0;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-cases:hover .btn-cases__name {
+  color: #616F75;
+}
+
+.btn-cases:hover .btn-cases_icon {
+  color: #616F75;
+  fill: #616F75;
+}
+
+.btn-cases:hover:before {
+  right: 0;
 }
 
 .btn-cases__name {
@@ -812,12 +842,14 @@ body {
 .btn-cases_icon {
   width: 16px;
   height: 16px;
-  background: url("../svg/arrow.svg");
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: -2px;
+  top: 0;
   margin-left: 10px;
+  color: #fff;
+  fill: #fff;
+  z-index: 1;
 }
 
 .slider {
@@ -1697,7 +1729,7 @@ Main page Components
   text-align: center;
   line-height: 1.26666667;
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1710,6 +1742,10 @@ Main page Components
   .main-article__title {
     font-size: 2.5rem;
   }
+}
+
+.main-article__title--sm-p {
+  margin-bottom: 20px;
 }
 
 .main-article__quote {

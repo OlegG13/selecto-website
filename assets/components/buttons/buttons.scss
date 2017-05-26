@@ -104,6 +104,34 @@
   border-radius: 100px;
   padding: 12px 32px;
   font-size: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(255,255,255,1);
+    left: 0;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    & .btn-cases__name {
+      color: $base-font-color-third;
+    }
+    & .btn-cases_icon {
+      color: $base-font-color-third;
+      fill: $base-font-color-third;
+    }
+  }
+  &:hover:before {
+    right: 0;
+  }
   &__name {
     line-height: 1.5;
     font-size: 14px;
@@ -116,11 +144,14 @@
   &_icon {
     width: 16px;
     height: 16px;
-    background: url(../svg/arrow.svg);
+
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    top: -2px;
+    top: 0;
     margin-left: 10px;
+    color: #fff;
+    fill: #fff;
+    z-index: 1;
   }
 }

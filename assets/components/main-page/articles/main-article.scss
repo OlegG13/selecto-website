@@ -46,8 +46,11 @@
     font-weight: 200;
     //font-family: $base-font-family-light;
 
-    //margin-bottom: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    &--sm-p {
+      margin-bottom: 20px;
+    }
+
   }
   &__quote {
     font-size: 1rem;
