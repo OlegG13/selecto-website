@@ -100,7 +100,8 @@
 
                     lifeCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
                     msfitCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
-                    sproutCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }'
+                    sproutCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--result", "offset": 220, "reverse": false } } }',
+                    menu: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": 400, "reverse": true } } }'
 
                 };
 
