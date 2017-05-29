@@ -67,7 +67,7 @@
   }
   &__title {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.375;
     margin-bottom: 25px;
     @media (max-width: $screen-xs-max) {
@@ -75,9 +75,6 @@
     }
   }
   &__info {
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: #616f75;
     line-height: 2;
     margin-bottom: 44px;
     @media (max-width: $screen-xs-max) {

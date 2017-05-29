@@ -29,8 +29,7 @@
             triggerHook: 0,
             offset: 0,
             duration: "100%"
-        })
-            .setTween(introTl)
+        }).setTween(introTl)
             .addTo(controller);
 
         /* First slide. Begin */

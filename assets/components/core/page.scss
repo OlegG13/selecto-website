@@ -17,11 +17,12 @@
   &__top {
     position: relative;
     //background-color: $theme-main-color;
+    background-color: #161c26;
     overflow: hidden;
     &--white {
       background-color: #fff;
       //border-bottom: 1px solid $third-border-color;
-      box-shadow: 0 1px 3px 0 #EDEDED;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07);
     }
     & .particles-js-canvas-el {
       position: absolute;
@@ -169,12 +170,12 @@
     }
   }
   &__contact-info {
-    padding: 88px 0 42px;
-    padding: 4.583vw 0 2.1875vw;
+    padding: 85px 0 60px;
+    //padding: 4.583vw 0 2.1875vw;
     @media (max-width: $screen-lg-max) {
       padding: 40px 0 20px;
     }
-    background-color: $article-dark-bg;
+    background-color: #486CFF;
   }
   &__contact-item {
     background-color: #f5f5f5;
