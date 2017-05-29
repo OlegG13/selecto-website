@@ -8,7 +8,7 @@
         var slides = $('[data-slider-slides]', scope).attr('data-slider-slides');
 
         $('[data-slider-slides]', scope).find('[data-slider-slide]').css('float', 'left').end().slick({
-            dots: false,
+            dots: true,
             arrows: true,
             infinite: false,
             adaptiveHeight: false,

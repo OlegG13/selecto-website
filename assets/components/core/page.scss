@@ -38,6 +38,15 @@
       transform: translate(0%, -100%);
       opacity: 0;
     }
+    &--fx-na {
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      opacity: 1;
+      & + * {
+        margin-top: 72px;
+      }
+    }
   }
   &__container {
     max-width: $site-max-width;
@@ -114,6 +123,16 @@
     }
     &--no-padding {
       padding: 0 0;
+    }
+
+    &--review {
+      padding: 140px 0 105px;
+      @media (max-width: $screen-md-max) {
+        padding: 70px 0 53px;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 35px 0 26px;
+      }
     }
     /* Cases articles */
     &--ui-design {

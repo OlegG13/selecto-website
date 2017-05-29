@@ -374,6 +374,17 @@ body {
   opacity: 0;
 }
 
+.page__top--fx-na {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  opacity: 1;
+}
+
+.page__top--fx-na + * {
+  margin-top: 72px;
+}
+
 .page__container {
   max-width: 1440px;
   padding: 0 20px;
@@ -466,6 +477,22 @@ body {
 
 .page__section--no-padding {
   padding: 0 0;
+}
+
+.page__section--review {
+  padding: 140px 0 105px;
+}
+
+@media (max-width: 992px) {
+  .page__section--review {
+    padding: 70px 0 53px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__section--review {
+    padding: 35px 0 26px;
+  }
 }
 
 .page__section--ui-design {
@@ -897,12 +924,12 @@ body {
 
 .slider {
   position: relative;
-  max-width: 915px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .slider__inner {
-  padding: 0 125px;
+  padding: 0 95px;
 }
 
 @media (max-width: 768px) {
@@ -957,6 +984,28 @@ body {
 
 .slider__icon--left {
   transform: rotate(180deg);
+}
+
+.slick-dots {
+  font-size: 0;
+}
+
+.slick-dots > li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.slick-dots > li > button {
+  font-size: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #d8d8d8;
+}
+
+.slick-dots > li.slick-active > button {
+  background-color: #486cff;
 }
 
 .select {
@@ -2203,6 +2252,7 @@ Main page Components
   top: 135px;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .latest-projects__img--violet {
@@ -2298,11 +2348,15 @@ Main page Components
 .brands__frame {
   position: relative;
   display: inline-block;
-  max-width: 137px;
+  max-width: 146px;
   width: 100%;
   padding-bottom: 30%;
   max-height: 100%;
   text-align: center;
+}
+
+.brands__frame--burger-king {
+  max-width: 84px;
 }
 
 .brands__img {
@@ -2322,13 +2376,14 @@ Main page Components
 }
 
 .review__head {
-  margin-bottom: 10px;
+  margin-bottom: 33px;
+  font-size: 0;
 }
 
 .review__photo {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -2337,28 +2392,34 @@ Main page Components
 }
 
 .review__text {
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 2;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 1.73333;
 }
 
 .review__company {
   font-weight: 500;
-  letter-spacing: 3px;
-  color: #486CFF;
+  color: #2b2935;
   text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 2;
+  padding-left: 9px;
 }
 
 .review__name {
   color: #2B2935;
   font-size: 0.875rem;
   font-weight: 300;
-  line-height: 2.85714286;
-  opacity: 0.7;
+  line-height: 2;
+  text-transform: uppercase;
 }
 
 .review__body {
-  margin-bottom: 30px;
+  margin-bottom: 39px;
+}
+
+.review__footer {
+  margin-bottom: 50px;
 }
 
 .action-project {

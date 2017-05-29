@@ -1,9 +1,9 @@
 .slider {
   position: relative;
-  max-width: 915px;
+  max-width: 1300px;
   margin: 0 auto;
   &__inner {
-   padding: 0 125px;
+   padding: 0 95px;
     @media (max-width: $screen-sm-max) {
       padding: 0 45px;
     }
@@ -48,5 +48,25 @@
     &--left {
       transform: rotate(180deg);
     }
+  }
+}
+
+
+.slick-dots {
+  font-size: 0;
+  & > li {
+  display: inline-block;
+    padding: 0 6px;
+  }
+  & > li > button {
+    font-size: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+  }
+  & > li.slick-active > button {
+    background-color: #486cff;
   }
 }
