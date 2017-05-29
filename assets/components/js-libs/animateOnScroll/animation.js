@@ -21,8 +21,8 @@
 
         introTl
             //.to($('.page__top header, .scroll-hint'), 0.2, {autoAlpha: 0, ease:Power0.easeNone})
-            //.to($('#particlesJS .hero__title'), 1.4, {y: '0%', ease:Power1.easeOut}, '-=0.2')
             .to($('#particlesJS'), 0.2, {autoAlpha: 0, ease:Power0.easeNone}, '-=0.01');
+            //.to($('#particlesJS .hero__title'), 1.4, {y: '10%', ease:Power1.easeOut}, '-=0.2');
 
         var introScene = new ScrollMagic.Scene({
             triggerElement: '#particlesJS',

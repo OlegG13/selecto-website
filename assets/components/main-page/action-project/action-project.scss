@@ -3,15 +3,8 @@
   text-decoration: none;
   text-align: center;
   padding: 195px 0 181px;
-  padding: 10.15625vw 0 9.42708333vw;
+  //padding: 10.15625vw 0 9.42708333vw;
   transition: all 0.2s ease-in-out;
-
-  &--main {
-    /*animation*/
-    opacity: 0;
-    transform: translateY(45px);
-  }
-
   cursor: pointer;
   display: block;
   position: relative;
@@ -39,7 +32,7 @@
     }
   }
   @media (max-width: $screen-sm-max) {
-    padding: 60px 0 60px;
+    padding: 110px 0 110px;
   }
   &__title {
     font-size: 0;

@@ -108,6 +108,7 @@
   z-index: 1;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
+  transition-delay: 0.2s;
   &:before {
     content: "";
     display: block;
@@ -121,6 +122,7 @@
     transition: all 0.2s ease-in-out;
   }
   &:hover {
+    background: #fff;
     & .btn-cases__name {
       color: $base-font-color-third;
     }
@@ -140,6 +142,7 @@
     letter-spacing: 2px;
     vertical-align: middle;
     font-weight: 500;
+    transition-delay: 0.2s;
   }
   &_icon {
     width: 16px;

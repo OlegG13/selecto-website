@@ -335,6 +335,16 @@ body {
 
 .page__content {
   flex: 1 0 auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 540px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .page__content {
+    margin-bottom: 452px;
+  }
 }
 
 .page__top {
@@ -344,7 +354,7 @@ body {
 
 .page__top--white {
   background-color: #fff;
-  border-bottom: 1px solid #c6ccce;
+  box-shadow: 0 1px 3px 0 #EDEDED;
 }
 
 .page__top .particles-js-canvas-el {
@@ -401,11 +411,20 @@ body {
 }
 
 .page__footer {
-  background-color: #101517;
-  color: #FFFFFF;
   flex: 0 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.page__footer-bottom {
+  color: #FFFFFF;
   border-top: 1px solid #2e3538;
   padding: 55px 0 55px;
+  background-color: #101517;
 }
 
 .page__section {
@@ -819,6 +838,7 @@ body {
   z-index: 1;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
+  transition-delay: 0.2s;
 }
 
 .btn-cases:before {
@@ -832,6 +852,10 @@ body {
   top: 0;
   bottom: 0;
   transition: all 0.2s ease-in-out;
+}
+
+.btn-cases:hover {
+  background: #fff;
 }
 
 .btn-cases:hover .btn-cases__name {
@@ -855,6 +879,7 @@ body {
   letter-spacing: 2px;
   vertical-align: middle;
   font-weight: 500;
+  transition-delay: 0.2s;
 }
 
 .btn-cases_icon {
@@ -1331,7 +1356,7 @@ body {
   width: 100%;
   max-height: 100%;
   text-align: center;
-  padding-bottom: 95%;
+  padding-bottom: 70%;
 }
 
 @media (min-width: 1921px) {
@@ -1785,7 +1810,7 @@ Main page Components
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
   line-height: 1.26666667;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 50px;
 }
 
@@ -2116,7 +2141,7 @@ Main page Components
 
 .latest-projects__card {
   display: block;
-  height: 525px;
+  height: 607px;
   text-decoration: none;
   color: #fff;
   padding: 40px;
@@ -2340,18 +2365,11 @@ Main page Components
   text-decoration: none;
   text-align: center;
   padding: 195px 0 181px;
-  padding: 10.15625vw 0 9.42708333vw;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   display: block;
   position: relative;
   overflow: hidden;
-}
-
-.action-project--main {
-  /*animation*/
-  opacity: 0;
-  transform: translateY(45px);
 }
 
 .action-project__name {
@@ -2382,7 +2400,7 @@ Main page Components
 
 @media (max-width: 768px) {
   .action-project {
-    padding: 60px 0 60px;
+    padding: 110px 0 110px;
   }
 }
 
@@ -3431,6 +3449,7 @@ Cases page Components
   color: #ffffff;
   margin: 0 auto;
   justify-content: center;
+  opacity: 0;
 }
 
 @media (max-width: 480px) {

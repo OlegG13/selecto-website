@@ -8,6 +8,8 @@
     //max-width: 845px;
     margin: 0 auto;
     justify-content: center;
+    opacity: 0;
+
     @media (max-width: $screen-xs-max) {
       flex-direction: column;
     }
