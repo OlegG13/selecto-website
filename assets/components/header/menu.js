@@ -8,6 +8,7 @@ var menu = (function () {
         $menuAllLine = $menuBtn.find('.mobile-menu-btn__line'),
         $header = $('.page__header'),
         $logo = $('.logo'),
+        $page = $('.page'),
         isOpen = false,
         screenWidth = 0;
 
@@ -30,10 +31,11 @@ var menu = (function () {
         $menuTopLine.addClass('mobile-menu-btn__line--top-active');
         $menuMidLine.addClass('mobile-menu-btn__line--mid-active');
         $menuBotLine.addClass('mobile-menu-btn__line--bot-active');
-        $menuAllLine.removeClass('mobile-menu-btn__line--dark');
+        //$menuAllLine.removeClass('mobile-menu-btn__line--dark');
         $logo.addClass('logo--menu');
         $header.css("width", screenWidth).addClass('page__header--menu-open');
         $menuFrame.addClass('menu--open');
+        $page.css("overflow", "hidden");
     }
 
     function closeMenu() {
@@ -41,10 +43,11 @@ var menu = (function () {
         $menuTopLine.removeClass('mobile-menu-btn__line--top-active');
         $menuMidLine.removeClass('mobile-menu-btn__line--mid-active');
         $menuBotLine.removeClass('mobile-menu-btn__line--bot-active');
-        $menuAllLine.addClass('mobile-menu-btn__line--dark');
+        //$menuAllLine.addClass('mobile-menu-btn__line--dark');
         $logo.removeClass('logo--menu');
         $header.css("width", "auto").removeClass('page__header--menu-open');
         $menuFrame.removeClass('menu--open');
+        $page.css("overflow", "visible");
     }
     
     function _reverseStatus() {

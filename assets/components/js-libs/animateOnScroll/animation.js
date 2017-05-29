@@ -15,7 +15,6 @@
     var breakSections = ["#particlesJS"];
 
     // Enable ScrollMagic only for desktop, disable on touch and mobile devices
-    if (screenW > 992) {
 
         // move bcg container when intro gets out of the the view
         var introTl = new TimelineMax();
@@ -51,6 +50,6 @@
         });
         /* First slide. End */
 
-    }
+
 
 }(jQuery));
