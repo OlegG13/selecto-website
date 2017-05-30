@@ -2247,7 +2247,7 @@ Main page Components
 
 .latest-projects__img {
   position: absolute;
-  left: 8px;
+  left: 55px;
   right: 8px;
   bottom: 0;
   top: 135px;
@@ -3482,6 +3482,19 @@ Cases page Components
   box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
 }
 
+.similar-case__item--sprout .similar-case__inner {
+  background-color: #62a544;
+  background-image: url("../img/sprout.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+
+.similar-case__item--sprout:hover .similar-case__inner {
+  background-color: #62a544;
+  box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
+}
+
 .similar-case__inner {
   display: block;
   position: relative;
@@ -3524,7 +3537,7 @@ Cases page Components
 
 .similar-case__title {
   font-size: 38px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 44px;
   vertical-align: middle;
 }
@@ -3540,10 +3553,11 @@ Cases page Components
 }
 
 .similar-case__platform {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 300;
   letter-spacing: 1px;
   line-height: 32px;
+  opacity: 0.8;
 }
 
 .similar-case__footer {
