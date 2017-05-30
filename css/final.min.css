@@ -926,7 +926,7 @@ body {
 
 .slider {
   position: relative;
-  max-width: 1300px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -2718,25 +2718,37 @@ Cases page Components
 }
 
 .overview-case {
-  padding: 122px 0 160px 0;
+  padding: 160px 0 160px 0;
 }
 
 @media (max-width: 992px) {
   .overview-case {
-    padding: 61px 0 80px 0;
+    padding: 80px 0 80px 0;
   }
 }
 
 @media (max-width: 768px) {
   .overview-case {
-    padding: 40px 0 63px 0;
+    padding: 63px 0 63px 0;
   }
 }
 
 .overview-case__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 33px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 992px) {
+  .overview-case__content {
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-case__content {
+    margin-bottom: 30px;
+  }
 }
 
 .overview-case__desc {
@@ -2811,27 +2823,47 @@ Cases page Components
 }
 
 .case-prop {
-  line-height: 2;
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
 }
 
-.case-prop__item:not(:last-child) {
-  padding-bottom: 32px;
+.case-prop__item {
+  text-align: center;
+  padding: 0 45px;
+  line-height: 2;
+}
+
+@media (max-width: 1400px) {
+  .case-prop__item {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .case-prop__item {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-prop__item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .case-prop__name {
+  display: block;
   color: #616F75;
-  font-weight: 300;
-  display: table-cell;
-  width: 120px;
-  padding-right: 10px;
 }
 
 .case-prop__value {
+  display: block;
   font-weight: 400;
-  display: table-cell;
 }
 
 .masonry {
@@ -3311,8 +3343,8 @@ Cases page Components
 
 .case-review__photo {
   display: inline-block;
-  width: 142px;
-  height: 142px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -3419,6 +3451,19 @@ Cases page Components
 
 .similar-case__item--life:hover .similar-case__inner {
   background-color: #4f71fb;
+  box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
+}
+
+.similar-case__item--msfit .similar-case__inner {
+  background-color: #7250d5;
+  background-image: url("../img/msfit.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+
+.similar-case__item--msfit:hover .similar-case__inner {
+  background-color: #7a57e0;
   box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
 }
 

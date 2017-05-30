@@ -70,6 +70,19 @@
         box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
       }
     }
+    &--msfit {
+      & .similar-case__inner {
+        background-color: #7250d5;
+        background-image: url("../img/msfit.png");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: contain;
+      }
+      &:hover .similar-case__inner {
+        background-color: #7a57e0;
+        box-shadow: 0 10px 14px rgba(174, 172, 172, 0.5);
+      }
+    }
   }
   &__inner {
     display: block;
