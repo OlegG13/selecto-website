@@ -865,7 +865,6 @@ body {
   z-index: 1;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
-  transition-delay: 0.2s;
 }
 
 .btn-cases:before {
@@ -874,15 +873,17 @@ body {
   position: absolute;
   z-index: -1;
   background-color: white;
-  left: 0;
+  left: -2px;
   right: 100%;
-  top: 0;
-  bottom: 0;
+  top: -2px;
+  bottom: -2px;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-cases:hover {
   background: #fff;
+  transition: background-color 0.2s linear 0.2s, color 0.2s;
+  border-color: white;
 }
 
 .btn-cases:hover .btn-cases__name {
@@ -895,7 +896,7 @@ body {
 }
 
 .btn-cases:hover:before {
-  right: 0;
+  right: -2px;
 }
 
 .btn-cases__name {
@@ -906,7 +907,7 @@ body {
   letter-spacing: 2px;
   vertical-align: middle;
   font-weight: 500;
-  transition-delay: 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn-cases_icon {
@@ -920,6 +921,7 @@ body {
   color: #fff;
   fill: #fff;
   z-index: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 .slider {
@@ -2348,9 +2350,9 @@ Main page Components
 .brands__frame {
   position: relative;
   display: inline-block;
-  max-width: 146px;
+  max-width: 112px;
   width: 100%;
-  padding-bottom: 30%;
+  padding-bottom: 23%;
   max-height: 100%;
   text-align: center;
 }
