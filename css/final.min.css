@@ -1155,7 +1155,7 @@ body {
 
 .logo {
   display: block;
-  width: 100px;
+  width: 111px;
 }
 
 .logo--dark .logo__bg {
@@ -1236,7 +1236,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.5;
   position: relative;
@@ -1843,7 +1843,6 @@ Main page Components
   text-align: center;
   line-height: 1.5;
   letter-spacing: 2px;
-  font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
   color: #486CFF;
@@ -2350,15 +2349,31 @@ Main page Components
 .brands__frame {
   position: relative;
   display: inline-block;
-  max-width: 112px;
+  max-width: 135px;
   width: 100%;
-  padding-bottom: 23%;
+  padding-bottom: 29%;
   max-height: 100%;
   text-align: center;
 }
 
 .brands__frame--burger-king {
   max-width: 84px;
+}
+
+.brands__frame--suzuki {
+  max-width: 61px;
+}
+
+.brands__frame--durex {
+  max-width: 112px;
+}
+
+.brands__frame--subaru {
+  max-width: 102px;
+}
+
+.brands__frame--gameloft {
+  max-width: 92px;
 }
 
 .brands__img {
@@ -3443,7 +3458,7 @@ Cases page Components
 
 .similar-case__item--life .similar-case__inner {
   background-color: #3c55bc;
-  background-image: url("../img/life4fit-similar.png");
+  background-image: url("../img/life4me.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: contain;
