@@ -1890,6 +1890,18 @@ Main page Components
   margin-bottom: 147px;
 }
 
+@media (max-width: 992px) {
+  .main-article__quote {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-article__quote {
+    margin-bottom: 50px;
+  }
+}
+
 .main-article__container {
   font-size: 1rem;
 }
@@ -4701,6 +4713,37 @@ About Us page Components
 .map {
   text-align: center;
   margin-bottom: 55px;
+  max-width: 877px;
+  margin: 0 auto 55px;
+  position: relative;
+  padding-bottom: 37%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.map__wrapp {
+  display: inline-block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: inherit;
+}
+
+#map-pin {
+  animation: pinAnimation 1s infinite;
+}
+
+@keyframes pinAnimation {
+  0% {
+    opacity: 0;
+    stroke-width: 5;
+  }
+
+  100% {
+    opacity: 1;
+    stroke-width: 20;
+  }
 }
 
 .principles__list {
@@ -4739,23 +4782,17 @@ About Us page Components
 }
 
 .principles__icon--healthy {
-  background-image: url("../img/sprite.png");
-  background-position: 0px 0px;
-  width: 43px;
+  width: 62px;
   height: 62px;
 }
 
 .principles__icon--strong {
-  background-image: url("../img/sprite.png");
-  background-position: -86px 0px;
-  width: 42px;
+  width: 62px;
   height: 62px;
 }
 
 .principles__icon--continuous {
-  background-image: url("../img/sprite.png");
-  background-position: -43px 0px;
-  width: 43px;
+  width: 62px;
   height: 62px;
 }
 

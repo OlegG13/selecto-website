@@ -59,6 +59,13 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 147px;
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 75px;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 50px;
+    }
+
   }
   &__container {
     font-size: 1rem;

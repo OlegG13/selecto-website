@@ -1,4 +1,37 @@
 .map {
   text-align: center;
   margin-bottom: 55px;
+  max-width: 877px;
+  margin: 0 auto 55px;
+  position: relative;
+  padding-bottom: 37%;
+  max-height: 100%;
+  text-align: center;
+  &__wrapp {
+    display: inline-block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: inherit;
+  }
+}
+
+#map-pin {
+  animation: pinAnimation 1s infinite;
+}
+
+
+@keyframes pinAnimation {
+  0% {
+    opacity: 0;
+    stroke-width: 5;
+    //transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    stroke-width: 20;
+    //transform: scale(1.2);
+  }
 }

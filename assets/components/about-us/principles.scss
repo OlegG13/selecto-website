@@ -24,13 +24,19 @@
   &__icon {
     display: inline-block;
     &--healthy {
-      @include sprite($principles-1);
+      //@include sprite($principles-1);
+      width: 62px;
+      height: 62px;
     }
     &--strong {
-      @include sprite($principles-2);
+      //@include sprite($principles-2);
+      width: 62px;
+      height: 62px;
     }
     &--continuous {
-      @include sprite($principles-3);
+      //@include sprite($principles-3);
+      width: 62px;
+      height: 62px;
     }
   }
   &__title {
