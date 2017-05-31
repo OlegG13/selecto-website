@@ -31,11 +31,13 @@
     &:nth-child(2n+2) {
       & .cases-list__desc {
         order: 2;
+        @media (min-width: $screen-md-min) {
+          margin-left: 40px;
+        }
       }
       & .cases-list__photo {
         order: 1;
-
-        @media (max-width: $screen-md-max) {
+        @media (min-width: $screen-sm-min) {
           margin-right: 40px;
         }
         @media (max-width: $screen-sm-max) {

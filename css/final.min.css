@@ -430,6 +430,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  opacity: 0;
 }
 
 .page__footer-bottom {
@@ -884,6 +885,7 @@ body {
   background: #fff;
   transition: background-color 0.2s linear 0.2s, color 0.2s;
   border-color: white;
+  cursor: pointer;
 }
 
 .btn-cases:hover .btn-cases__name {
@@ -922,6 +924,24 @@ body {
   fill: #fff;
   z-index: 1;
   transition: all 0.2s ease-in-out;
+}
+
+.cases-list__item--msfit .btn-cases:hover .btn-cases__name,
+.cases-list__item--msfit .btn-cases:hover .btn-cases_icon {
+  color: #7250d5;
+  fill: #7250d5;
+}
+
+.cases-list__item--life .btn-cases:hover .btn-cases__name,
+.cases-list__item--life .btn-cases:hover .btn-cases_icon {
+  color: #486cff;
+  fill: #486cff;
+}
+
+.cases-list__item--sprout .btn-cases:hover .btn-cases__name,
+.cases-list__item--sprout .btn-cases:hover .btn-cases_icon {
+  color: #799c0a;
+  fill: #799c0a;
 }
 
 .slider {
@@ -2646,8 +2666,7 @@ Cases page Components
   padding-bottom: 36%;
   max-height: 100%;
   text-align: center;
-  background-attachment: fixed;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2726,7 +2745,7 @@ Cases page Components
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 47px;
+  margin-bottom: 64px;
 }
 
 .case-article__desc--white {
@@ -2761,7 +2780,6 @@ Cases page Components
 }
 
 .overview-case__content {
-  margin-top: 33px;
   margin-bottom: 120px;
 }
 
@@ -3113,6 +3131,10 @@ Cases page Components
   margin-left: 28px;
 }
 
+.chess-list__item:nth-child(2n+2) .chess-list__photo--tab {
+  margin-left: 150px;
+}
+
 @media (max-width: 768px) {
   .chess-list__item:nth-child(2n+2) .chess-list__photo {
     margin-left: 15px;
@@ -3148,6 +3170,10 @@ Cases page Components
   margin-right: 40px;
 }
 
+.chess-list__item:nth-child(2n+1) .chess-list__photo--tab {
+  margin-right: 150px;
+}
+
 @media (max-width: 768px) {
   .chess-list__item:nth-child(2n+1) .chess-list__photo {
     margin-right: 10px;
@@ -3167,6 +3193,16 @@ Cases page Components
 
 .chess-list__item--tab:not(:last-child) {
   margin-bottom: 100px;
+}
+
+@media (min-width: 481px) {
+  .chess-list__photo {
+    flex-basis: 302px;
+  }
+}
+
+.chess-list__photo--tab {
+  flex-basis: 740px;
 }
 
 @media (min-width: 481px) {
@@ -3213,12 +3249,13 @@ Cases page Components
 .chess-list__icon {
   margin-right: 15px;
   font-size: 0;
+  max-width: 52px;
+  max-height: 73px;
 }
 
 .chess-list__footer-title {
-  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.5;
   color: #a5724d;
 }
 
@@ -3239,7 +3276,11 @@ Cases page Components
 }
 
 .chess-list__footer-title--violet {
-  color: #716296;
+  color: #6f41d9;
+}
+
+.chess-list__footer-title--red {
+  color: #e54e49;
 }
 
 .project-view {
@@ -3634,11 +3675,17 @@ Cases page Components
   order: 2;
 }
 
+@media (min-width: 993px) {
+  .cases-list__item:nth-child(2n+2) .cases-list__desc {
+    margin-left: 40px;
+  }
+}
+
 .cases-list__item:nth-child(2n+2) .cases-list__photo {
   order: 1;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) {
   .cases-list__item:nth-child(2n+2) .cases-list__photo {
     margin-right: 40px;
   }

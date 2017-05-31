@@ -125,6 +125,7 @@
     background: #fff;
     transition: background-color 0.2s linear 0.2s, color 0.2s;
     border-color: rgba(255,255,255,1);
+    cursor: pointer;
     & .btn-cases__name {
       color: $base-font-color-third;
     }
@@ -161,4 +162,19 @@
     z-index: 1;
     transition: all 0.2s ease-in-out;
   }
+}
+
+.cases-list__item--msfit .btn-cases:hover .btn-cases__name, .cases-list__item--msfit .btn-cases:hover .btn-cases_icon {
+  color: $ms-fit;
+  fill: $ms-fit;
+}
+
+.cases-list__item--life .btn-cases:hover .btn-cases__name, .cases-list__item--life .btn-cases:hover .btn-cases_icon {
+  color: $life;
+  fill: $life;
+}
+
+.cases-list__item--sprout .btn-cases:hover .btn-cases__name, .cases-list__item--sprout .btn-cases:hover .btn-cases_icon {
+  color: $sprout;
+  fill: $sprout;
 }

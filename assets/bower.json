@@ -23,6 +23,13 @@
         "slick/slick.css"
       ],
       "ignore": false
+    },
+    "scrollmagic": {
+      "main": [
+        "scrollmagic/uncompressed/ScrollMagic.js",
+        "scrollmagic/uncompressed/plugins/debug.addIndicators.js"
+      ],
+      "ignore": false
     }
   }
 }
