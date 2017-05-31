@@ -1,12 +1,13 @@
 .map {
   text-align: center;
-  margin-bottom: 55px;
+  //margin-bottom: 55px;
   max-width: 877px;
   margin: 0 auto 55px;
   position: relative;
   padding-bottom: 37%;
-  max-height: 100%;
-  text-align: center;
+  //max-height: 100%;
+  max-height: 518px;
+  overflow: hidden;
   &__wrapp {
     display: inline-block !important;
     position: absolute;
