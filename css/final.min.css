@@ -843,6 +843,8 @@ body {
   border-radius: 100px;
   border: 1px solid #838586;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .btn-transparent:before {
@@ -851,10 +853,16 @@ body {
   display: block;
   left: 0;
   top: 0;
+  border-radius: 100px;
   bottom: 0;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
   z-index: -1;
+  width: 0;
+}
+
+.btn-transparent--black:before {
+  background-color: #101517;
 }
 
 .btn-transparent__title {
@@ -923,15 +931,24 @@ body {
 
 .btn-transparent:hover:before {
   right: 0;
+  width: 100%;
 }
 
 .btn-transparent:hover .btn-transparent__title {
   color: #101517;
 }
 
-.btn-transparent:hover btn-transparent__icon {
+.btn-transparent:hover .btn-transparent__icon {
   color: #101517;
   fill: #101517;
+}
+
+.btn-transparent--black:hover {
+  background: #101517;
+}
+
+.btn-transparent--black:hover .btn-transparent__title {
+  color: #fff;
 }
 
 .btn-tag,
