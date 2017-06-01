@@ -119,6 +119,11 @@
     //     particlesJS("particlesJS", options);
     // }
 
+    setTimeout(function(){
+        //$("[data-video]").each(this.play());
+        $("[data-video]").get(0).play();
+    }, 1500);
+
 })(jQuery);
 
 
