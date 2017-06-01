@@ -76,7 +76,7 @@
                     top: '{"tween": { "duration": 0.5, "options": { "opacity": 1 } }, "scene": { "options": { "offset": 0, "reverse": false } } }',
                     heroTitle: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "offset": 0, "reverse": true } } }',
                     heroBorder: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "offset": 0, "reverse": true } } }',
-                    ourSolutionHead: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": -250, "reverse": false } } }',
+                    ourSolutionHead: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": -350, "reverse": false } } }',
                     ourSolutionText: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": -100, "reverse": false } } }',
                     ourSolutionCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": 0, "reverse": false } } }',
                     ourSolutionBtn: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": 100, "reverse": false } } }',

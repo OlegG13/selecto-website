@@ -63,6 +63,18 @@
   text-align: center;
   border-radius: 100px;
   border: 1px solid #838586;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+  }
   &__title {
     font-size: 14px;
     font-weight: 500;
@@ -71,6 +83,7 @@
     text-transform: uppercase;
     color: #ffffff;
     vertical-align: middle;
+    transition: all 0.2s ease-in-out;
     &--black {
       color: #101517;
     }
@@ -81,15 +94,22 @@
     color: #fff;
     vertical-align: middle;
     margin-right: 14px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
     &--appstore {
       width: 28px;
       height: 35px;
-      background: url(../svg/appstore.svg);
+      color: #fff;
+      fill: #fff;
+      //background: url(../svg/appstore.svg);
     }
     &--playmarket {
       width: 30px;
       height: 33px;
-      background: url(../svg/playmarket.svg);
+      color: #fff;
+      fill: #fff;
+      //background: url(../svg/playmarket.svg);
     }
   }
   &--inline {
@@ -102,6 +122,22 @@
       & + & {
         margin-top: 20px;
       }
+    }
+  }
+  &:hover {
+    background: #fff;
+    transition: background-color 0.2s linear 0.2s, color 0.2s;
+    border-color: white;
+    cursor: pointer;
+    &:before {
+      right: 0;
+    }
+    & .btn-transparent__title {
+      color: #101517;
+    }
+    & btn-transparent__icon {
+      color: #101517;
+      fill: #101517;
     }
   }
 }
