@@ -36,6 +36,10 @@
   &--life {
     background-image: url("../img/lfm-hero.png");
   }
+  &--lfm-bot {
+    padding-bottom: 26%;
+    background-image: url("../img/lfm-hero-bot.png");
+  }
   &__img {
     display: inline-block !important;
     position: absolute;

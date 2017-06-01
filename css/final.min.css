@@ -50,6 +50,22 @@
   }
 }
 
+.case-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.case-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*
 --------------------------------------------------
 Reset and normalize default browser styles
@@ -788,7 +804,24 @@ body {
   background: #486CFF;
   border-radius: 28px;
   font-size: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.btn-main:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #274eeb;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+  border-radius: 28px;
 }
 
 .btn-main__title {
@@ -796,10 +829,12 @@ body {
   font-size: 1.125rem;
   line-height: 1.44444444;
   font-weight: 500;
+  position: relative;
+  z-index: 3;
 }
 
-.btn-main:hover {
-  background: #274eeb;
+.btn-main:hover:before {
+  width: 100%;
 }
 
 .btn-transparent {
@@ -891,6 +926,7 @@ body {
   top: -2px;
   bottom: -2px;
   transition: all 0.2s ease-in-out;
+  border-radius: 100px;
 }
 
 .btn-cases:hover {
@@ -2717,6 +2753,11 @@ Cases page Components
   background-image: url("../img/lfm-hero.png");
 }
 
+.hero-cases--lfm-bot {
+  padding-bottom: 26%;
+  background-image: url("../img/lfm-hero-bot.png");
+}
+
 .hero-cases__img {
   display: inline-block !important;
   position: absolute;
@@ -3334,9 +3375,18 @@ Cases page Components
   color: #e54e49;
 }
 
+.chess-list__footer-title--lime {
+  color: #10ad64;
+}
+
 .project-view {
   text-align: center;
   margin-top: 13px;
+}
+
+.project-view--small {
+  max-width: 1063px;
+  margin: 13px auto 0;
 }
 
 .development-net {

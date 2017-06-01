@@ -26,15 +26,33 @@
   background: $main-btn-bg;
   border-radius: 28px;
   font-size: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: $main-btn-bg-hover;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    border-radius: 28px;
+  }
   &__title {
     color: $main-btn-color;
     font-size: 1.125rem;
     line-height: 1.44444444;
     font-weight: 500;
+    position: relative;
+    z-index: 3;
   }
-  &:hover {
-    background: $main-btn-bg-hover;
+  &:hover:before {
+    width: 100%;
   }
 }
 
@@ -120,6 +138,7 @@
     top: -2px;
     bottom: -2px;
     transition: all 0.2s ease-in-out;
+    border-radius: 100px;
   }
   &:hover {
     background: #fff;
