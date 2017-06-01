@@ -366,6 +366,14 @@ body {
   bottom: 0;
 }
 
+.page__top .page__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .page__top--fixed {
   position: fixed;
   width: 100%;
@@ -708,6 +716,10 @@ body {
   z-index: 0;
   background-size: cover;
   background-color: #161C26;
+}
+
+.page__bottom {
+  height: 0;
 }
 
 @keyframes imageAnimation {
@@ -1450,6 +1462,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   max-height: inherit;
+  z-index: 1;
 }
 
 .menu {
@@ -2666,7 +2679,7 @@ Cases page Components
   padding-bottom: 36%;
   max-height: 100%;
   text-align: center;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2681,7 +2694,7 @@ Cases page Components
 }
 
 .hero-cases--bottom {
-  padding-bottom: 28%;
+  padding-bottom: 30%;
 }
 
 .hero-cases--sprout {
@@ -2697,7 +2710,7 @@ Cases page Components
 }
 
 .hero-cases--msfit-bot {
-  background-image: url("../img/msfit-big-photo.jpg");
+  background-image: url("../img/msfit-big-photo.png");
 }
 
 .hero-cases--life {
@@ -3135,6 +3148,24 @@ Cases page Components
   margin-left: 150px;
 }
 
+@media (max-width: 1400px) {
+  .chess-list__item:nth-child(2n+2) .chess-list__photo--tab {
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chess-list__item:nth-child(2n+2) .chess-list__photo--tab {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chess-list__item:nth-child(2n+2) .chess-list__photo--tab {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .chess-list__item:nth-child(2n+2) .chess-list__photo {
     margin-left: 15px;
@@ -3174,6 +3205,24 @@ Cases page Components
   margin-right: 150px;
 }
 
+@media (max-width: 1400px) {
+  .chess-list__item:nth-child(2n+1) .chess-list__photo--tab {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chess-list__item:nth-child(2n+1) .chess-list__photo--tab {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chess-list__item:nth-child(2n+1) .chess-list__photo--tab {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .chess-list__item:nth-child(2n+1) .chess-list__photo {
     margin-right: 10px;
@@ -3201,8 +3250,10 @@ Cases page Components
   }
 }
 
-.chess-list__photo--tab {
-  flex-basis: 740px;
+@media (min-width: 1201px) {
+  .chess-list__photo--tab {
+    flex-basis: 740px;
+  }
 }
 
 @media (min-width: 481px) {

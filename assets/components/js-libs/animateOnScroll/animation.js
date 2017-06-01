@@ -57,14 +57,50 @@
     var footerTl = new TimelineMax();
     footerTl.to($('.page__footer'), 0.2, {autoAlpha: 1, ease: Power0.easeNone}, '=0.1');
 
-    var introScene = new ScrollMagic.Scene({
-        //triggerElement: '.page__content',
+    // var introScene = new ScrollMagic.Scene({
+    //     //triggerElement: '.page__content',
+    //     triggerHook: 1,
+    //     offset: footerShow,
+    //     duration: "100%"
+    // }).setTween(footerTl)
+    //     .addTo(controller);
+
+
+    //Main Page
+    var footerSceneMain = new ScrollMagic.Scene({
+        triggerElement: '.page__bottom',
         triggerHook: 1,
-        offset: footerShow,
+        offset: -350,
         duration: "100%"
     }).setTween(footerTl)
         .addTo(controller);
 
-    //introScene.addIndicators();
+    // About us
+    var footerSceneAbout = new ScrollMagic.Scene({
+        triggerElement: '[data-bottom-about]',
+        triggerHook: 1,
+        offset: -450,
+        duration: "100%"
+    }).setTween(footerTl)
+        .addTo(controller);
+
+    // Cases list
+    var footerSceneCasesList = new ScrollMagic.Scene({
+        triggerElement: '[data-bottom-cases-list]',
+        triggerHook: 1,
+        offset: -400,
+        duration: "100%"
+    }).setTween(footerTl)
+        .addTo(controller);
+
+    // Cases Msfit
+    var footerSceneCasesMsfit = new ScrollMagic.Scene({
+        triggerElement: '[data-bottom-msfit]',
+        triggerHook: 1,
+        offset: -400,
+        duration: "100%"
+    }).setTween(footerTl)
+        .addTo(controller);
+
 
 }(jQuery));

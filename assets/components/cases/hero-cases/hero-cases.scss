@@ -7,7 +7,7 @@
   text-align: center;
 
   //background-attachment: fixed;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   &--not-fixed {
@@ -19,7 +19,7 @@
   }
 
   &--bottom {
-    padding-bottom: 28%;
+    padding-bottom: 30%;
   }
   &--sprout {
     background-image: url("../img/sprout-hero.jpg");
@@ -31,7 +31,7 @@
     background-image: url("../img/msfit-hero.jpg");
   }
   &--msfit-bot {
-    background-image: url("../img/msfit-big-photo.jpg");
+    background-image: url("../img/msfit-big-photo.png");
   }
   &--life {
     background-image: url("../img/msfit-hero.jpg");

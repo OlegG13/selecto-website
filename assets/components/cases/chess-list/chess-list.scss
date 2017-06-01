@@ -18,6 +18,15 @@
         margin-left: 28px;
         &--tab {
           margin-left: 150px;
+          @media (max-width: $screen-xl-max) {
+            margin-left: 28px;
+          }
+          @media (max-width: $screen-sm-max) {
+            margin-left: 15px;
+          }
+          @media (max-width: $screen-xs-max) {
+            margin-left: 0;
+          }
         }
         @media (max-width: $screen-sm-max) {
           margin-left: 15px;
@@ -44,6 +53,15 @@
         margin-right: 40px;
         &--tab {
           margin-right: 150px;
+          @media (max-width: $screen-xl-max) {
+            margin-right: 40px;
+          }
+          @media (max-width: $screen-sm-max) {
+            margin-right: 10px;
+          }
+          @media (max-width: $screen-xs-max) {
+            margin-right: 0;
+          }
         }
         @media (max-width: $screen-sm-max) {
           margin-right: 10px;
@@ -68,7 +86,9 @@
       flex-basis: 302px;
     }
     &--tab {
-      flex-basis: 740px;
+      @media (min-width: $screen-lg-min) {
+        flex-basis: 740px;
+      }
     }
   }
   &__desc {

@@ -115,9 +115,9 @@
     };
 
 
-    if (document.getElementById("particlesJS") !== null) {
-        particlesJS("particlesJS", options);
-    }
+    // if (document.getElementById("particlesJS") !== null) {
+    //     particlesJS("particlesJS", options);
+    // }
 
 })(jQuery);
 

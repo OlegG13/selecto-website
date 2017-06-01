@@ -31,6 +31,14 @@
       right: 0;
       bottom: 0;
     }
+    & .page__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
     &--fixed {
       position: fixed;
       width: 100%;
@@ -292,6 +300,9 @@
   }
   &__services-hero {
     //opacity: 0;
+  }
+  &__bottom {
+    height: 0;
   }
 }
 
