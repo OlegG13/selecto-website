@@ -74,7 +74,7 @@
             duration: "100%"
         }).setTween(animationPhoto).addTo(controller);
 
-        newAnimationPhotoScene.addIndicators();
+        //newAnimationPhotoScene.addIndicators();
     });
 
     var animationPhotoObjTop = $('.animate-block-top');
@@ -87,11 +87,44 @@
             duration: "100%"
         }).setTween(animationPhoto2).addTo(controller);
 
-        newAnimationPhotoSceneTop.addIndicators();
+        //newAnimationPhotoSceneTop.addIndicators();
     });
 
 
+    /* Cases animation */
+    var chessList = $('.chess-list__item');
+    
+    Array.prototype.forEach.call(chessList, function (item, index) {
 
+        var nodeItems = item.childNodes;
+
+        var img = new TimelineMax();
+        img.fromTo(nodeItems[1], 0.4, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var text = new TimelineMax({delay: 0.4});
+        text.fromTo(nodeItems[3], 0.4, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var chessItems = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: -200,
+            reverse: false
+        })
+            //.setClassToggle(item, 'chess-list__item--active')
+            .setTween(img).addTo(controller);
+
+        var chessItemsText = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        })
+        //.setClassToggle(item, 'chess-list__item--active')
+            .setTween(text).addTo(controller);
+
+        chessItems.addIndicators();
+
+    });
 
 
 }(jQuery));
