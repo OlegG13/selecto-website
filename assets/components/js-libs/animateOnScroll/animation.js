@@ -59,10 +59,10 @@
     /* Parallax photos */
 
     var animationPhoto = new TimelineMax();
-    animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '40%', ease: Linear.easeNone}, '+=0.1');
+    animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '70%', ease: Linear.easeNone}, '+=0.1');
 
     var animationPhoto2 = new TimelineMax();
-    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '40%', ease: Linear.easeNone}, '+=0.1');
+    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '70%', ease: Linear.easeNone}, '+=0.1');
 
     var animationPhotoObj = $('.animate-block');
 
@@ -70,7 +70,7 @@
         var newAnimationPhotoScene = new ScrollMagic.Scene({
             triggerElement: '.animate-block-top',
             triggerHook: 0,
-            offset: -200,
+            offset: -300,
             duration: "100%"
         }).setTween(animationPhoto).addTo(controller);
 
@@ -82,7 +82,7 @@
     Array.prototype.forEach.call(animationPhotoObjTop, function (item, index) {
         var newAnimationPhotoSceneTop = new ScrollMagic.Scene({
             triggerElement: '.animate-block',
-            offset: -200,
+            offset: -300,
             triggerHook: 0,
             duration: "100%"
         }).setTween(animationPhoto2).addTo(controller);
@@ -123,6 +123,45 @@
             .setTween(text).addTo(controller);
 
         //chessItems.addIndicators();
+
+    });
+
+
+    /* Cases list item */
+
+    var casesList = $('.cases-list__item');
+
+    Array.prototype.forEach.call(casesList, function (item, index) {
+
+        var nodeItems = item.childNodes;
+
+        var imgCase = new TimelineMax();
+        imgCase.fromTo(nodeItems[1], 0.4, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var textCase = new TimelineMax({delay: 0.5});
+        textCase.fromTo(nodeItems[3], 0.4, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var casesItemPhoto = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        })
+        //.setClassToggle(item, 'chess-list__item--active')
+            .setTween(imgCase).addTo(controller);
+
+        //casesItemPhoto.addIndicators();
+
+        var casesItemText = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        })
+        //.setClassToggle(item, 'chess-list__item--active')
+            .setTween(textCase).addTo(controller);
+
+        //casesItemText.addIndicators();
 
     });
 
