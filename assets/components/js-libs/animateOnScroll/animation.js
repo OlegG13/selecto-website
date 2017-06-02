@@ -122,7 +122,7 @@
         //.setClassToggle(item, 'chess-list__item--active')
             .setTween(text).addTo(controller);
 
-        chessItems.addIndicators();
+        //chessItems.addIndicators();
 
     });
 
