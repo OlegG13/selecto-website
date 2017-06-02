@@ -1,16 +1,6 @@
 (function ($) {
 
     var screenW = screen.width;
-    var screenH = screen.height;
-    var screenHHalf = screenH/2;
-    var contentH = $(".page__content").height();
-    var footerH = $(".page__footer").height();
-    var footerShow = contentH - footerH - footerH - screenH;
-
-    console.log(contentH);
-    console.log(footerShow + 'footerShow');
-    console.log(screenH);
-
 
     // Init ScrollMagic
     var controller = new ScrollMagic.Controller();
@@ -23,9 +13,8 @@
         // move bcg container when intro gets out of the the view
         var introTl = new TimelineMax();
 
-        introTl
+        introTl.to($('#particlesJS'), 0.2, {autoAlpha: 0, ease: Power0.easeNone}, '-=0.01');
         //.to($('.page__top header, .scroll-hint'), 0.2, {autoAlpha: 0, ease:Power0.easeNone})
-            .to($('#particlesJS'), 0.2, {autoAlpha: 0, ease: Power0.easeNone}, '-=0.01');
         //.to($('#particlesJS .hero__title'), 1.4, {y: '10%', ease:Power1.easeOut}, '-=0.2');
 
         var introScene = new ScrollMagic.Scene({
@@ -59,29 +48,50 @@
 
     var offsetBottom = $('[data-bottom]').data(),
         offsetBottomVal = offsetBottom.bottom;
-    console.log(offsetBottomVal);
-    console.log(typeof offsetBottomVal);
-    //Main Page
+    var footerSceneMain = new ScrollMagic.Scene({
+        triggerElement: '[data-bottom]',
+        triggerHook: 1,
+        offset: offsetBottomVal,
+        duration: "100%"
+    }).setTween(footerTl).addTo(controller);
 
-        var footerSceneMain = new ScrollMagic.Scene({
-            triggerElement: '[data-bottom]',
-            triggerHook: 1,
-            offset: offsetBottomVal,
+
+    /* Parallax photos */
+
+    var animationPhoto = new TimelineMax();
+    animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '40%', ease: Linear.easeNone}, '+=0.1');
+
+    var animationPhoto2 = new TimelineMax();
+    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '40%', ease: Linear.easeNone}, '+=0.1');
+
+    var animationPhotoObj = $('.animate-block');
+
+    Array.prototype.forEach.call(animationPhotoObj, function (item, index) {
+        var newAnimationPhotoScene = new ScrollMagic.Scene({
+            triggerElement: '.animate-block-top',
+            triggerHook: 0,
+            offset: -200,
             duration: "100%"
-        }).setTween(footerTl)
-            .addTo(controller);
+        }).setTween(animationPhoto).addTo(controller);
+
+        newAnimationPhotoScene.addIndicators();
+    });
+
+    var animationPhotoObjTop = $('.animate-block-top');
+
+    Array.prototype.forEach.call(animationPhotoObjTop, function (item, index) {
+        var newAnimationPhotoSceneTop = new ScrollMagic.Scene({
+            triggerElement: '.animate-block',
+            offset: -200,
+            triggerHook: 0,
+            duration: "100%"
+        }).setTween(animationPhoto2).addTo(controller);
+
+        newAnimationPhotoSceneTop.addIndicators();
+    });
 
 
-    //footerSceneMain.addIndicators();
 
-    // Cases Msfit
-    // var footerSceneCasesMsfit = new ScrollMagic.Scene({
-    //     triggerElement: '[data-bottom-msfit]',
-    //     triggerHook: 1,
-    //     offset: -400,
-    //     duration: "100%"
-    // }).setTween(footerTl)
-    //     .addTo(controller);
 
 
 }(jQuery));

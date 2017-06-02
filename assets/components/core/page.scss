@@ -304,6 +304,9 @@
   &__bottom {
     height: 0;
   }
+  &__photo {
+    overflow: hidden;
+  }
 }
 
 @keyframes imageAnimation {

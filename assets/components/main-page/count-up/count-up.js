@@ -142,17 +142,17 @@ if (document.getElementById("people-msfit") !== null) {
     var peopleMsfitCount = new CountUp(peopleMsfit.id, 0, peopleMsfit.count, 0, 2.5, peopleMsfit);
 }
 
-if (document.getElementById("publications-msfit") !== null) {
-    var publicationsMsfit = {
-        useEasing: true,
-        useGrouping: true,
-        separator: ',',
-        decimal: '.',
-        count: 5,
-        id: "publications-life"
-    };
-    var publicationsMsfitCount = new CountUp(publicationsMsfit.id, 0, publicationsMsfit.count, 0, 2.5, publicationsMsfit);
-}
+// if (document.getElementById("publications-msfit") !== null) {
+//     var publicationsMsfit = {
+//         useEasing: true,
+//         useGrouping: true,
+//         separator: ',',
+//         decimal: '.',
+//         count: 5,
+//         id: "publications-life"
+//     };
+//     var publicationsMsfitCount = new CountUp(publicationsMsfit.id, 0, publicationsMsfit.count, 0, 2.5, publicationsMsfit);
+// }
 
 /* Cases  Sprout */
 
