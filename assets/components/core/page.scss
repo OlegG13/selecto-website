@@ -52,7 +52,7 @@
       z-index: 10;
       opacity: 1;
       & + * {
-        margin-top: 72px;
+        padding-top: 72px;
       }
     }
   }
@@ -197,18 +197,30 @@
       position: relative;
     }
   }
+  &__contact {
+    background-color: #f5f5f5;
+  }
   &__contact-info {
-    padding: 85px 0 60px;
+    padding: 15px 0 15px;
     //padding: 4.583vw 0 2.1875vw;
     @media (max-width: $screen-lg-max) {
       padding: 40px 0 20px;
     }
-    background-color: #486CFF;
+    background-color: #f5f5f5;
   }
   &__contact-item {
     background-color: #f5f5f5;
     padding: 60px 0;
     padding: 3.125vw 0 3.125vw;
+    &--follow {
+      background-color: #fff;
+      padding: 135px 0;
+      padding: 7vw 0 7vw;
+    }
+    &--offices {
+      padding: 60px 0 120px 0;
+      padding: 3.125vw 0 6.25vw;
+    }
     @media (max-width: $screen-lg-max) {
       padding: 30px 0 30px;
     }

@@ -406,7 +406,7 @@ body {
 }
 
 .page__top--fx-na + * {
-  margin-top: 72px;
+  padding-top: 72px;
 }
 
 .page__container {
@@ -612,9 +612,13 @@ body {
   position: relative;
 }
 
+.page__contact {
+  background-color: #f5f5f5;
+}
+
 .page__contact-info {
-  padding: 85px 0 60px;
-  background-color: #486CFF;
+  padding: 15px 0 15px;
+  background-color: #f5f5f5;
 }
 
 @media (max-width: 1200px) {
@@ -627,6 +631,17 @@ body {
   background-color: #f5f5f5;
   padding: 60px 0;
   padding: 3.125vw 0 3.125vw;
+}
+
+.page__contact-item--follow {
+  background-color: #fff;
+  padding: 135px 0;
+  padding: 7vw 0 7vw;
+}
+
+.page__contact-item--offices {
+  padding: 60px 0 120px 0;
+  padding: 3.125vw 0 6.25vw;
 }
 
 @media (max-width: 1200px) {
@@ -1056,6 +1071,7 @@ body {
   position: relative;
   max-width: 1250px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .slider__inner {
@@ -1210,13 +1226,13 @@ body {
 }
 
 .single-page {
-  margin: 127px 0 134px;
-  margin: 6.61vw 0 7vw;
+  padding: 127px 0 100px;
+  padding: 6.61vw 0 5.2vw;
 }
 
 .single-page__top {
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
-  margin-bottom: 1em;
+  margin-bottom: 0.733em;
   text-align: center;
 }
 
@@ -1234,7 +1250,7 @@ body {
 
 .single-page__title {
   line-height: 1.25;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1em;
 }
 
@@ -2060,6 +2076,12 @@ Main page Components
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .main-article__footer--tech {
+    display: none;
+  }
+}
+
 .count-up {
   display: inline-block;
   color: #101517;
@@ -2183,7 +2205,7 @@ Main page Components
   flex-grow: 1;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 993px) {
   .info-table__cell {
     flex-basis: 33.3333%;
   }
@@ -2257,6 +2279,12 @@ Main page Components
   transform: translateY(45px);
 }
 
+@media (max-width: 992px) {
+  .technology-list {
+    display: none;
+  }
+}
+
 .technology-list__items {
   display: flex;
   justify-content: center;
@@ -2305,6 +2333,18 @@ Main page Components
   transition: all ease-in-out 0.2s;
 }
 
+@media (max-width: 1200px) {
+  .latest-projects__item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .latest-projects__item {
+    flex-basis: 392px;
+  }
+}
+
 .latest-projects__item:hover {
   top: -10px;
 }
@@ -2337,6 +2377,12 @@ Main page Components
   color: #fff;
   padding: 40px;
   transition: all ease-in-out 0.2s;
+}
+
+@media (max-width: 1440px) {
+  .latest-projects__card {
+    height: 500px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2994,7 +3040,7 @@ Cases page Components
   line-height: 2;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .case-prop__item {
     padding: 0 15px;
   }
@@ -3249,7 +3295,7 @@ Cases page Components
   margin-left: 150px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .chess-list__item:nth-child(2n+2) .chess-list__photo--tab {
     margin-left: 28px;
   }
@@ -3306,7 +3352,7 @@ Cases page Components
   margin-right: 150px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .chess-list__item:nth-child(2n+1) .chess-list__photo--tab {
     margin-right: 40px;
   }
@@ -4018,6 +4064,56 @@ Cases page Components
   border-radius: 100px;
 }
 
+.view-video {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.view-video__head {
+  background-color: #f5f5f5;
+  height: 40px;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  position: relative;
+}
+
+.view-video__btns {
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 0;
+}
+
+.view-video__btn {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  font-size: 1rem;
+  background-color: #c6ccce;
+  border-radius: 5px;
+}
+
+.view-video__btn:not(:last-child) {
+  margin-right: 6px;
+}
+
+.view-video__inner {
+  position: relative;
+  padding-bottom: 49%;
+  max-height: 346px;
+  overflow: hidden;
+}
+
+.view-video__video {
+  display: inline-block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: inherit;
+}
+
 /*
 --------------------------------------------------
 Contacts page Components
@@ -4134,7 +4230,17 @@ Contacts page Components
 
 .popup__content__form {
   display: block;
-  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  box-shadow: 0 22px 24px #ededed;
+  background-color: #ffffff;
+  padding: 93px 0;
+}
+
+@media (max-width: 992px) {
+  .popup__content__form {
+    padding: 40px 0;
+  }
 }
 
 @media screen and (max-width: 1380px) {
@@ -4192,7 +4298,6 @@ Contacts page Components
 }
 
 .material__field.error {
-  box-shadow: 0 1px 0 0 tomato !important;
   border-bottom-color: tomato !important;
 }
 
@@ -4267,7 +4372,7 @@ select {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
-  max-width: 1180px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -4288,10 +4393,13 @@ select {
 }
 
 .contact-information__title {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 500;
   line-height: 1.375;
   margin-bottom: 11px;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .contact-information__list {
@@ -4305,7 +4413,7 @@ select {
 
 .contact-information__link {
   text-decoration: none;
-  color: #fff;
+  color: #101517;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -4328,10 +4436,14 @@ select {
   }
 }
 
+.contact-item__head--sm {
+  margin-bottom: 14px;
+}
+
 .contact-item__title {
-  font-size: 1em;
-  font-weight: 200;
-  line-height: 2.1363;
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 2.136;
   color: #262431;
 }
 
@@ -4436,7 +4548,6 @@ select {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -4948,18 +5059,20 @@ About Us page Components
 }
 
 #map-pin {
-  animation: pinAnimation 1s infinite;
+  animation: pinAnimation 1.7s ease-in-out 0.9s infinite;
 }
 
 @keyframes pinAnimation {
   0% {
     opacity: 0;
-    stroke-width: 5;
+    stroke-width: 0;
+    stroke-opacity: 0;
   }
 
   100% {
     opacity: 1;
-    stroke-width: 20;
+    stroke-width: 30;
+    stroke-opacity: 0.5;
   }
 }
 

@@ -11,6 +11,15 @@
     position: relative;
     top: 0;
     transition: all ease-in-out 0.2s;
+    &:last-child {
+      @media (max-width: $screen-lg-max) {
+        display: none;
+      }
+    }
+    @media (max-width: $screen-xl-max) {
+      flex-basis: 392px;
+    }
+
     &:hover {
       top: -10px;
       & .latest-projects__icon {
@@ -40,6 +49,9 @@
     color: #fff;
     padding: 40px;
     transition: all ease-in-out 0.2s;
+    @media (max-width: $screen-xl-max) {
+      height: 500px;
+    }
     @media (max-width: $screen-sm-max) {
       padding: 20px;
     }

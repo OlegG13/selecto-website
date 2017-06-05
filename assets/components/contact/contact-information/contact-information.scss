@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
-  max-width: 1180px;
+  max-width: 920px;
   margin: 0 auto;
   @media (max-width: $screen-sm-max) {
     flex-direction: column;
@@ -17,10 +17,13 @@
     }
   }
   &__title {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 500;
     line-height: 1.375;
     margin-bottom: 11px;
+    color: #000;
+    text-transform: uppercase;
   }
   &__list {
     display: block;
@@ -31,7 +34,7 @@
   }
   &__link {
     text-decoration: none;
-    color: #fff;
+    color: #101517;
     font-weight: 400;
     font-size: 1rem;
   }

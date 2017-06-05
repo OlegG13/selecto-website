@@ -118,10 +118,16 @@
     // if (document.getElementById("particlesJS") !== null) {
     //     particlesJS("particlesJS", options);
     // }
-    var $video = $("[data-video]");
-        setTimeout(function(){
-            $video.get(0).play();
-        }, 1500);
+
+    // var $video = $("[data-video]");
+    //     setTimeout(function(){
+    //         $video.get(0).play();
+    //     }, 1500);
+
+    var video = document.querySelector('[data-video]');
+    if (video !== null && typeof (video) !== "undefined") {
+        video.play();
+    }
 
 })(jQuery);
 

@@ -146,9 +146,7 @@
             triggerHook: 0.75,
             offset: 0,
             reverse: false
-        })
-        //.setClassToggle(item, 'chess-list__item--active')
-            .setTween(imgCase).addTo(controller);
+        }).setTween(imgCase).addTo(controller);
 
         //casesItemPhoto.addIndicators();
 
@@ -157,13 +155,72 @@
             triggerHook: 0.75,
             offset: 0,
             reverse: false
-        })
-        //.setClassToggle(item, 'chess-list__item--active')
-            .setTween(textCase).addTo(controller);
+        }).setTween(textCase).addTo(controller);
 
         //casesItemText.addIndicators();
 
     });
 
+    /* Video Life fot me */
+    var caseVideo = document.querySelector('[data-video-life]');
+    if (caseVideo !== null && typeof (caseVideo) !== "undefined") {
+        var videoLife = new ScrollMagic.Scene({
+            triggerElement: '[data-video-life]',
+            triggerHook: 0.5,
+            offset: 0,
+            reverse: false
+        }).addTo(controller).on('start', function () {
+            var landing = document.querySelector('[data-landing-life]');
 
+            if (landing !== null && typeof (landing) !== "undefined") {
+                landing.currentTime = 5;
+                landing.play();
+            }
+
+        });
+    }
+    //videoLife.addIndicators();
+
+    /* About us (Principles) */
+
+    // var $principles = $('[data-principles]'),
+    //     principlesTitle = $principles.find('[data-principles-title]'),
+    //     principlesItems = $principles.find('[data-principles-items]');
+    //
+    // Array.prototype.forEach.call(casesList, function (item, index) {
+    //
+    //
+    //     var principlesTitleTM = new TimelineMax();
+    //     principlesTitleTM.fromTo(principlesTitle, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {
+    //         y: '0%',
+    //         autoAlpha: 1,
+    //         ease: Linear.easeNone
+    //     });
+    //
+    //     var principlesItemsTM = new TimelineMax({delay: 0.5});
+    //     principlesItemsTM.fromTo(principlesItems, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {
+    //         y: '0%',
+    //         autoAlpha: 1,
+    //         ease: Linear.easeNone
+    //     });
+    //
+    //     var principlesTitleScene = new ScrollMagic.Scene({
+    //         triggerElement: $principles,
+    //         triggerHook: 0.75,
+    //         offset: 0,
+    //         reverse: false
+    //     }).setTween(principlesTitleTM).addTo(controller);
+    //
+    //     principlesTitleScene.addIndicators();
+    //
+    //     var principlesItemsScene = new ScrollMagic.Scene({
+    //         triggerElement: $principles,
+    //         triggerHook: 0.75,
+    //         offset: 0,
+    //         reverse: false
+    //     }).setTween(principlesItemsTM).addTo(controller);
+    //
+    //     principlesItemsScene.addIndicators();
+    //
+    // })
 }(jQuery));

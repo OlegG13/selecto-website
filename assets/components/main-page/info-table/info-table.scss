@@ -16,7 +16,7 @@
     background-color: #FFFFFF;
     text-align: center;
     flex-grow: 1;
-    @media (min-width: $screen-lg-min) {
+    @media (min-width: $screen-md-min) {
       flex-basis: 33.3333%;
     }
 

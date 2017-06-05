@@ -93,5 +93,10 @@
   &__footer {
     margin-top: 70px;
     text-align: center;
+    &--tech {
+      @media (max-width: $screen-md-max) {
+        display: none;
+      }
+    }
   }
 }

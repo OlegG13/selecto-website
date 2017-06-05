@@ -4,11 +4,14 @@
     text-align: center;
     font-size: responsive 2rem 2.75rem;
     font-range: 980px 1280px;
+    &--sm {
+      margin-bottom: 14px;
+    }
   }
   &__title {
-    font-size: 1em;
-    font-weight: 200;
-    line-height: 2.1363;
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 2.136;
     color: #262431;
   }
   &__container {
