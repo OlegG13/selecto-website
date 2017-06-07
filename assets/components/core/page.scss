@@ -97,7 +97,9 @@
     bottom: 0;
     width: 100%;
     z-index: 1;
-    opacity: 0;
+
+    //animation
+    //opacity: 0;
   }
   &__footer-bottom {
     color: #FFFFFF;
@@ -270,17 +272,18 @@
     left: 0;
     top: 0;
     right: 0;
-
-    opacity: 0;
     z-index: 1;
-    animation-name: imageAnimation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 
-    animation-duration: 50s;
+    /* Animation */
+    //opacity: 0;
+    //z-index: 1;
+    //animation-name: imageAnimation;
+    //animation-timing-function: linear;
+    //animation-iteration-count: infinite;
+    //animation-duration: 50s;
 
     &--first {
-      background-image: url("../img/about-us.jpg");
+      background-image: url("../img/test-4.jpg");
     }
     &--second {
       background-image: url("../img/test-1.jpg");
@@ -295,7 +298,8 @@
       animation-delay: 30s;
     }
     &--fifth {
-      background-image: url("../img/test-4.jpg");
+
+      background-image: url("../img/about-us.jpg");
       animation-delay: 40s;
     }
   }

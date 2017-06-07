@@ -9,11 +9,9 @@
     font-size: 1rem;
     height: 2.8125rem;
     line-height: 2.8125rem;;
-    margin: 0 0 20px 0;
     transition: all 0.3s;
     color: #616f75;
     font-weight: 300;
-    overflow: hidden;
     border-bottom: 1px solid #9e9e9e;
     padding-right: 20px;
     position: relative;
@@ -31,11 +29,25 @@
       border-color: #616f75 transparent transparent transparent;
       transition: 0.4s ease-in-out;
     }
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      background-color: $theme-secondary-color;
+      width: 0;
+      transition: 0.2s ease-in-out;
+    }
     &--active {
-      border-bottom-color: $theme-secondary-color;
+      //border-bottom-color: $theme-secondary-color;
       &:after {
         border-width: 0 6px 7px 6px;
         border-color: transparent transparent $theme-secondary-color transparent;
+      }
+      &:before {
+        width: 100%;
       }
     }
   }

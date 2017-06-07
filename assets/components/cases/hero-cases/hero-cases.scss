@@ -9,7 +9,7 @@
   //background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
   &--not-fixed {
     background-attachment: inherit;
   }
@@ -29,6 +29,7 @@
   }
   &--msfit {
     background-image: url("../img/msfit-hero.jpg");
+    //background-image: url("../img/test-1.jpg")
   }
   &--msfit-bot {
     background-image: url("../img/msfit-big-photo.png");

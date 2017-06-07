@@ -6,6 +6,9 @@
       opacity: 0;
       transform: translateY(45px);
     }
+    &--case {
+
+    }
   }
   @media (max-width: $screen-lg-max) {
     padding: 120px 0;

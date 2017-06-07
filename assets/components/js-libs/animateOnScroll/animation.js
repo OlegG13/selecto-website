@@ -5,17 +5,13 @@
     // Init ScrollMagic
     var controller = new ScrollMagic.Controller();
 
-    // get all break up sections
     var breakSections = ["#particlesJS"];
-
-    // Enable ScrollMagic only for desktop, disable on touch and mobile devices
     if (document.getElementById("particlesJS") !== null) {
-        // move bcg container when intro gets out of the the view
-        var introTl = new TimelineMax();
 
-        introTl.to($('#particlesJS'), 0.2, {autoAlpha: 0, ease: Power0.easeNone}, '-=0.01');
-        //.to($('.page__top header, .scroll-hint'), 0.2, {autoAlpha: 0, ease:Power0.easeNone})
-        //.to($('#particlesJS .hero__title'), 1.4, {y: '10%', ease:Power1.easeOut}, '-=0.2');
+        /* Main hero */
+        var introTl = new TimelineMax();
+        introTl.to($('#particlesJS'), 0.2, {autoAlpha: 0.35, ease: Power0.easeNone}, '-=0.01');
+        //.to($('.page__video'), 0.2, {css: {scale: 1.1, transform: translate3d(0, '-200px', 0)}}, '-=0.01');
 
         var introScene = new ScrollMagic.Scene({
             //triggerElement: '#particlesJS',
@@ -24,6 +20,8 @@
             duration: "100%"
         }).setTween(introTl)
             .addTo(controller);
+
+
 
 
 
@@ -43,26 +41,30 @@
         /* First slide. End */
     }
 
-    var footerTl = new TimelineMax();
-    footerTl.to($('.page__footer'), 0.2, {autoAlpha: 1, ease: Power0.easeNone}, '=0.1');
 
-    var offsetBottom = $('[data-bottom]').data(),
-        offsetBottomVal = offsetBottom.bottom;
-    var footerSceneMain = new ScrollMagic.Scene({
-        triggerElement: '[data-bottom]',
-        triggerHook: 1,
-        offset: offsetBottomVal,
-        duration: "100%"
-    }).setTween(footerTl).addTo(controller);
+    /* Footer */
+    // var footerTl = new TimelineMax();
+    // footerTl.to($('.page__footer'), 0.2, {autoAlpha: 1, ease: Power0.easeNone}, '=0.1');
+    //
+    // var offsetBottom = $('[data-bottom]').data(),
+    //     offsetBottomVal = offsetBottom.bottom;
+    // var footerSceneMain = new ScrollMagic.Scene({
+    //     triggerElement: '[data-bottom]',
+    //     triggerHook: 1,
+    //     offset: offsetBottomVal,
+    //     duration: "100%"
+    // }).setTween(footerTl).addTo(controller);
 
 
     /* Parallax photos */
 
     var animationPhoto = new TimelineMax();
-    animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '70%', ease: Linear.easeNone}, '+=0.1');
+    //animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '70%', ease: Linear.easeNone}, '+=0.1');
+    animationPhoto.fromTo($('.animate-block-top .animate-block__photo'), 1, {css: {backgroundPositionY: "50%"}}, {css: {backgroundPositionY: "0%"}}, '+=0.1');
+
 
     var animationPhoto2 = new TimelineMax();
-    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {y: '0%', ease: Power0.easeNone}, {y: '70%', ease: Linear.easeNone}, '+=0.1');
+    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {css: {backgroundPositionY: "50%"}}, {css: {backgroundPositionY: "0%"}}, '+=0.1');
 
     var animationPhotoObj = $('.animate-block');
 
@@ -70,7 +72,7 @@
         var newAnimationPhotoScene = new ScrollMagic.Scene({
             triggerElement: '.animate-block-top',
             triggerHook: 0,
-            offset: -300,
+            offset: -700,
             duration: "100%"
         }).setTween(animationPhoto).addTo(controller);
 
@@ -118,9 +120,7 @@
             triggerHook: 0.75,
             offset: 0,
             reverse: false
-        })
-        //.setClassToggle(item, 'chess-list__item--active')
-            .setTween(text).addTo(controller);
+        }).setTween(text).addTo(controller);
 
         //chessItems.addIndicators();
 
@@ -181,46 +181,52 @@
     }
     //videoLife.addIndicators();
 
-    /* About us (Principles) */
+    /* Case hero */
+    var caseTop = new TimelineMax();
+    caseTop.fromTo($('.main-article__head--case'), 0.4, {y: '10%', autoAlpha: 0, ease: Linear.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
 
-    // var $principles = $('[data-principles]'),
-    //     principlesTitle = $principles.find('[data-principles-title]'),
-    //     principlesItems = $principles.find('[data-principles-items]');
-    //
-    // Array.prototype.forEach.call(casesList, function (item, index) {
-    //
-    //
-    //     var principlesTitleTM = new TimelineMax();
-    //     principlesTitleTM.fromTo(principlesTitle, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {
-    //         y: '0%',
-    //         autoAlpha: 1,
-    //         ease: Linear.easeNone
-    //     });
-    //
-    //     var principlesItemsTM = new TimelineMax({delay: 0.5});
-    //     principlesItemsTM.fromTo(principlesItems, {y: '10%', autoAlpha: 0, ease: Power0.easeNone}, {
-    //         y: '0%',
-    //         autoAlpha: 1,
-    //         ease: Linear.easeNone
-    //     });
-    //
-    //     var principlesTitleScene = new ScrollMagic.Scene({
-    //         triggerElement: $principles,
-    //         triggerHook: 0.75,
-    //         offset: 0,
-    //         reverse: false
-    //     }).setTween(principlesTitleTM).addTo(controller);
-    //
-    //     principlesTitleScene.addIndicators();
-    //
-    //     var principlesItemsScene = new ScrollMagic.Scene({
-    //         triggerElement: $principles,
-    //         triggerHook: 0.75,
-    //         offset: 0,
-    //         reverse: false
-    //     }).setTween(principlesItemsTM).addTo(controller);
-    //
-    //     principlesItemsScene.addIndicators();
-    //
-    // })
+    var caseHero = new ScrollMagic.Scene({
+        triggerElement: '.page__section--white',
+        triggerHook: 0.75,
+        offset: 0,
+        reverse: false
+    }).setTween(caseTop).addTo(controller);
+
+    //caseHero.addIndicators();
+
+
+    /* Case content items */
+    var casesList = $('.case-article');
+
+    Array.prototype.forEach.call(casesList, function (item, index) {
+
+        var nodeItems = item.childNodes;
+
+        var imgCase = new TimelineMax();
+        imgCase.fromTo(nodeItems[1], 0.4, {y: '20%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var textCase = new TimelineMax({delay: 0.2});
+        textCase.fromTo(nodeItems[3], 0.4, {y: '20%', autoAlpha: 0, ease: Power0.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+
+        var casesItemTitle = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        }).setTween(imgCase).addTo(controller);
+
+        //casesItemTitle.addIndicators();
+
+        var casesItemDesc = new ScrollMagic.Scene({
+            triggerElement: item,
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        }).setTween(textCase).addTo(controller);
+
+        //casesItemDesc.addIndicators();
+
+    });
+
+
 }(jQuery));
