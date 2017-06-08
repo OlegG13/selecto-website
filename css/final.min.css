@@ -353,7 +353,6 @@ body {
   flex: 1 0 auto;
   position: relative;
   z-index: 2;
-  margin-bottom: 540px;
   background-color: #fff;
 }
 
@@ -448,7 +447,6 @@ body {
 
 .page__footer {
   flex: 0 0 auto;
-  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -729,8 +727,14 @@ body {
 }
 
 .page__header-img--fifth {
-  background-image: url("../img/about-us.jpg");
+  background-image: url("../img/about_us.jpg");
   animation-delay: 40s;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .page__header-img--fifth {
+    background-image: url("../img/about_us@1.jpg");
+  }
 }
 
 .page__bcg {
@@ -1002,7 +1006,6 @@ body {
 .btn-cases:hover {
   background: #fff;
   transition: background-color 0.2s linear 0.2s, color 0.2s;
-  border-color: white;
   cursor: pointer;
 }
 
@@ -1496,7 +1499,7 @@ body {
 
 .hero__title {
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 500;
   /*animation*/
   line-height: 1.33333333;
   position: relative;
@@ -2010,7 +2013,7 @@ Main page Components
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
   text-align: center;
   line-height: 1.26666667;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 50px;
 }
 
@@ -2331,7 +2334,7 @@ Main page Components
 .latest-projects__item {
   padding: 16px 8px 0 8px;
   flex-shrink: 1;
-  flex-basis: 472px;
+  flex-basis: 468px;
   max-width: 100%;
   position: relative;
   top: 0;
@@ -2416,7 +2419,7 @@ Main page Components
 .latest-projects__name {
   font-size: 2.75rem;
   line-height: 1.22727273;
-  font-weight: 300;
+  font-weight: 500;
   vertical-align: middle;
 }
 
@@ -2490,6 +2493,7 @@ Main page Components
   line-height: 96px;
   text-align: center;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .brands__list {
@@ -2847,8 +2851,16 @@ Cases page Components
 }
 
 .hero-cases--about {
-  background-image: url("../img/selecto-photo.jpg");
+  background: url("../img/photos.jpg") no-repeat center bottom;
+  background-size: contain;
   padding-bottom: 32%;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--about {
+    background-image: url("../img/photos@1x.jpg") no-repeat center bottom;
+    background-size: contain;
+  }
 }
 
 .hero-cases--bottom {
@@ -2864,7 +2876,13 @@ Cases page Components
 }
 
 .hero-cases--msfit {
-  background-image: url("../img/msfit-hero.jpg");
+  background-image: url("../img/14fit_ban.jpg");
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--msfit {
+    background-image: url("../img/14fit_ban@1x.jpg");
+  }
 }
 
 .hero-cases--msfit-bot {
@@ -2892,7 +2910,7 @@ Cases page Components
 
 .case-article__title {
   margin-bottom: 29px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.47;
   text-align: center;
   font-size: calc(2.8rem + 0.9500000000000002 * ((100vw - 61.25rem) / 18.75));
@@ -3980,7 +3998,7 @@ Cases page Components
 
 .cases-list__title {
   font-size: calc(2.5rem + 1.25 * ((100vw - 61.25rem) / 18.75));
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.26667;
   margin-bottom: 16px;
 }
@@ -4051,6 +4069,26 @@ Cases page Components
 
 .cases-list__footer-title--violet {
   color: #716296;
+}
+
+.cases-list__img--sm {
+  display: none;
+}
+
+@media only screen and (max-device-pixel-ratio: 2), only screen and (max-resolution: 192dpi) {
+  .cases-list__img--sm {
+    display: block;
+  }
+}
+
+.cases-list__img--lg {
+  display: none;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .cases-list__img--lg {
+    display: block;
+  }
 }
 
 .cases-tags {
@@ -5170,6 +5208,7 @@ About Us page Components
   font-size: 2rem;
   line-height: 1.375;
   margin-bottom: 36px;
+  font-weight: 500;
 }
 
 .principles__desc {

@@ -91,7 +91,7 @@
   &__title {
     font-size: responsive 2.5rem 3.75rem;
     font-range: 980px 1280px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.26667;
     margin-bottom: 16px;
     @media (max-width: $screen-xs-max) {
@@ -134,6 +134,22 @@
     }
     &--violet {
       color: #716296;
+    }
+  }
+  &__img{
+    &--sm{
+      display: none;
+      @media  only screen and (max-device-pixel-ratio: 2),
+      only screen and (max-resolution: 192dpi) {
+        display: block;
+      }
+    }
+    &--lg{
+      display: none;
+      @media  only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        display: block;
+      }
     }
   }
 }

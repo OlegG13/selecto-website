@@ -8,7 +8,6 @@
     flex: 1 0 auto;
     position: relative;
     z-index: 2;
-    margin-bottom: 540px;
     background-color: #fff;
     @media (max-width: $screen-sm-max) {
       margin-bottom: 452px;
@@ -91,7 +90,6 @@
   }
   &__footer {
     flex: 0 0 auto;
-    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -299,7 +297,11 @@
     }
     &--fifth {
 
-      background-image: url("../img/about-us.jpg");
+      background-image: url("../img/about_us.jpg");
+      @media  only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background-image: url("../img/about_us@1.jpg");
+      }
       animation-delay: 40s;
     }
   }

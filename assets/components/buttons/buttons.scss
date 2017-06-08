@@ -197,7 +197,6 @@
   &:hover {
     background: #fff;
     transition: background-color 0.2s linear 0.2s, color 0.2s;
-    border-color: rgba(255,255,255,1);
     cursor: pointer;
     & .btn-cases__name {
       color: $base-font-color-third;

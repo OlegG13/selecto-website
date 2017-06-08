@@ -14,7 +14,13 @@
     background-attachment: inherit;
   }
   &--about {
-    background-image: url("../img/selecto-photo.jpg");
+    background: url("../img/photos.jpg")no-repeat center bottom;
+    background-size: contain;
+    @media  only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+      background-image: url("../img/photos@1x.jpg")no-repeat center bottom;
+      background-size: contain;
+    }
     padding-bottom: 32%;
   }
 
@@ -28,8 +34,11 @@
     background-image: url("../img/sprout-big-photo.jpg");
   }
   &--msfit {
-    background-image: url("../img/msfit-hero.jpg");
-    //background-image: url("../img/test-1.jpg")
+    background-image: url("../img/14fit_ban.jpg");
+    @media  only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+      background-image: url("../img/14fit_ban@1x.jpg");
+    }
   }
   &--msfit-bot {
     background-image: url("../img/msfit-big-photo.png");
