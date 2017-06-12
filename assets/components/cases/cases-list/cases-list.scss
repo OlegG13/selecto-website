@@ -136,19 +136,34 @@
       color: #716296;
     }
   }
-  &__img{
-    &--sm{
-      display: none;
-      @media  only screen and (max-device-pixel-ratio: 2),
-      only screen and (max-resolution: 192dpi) {
-        display: block;
+  &__img {
+    width: 100%;
+    min-height: 600px;
+    &.pict--fit {
+      background-size: contain;
+      background: url("../img/ms_fit.png")no-repeat center center;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/ms_fit@1x.png")no-repeat center center;
+        background-size: contain;
       }
     }
-    &--lg{
-      display: none;
-      @media  only screen and (min-device-pixel-ratio: 2),
+    &.pict--lfm {
+      background-size: contain;
+      background: url("../img/lfm.png")no-repeat center center;
+      @media only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi) {
-        display: block;
+        background: url("../img/lfm@1x.png")no-repeat center center;
+        background-size: contain;
+      }
+    }
+    &.pict--sprout {
+      background-size: contain;
+      background: url("../img/sprout.png")no-repeat center center;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/sprout@1x.png")no-repeat center center;
+        background-size: contain;
       }
     }
   }

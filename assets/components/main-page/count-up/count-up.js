@@ -55,6 +55,7 @@ if (document.getElementById("country") !== null) {
     var countryCount = new CountUp(country.id, 0, country.count, 0, 2.5, country);
 }
 /* Cases */
+
 /* Cases Life*/
 if (document.getElementById("joined-life") !== null) {
     var joinedLife = {
@@ -105,7 +106,6 @@ if (document.getElementById("publications-life") !== null) {
 }
 
 /* Cases Msfit*/
-
 if (document.getElementById("joined-msfit") !== null) {
     var joinedMsfit = {
         useEasing: true,

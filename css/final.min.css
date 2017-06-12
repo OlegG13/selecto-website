@@ -1389,7 +1389,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.5;
   position: relative;
@@ -2870,28 +2870,34 @@ Cases page Components
 
 .hero-cases--sprout {
   background-image: url("../img/sprout-hero.jpg");
+  background-size: cover;
 }
 
 .hero-cases--sprout-bot {
   background-image: url("../img/sprout-big-photo.jpg");
+  background-size: cover;
 }
 
 .hero-cases--msfit {
   background-image: url("../img/14fit_ban.jpg");
+  background-size: cover;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .hero-cases--msfit {
     background-image: url("../img/14fit_ban@1x.jpg");
+    background-size: cover;
   }
 }
 
 .hero-cases--msfit-bot {
   background-image: url("../img/14fit_ban_2@1x.jpg");
+  background-size: cover;
 }
 
 .hero-cases--life {
   background-image: url("../img/lfm-hero.png");
+  background-size: cover;
 }
 
 .hero-cases--lfm-bot {
@@ -3159,6 +3165,115 @@ Cases page Components
   }
 }
 
+.msfit__overview {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .msfit__overview {
+    flex-direction: column;
+  }
+}
+
+.msfit__overview-large-image {
+  box-sizing: border-box;
+  width: 57%;
+  height: 100%;
+  background: url("../img/msfit_1@1x.jpg") no-repeat center center;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .msfit__overview-large-image {
+    background: url("../img/msfit_1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .msfit__overview-large-image {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .msfit__overview-large-image {
+    height: 50%;
+  }
+}
+
+.msfit__overview-small-images-box {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.msfit__overview-small-images-box > div:first-child {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .msfit__overview-small-images-box {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .msfit__overview-small-images-box > div:first-child {
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .msfit__overview-small-images-box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .msfit__overview-small-images-box > div:first-child {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.msfit__overview-small-image-top {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background: url("../img/msfit_2@1x.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .msfit__overview-small-image-top {
+    background: url("../img/msfit_2.jpg") no-repeat center center;
+    background-size: cover !important;
+  }
+}
+
+.msfit__overview-small-image-bottom {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background: url("../img/msfit_3@1x.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .msfit__overview-small-image-bottom {
+    background: url("../img/msfit_3.jpg") no-repeat center center;
+    background-size: cover !important;
+  }
+}
+
 .design-proc {
   font-size: 0;
   margin-bottom: 18px;
@@ -3298,6 +3413,44 @@ Cases page Components
   content: "—";
   display: inline-block;
   padding-right: 5px;
+}
+
+.design-proc__photo.msfit {
+  width: 100%;
+  max-height: 100%;
+  padding-bottom: 60%;
+  background-size: contain !important;
+  background: url("../img/msfit_wireframes.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .design-proc__photo.msfit {
+    background: url("../img/msfit_wireframes@1x.jpg") no-repeat center center;
+    background-size: contain !important;
+  }
+}
+
+.design-proc__photo.life4me {
+  width: 100%;
+  max-height: 100%;
+  padding-bottom: 60%;
+  background-size: contain !important;
+  background: url("../img/lfm-wireframes.png") no-repeat center center;
+}
+
+.design-proc__photo.sprout {
+  width: 100%;
+  max-height: 100%;
+  padding-bottom: 60%;
+  background-size: contain !important;
+  background: url("../img/sprout-design-proc-2.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .design-proc__photo.sprout {
+    background: url("../img/sprout-design-proc-1.png") no-repeat center center;
+    background-size: contain !important;
+  }
 }
 
 .chess-list {
@@ -4072,23 +4225,44 @@ Cases page Components
   color: #716296;
 }
 
-.cases-list__img--sm {
-  display: none;
+.cases-list__img {
+  width: 100%;
+  min-height: 600px;
 }
 
-@media only screen and (max-device-pixel-ratio: 2), only screen and (max-resolution: 192dpi) {
-  .cases-list__img--sm {
-    display: block;
-  }
-}
-
-.cases-list__img--lg {
-  display: none;
+.cases-list__img.pict--fit {
+  background-size: contain;
+  background: url("../img/ms_fit.png") no-repeat center center;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .cases-list__img--lg {
-    display: block;
+  .cases-list__img.pict--fit {
+    background: url("../img/ms_fit@1x.png") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.cases-list__img.pict--lfm {
+  background-size: contain;
+  background: url("../img/lfm.png") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .cases-list__img.pict--lfm {
+    background: url("../img/lfm@1x.png") no-repeat center center;
+    background-size: contain;
+  }
+}
+
+.cases-list__img.pict--sprout {
+  background-size: contain;
+  background: url("../img/sprout.png") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .cases-list__img.pict--sprout {
+    background: url("../img/sprout@1x.png") no-repeat center center;
+    background-size: contain;
   }
 }
 

@@ -182,15 +182,16 @@
     //videoLife.addIndicators();
 
     /* Case hero */
-    var caseTop = new TimelineMax();
-    caseTop.fromTo($('.main-article__head--case'), 0.4, {y: '10%', autoAlpha: 0, ease: Linear.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
-
-    var caseHero = new ScrollMagic.Scene({
-        triggerElement: '.page__section--white',
-        triggerHook: 0.75,
-        offset: 0,
-        reverse: false
-    }).setTween(caseTop).addTo(controller);
+    // var caseTop = new TimelineMax();
+    //
+    // caseTop.fromTo($('.main-article__head--case'), 0.4, {y: '10%', autoAlpha: 0, ease: Linear.easeNone}, {y: '0%', autoAlpha: 1, ease: Linear.easeNone});
+    //
+    // var caseHero = new ScrollMagic.Scene({
+    //     triggerElement: '.page__section--white',
+    //     triggerHook: 0.75,
+    //     offset: 0,
+    //     reverse: false
+    // }).setTween(caseTop).addTo(controller);
 
     //caseHero.addIndicators();
 
