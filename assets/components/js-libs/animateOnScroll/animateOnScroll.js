@@ -46,8 +46,8 @@
                 if (element.getAttribute("data-animation") === 'msfitCount') {
                     setTimeout(joinedMsfitCount.start.bind(joinedMsfitCount), 100);
                     setTimeout(platformsMsfitCount.start.bind(platformsMsfitCount), 400);
-                    setTimeout(peopleMsfitCount.start.bind(peopleMsfitCount), 700);
-                    //setTimeout(publicationsMsfitCount.start.bind(publicationsMsfitCount), 1000);
+                    setTimeout(peopleMsfitCount.start.bind(peopleMsfitCount), 400);
+                    //setTimeout(publicationsMsfitCount.start.bind(publicationsMsfitCount), 100);
                 }
 
                 if (element.getAttribute("data-animation") === 'sproutCount') {

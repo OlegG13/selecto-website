@@ -112,7 +112,7 @@ if (document.getElementById("joined-msfit") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 150,
+        count: 200,
         id: "joined-msfit"
     };
     var joinedMsfitCount = new CountUp(joinedMsfit.id, 0, joinedMsfit.count, 0, 2.5, joinedMsfit);
@@ -136,7 +136,7 @@ if (document.getElementById("people-msfit") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 2.5,
+        count: 4,
         id: "people-msfit"
     };
     var peopleMsfitCount = new CountUp(peopleMsfit.id, 0, peopleMsfit.count, 0, 2.5, peopleMsfit);
@@ -148,7 +148,7 @@ if (document.getElementById("people-msfit") !== null) {
 //         useGrouping: true,
 //         separator: ',',
 //         decimal: '.',
-//         count: 5,
+//         count: 4,
 //         id: "publications-life"
 //     };
 //     var publicationsMsfitCount = new CountUp(publicationsMsfit.id, 0, publicationsMsfit.count, 0, 2.5, publicationsMsfit);
