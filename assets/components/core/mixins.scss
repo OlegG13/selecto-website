@@ -55,3 +55,10 @@
   //font-size: $size; //Fallback in px
   font-size: rem-calc($size);
 }
+@mixin img_retina($standard, $retina) {
+  padding-bottom: 20%;
+  background-image: url($standard);
+  @media (min-width: 1920px) {
+      background-image: url($retina);
+  }
+}
