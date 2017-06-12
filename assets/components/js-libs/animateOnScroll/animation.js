@@ -64,7 +64,7 @@
 
 
     var animationPhoto2 = new TimelineMax();
-    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {css: {backgroundPositionY: "50%"}}, {css: {backgroundPositionY: "0%"}}, '+=0.1');
+    animationPhoto2.fromTo($('.animate-block .animate-block__photo'), 1, {css: {backgroundPositionY: "100%"}}, {css: {backgroundPositionY: "50%"}}, '+=0.1');
 
     var animationPhotoObj = $('.animate-block');
 
@@ -84,7 +84,7 @@
     Array.prototype.forEach.call(animationPhotoObjTop, function (item, index) {
         var newAnimationPhotoSceneTop = new ScrollMagic.Scene({
             triggerElement: '.animate-block',
-            offset: -300,
+            offset: -700,
             triggerHook: 0,
             duration: "100%"
         }).setTween(animationPhoto2).addTo(controller);

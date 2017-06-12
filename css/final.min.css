@@ -963,6 +963,7 @@ body {
 
 .btn-transparent--black:hover {
   background: #101517;
+  border-color: #101517;
 }
 
 .btn-transparent--black:hover .btn-transparent__title {
@@ -1552,7 +1553,7 @@ body {
 .hero__container {
   text-align: center;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 0 20px;
   position: relative;
   display: block;
@@ -2886,7 +2887,7 @@ Cases page Components
 }
 
 .hero-cases--msfit-bot {
-  background-image: url("../img/msfit-big-photo.png");
+  background-image: url("../img/14fit_ban_2@1x.jpg");
 }
 
 .hero-cases--life {
@@ -3112,7 +3113,7 @@ Cases page Components
 }
 
 .masonry__item--lg {
-  flex-basis: 57.1%;
+  flex-basis: 58.3%;
 }
 
 @media (max-width: 480px) {
@@ -3122,7 +3123,7 @@ Cases page Components
 }
 
 .masonry__item--sm {
-  flex-basis: 39.8%;
+  flex-basis: 41%;
 }
 
 @media (max-width: 480px) {
@@ -3451,7 +3452,7 @@ Cases page Components
 
 .chess-list__title {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.375;
   margin-bottom: 25px;
 }
@@ -3631,7 +3632,7 @@ Cases page Components
 
 .development-net__title {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
 }
 

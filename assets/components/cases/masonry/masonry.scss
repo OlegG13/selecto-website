@@ -5,14 +5,16 @@
   &__item {
     &--lg {
       //flex-basis: 800px;
-      flex-basis: 57.1%;
+      //flex-basis: 57.1%;
+      flex-basis: 58.3%;
       @media (max-width: $screen-xs-max) {
         flex-basis: 100%;
       }
     }
     &--sm {
       //flex-basis: 558px;
-      flex-basis: 39.8%;
+      //flex-basis: 39.8%;
+      flex-basis: 41%;
       @media (max-width: $screen-xs-max) {
         flex-basis: 100%;
       }
