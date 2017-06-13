@@ -1,5 +1,36 @@
 .chess-list {
   padding-top: 57px;
+  &__frame{
+    width: 100%;
+    height: 600px;
+    &.essential{
+      background: url("../img/msfit_main@1x.png")no-repeat center center;
+      background-size: cover;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/msfit_main.png")no-repeat center center;
+        background-size: contain;
+      }
+    }
+    &.design{
+      background: url("../img/msfit_training@1x.png")no-repeat center center;
+      background-size: cover;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/msfit_training.png")no-repeat center center;
+        background-size: contain;
+      }
+    }
+    &.gamification{
+      background: url("../img/msfit_profile@1x.png")no-repeat center center;
+      background-size: cover;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/msfit_profile.png")no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
   &__item {
     display: flex;
     align-items: center;
@@ -33,6 +64,7 @@
         }
         @media (max-width: $screen-xs-max) {
           margin-left: 0;
+          width: 100%;
         }
       }
     }
@@ -69,6 +101,7 @@
         @media (max-width: $screen-xs-max) {
           margin-right: 0;
           order: 2;
+          width: 100%;
         }
       }
     }
