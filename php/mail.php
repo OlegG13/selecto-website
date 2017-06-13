@@ -27,8 +27,10 @@
         if (!empty($req['name'])) $name = $req['name'];
         if (!empty($req['email'])) $email = $req['email'];
         if (!empty($req['message'])) $message = $req['message'];
+        if (!empty($req['budget'])) $budget = $req['budget'];
+        if (!empty($req['company'])) $company = $req['company'];
 
-        $mes = "Имя: " .$name . "\nПочта: ".$email . "\nСообщение: ".$message;
+        $mes = "Имя: " .$name . "\nПочта: ".$email . "\nСообщение: ".$message."\n Бюджет ". $budget. "\n Компания: " . $company;
         $subject = 'Site message from - ' . $name;
 
 		$mail->Subject = $subject;

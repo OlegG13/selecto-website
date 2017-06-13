@@ -990,7 +990,7 @@ body {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-radius: 100px;
-  padding: 14px 32px;
+  padding: 14.5px 32px;
   font-size: 0;
   position: relative;
   z-index: 1;
@@ -1016,6 +1016,7 @@ body {
   background: #fff;
   transition: background-color 0.2s linear 0.2s, color 0.2s;
   cursor: pointer;
+  padding: 14.5px 32px;
 }
 
 .btn-cases:hover .btn-cases__name {
@@ -1139,6 +1140,46 @@ body {
   transform: rotate(180deg);
 }
 
+.slider__item.msfit-first {
+  width: auto;
+  height: 100%;
+  min-height: 600px;
+  background: url("../img/msfit_dash.png") no-repeat center center;
+  background-size: contain;
+}
+
+.slider__item.msfit-second {
+  width: auto;
+  height: 100%;
+  min-height: 600px;
+  background: url("../img/msfit_profile_ipad.png") no-repeat center center;
+  background-size: contain;
+}
+
+.slider__item.msfit-third {
+  width: auto;
+  height: 100%;
+  min-height: 600px;
+  background: url("../img/msfit_exercise.png") no-repeat center center;
+  background-size: contain;
+}
+
+.slider__item.life4me-first {
+  width: auto;
+  height: 100%;
+  min-height: 600px;
+  background: url("../img/lfm-interface-4.png") no-repeat center center;
+  background-size: contain;
+}
+
+.slider__item.life4me-second {
+  width: auto;
+  height: 100%;
+  min-height: 600px;
+  background: url("../img/lfm-interface-5.png") no-repeat center center;
+  background-size: contain;
+}
+
 .slick-dots {
   font-size: 0;
 }
@@ -1159,6 +1200,17 @@ body {
 
 .slick-dots > li.slick-active > button {
   background-color: #486cff;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+}
+
+@media (max-width: 640px) {
+  .slick-track {
+    max-height: 275px;
+  }
 }
 
 .select {
@@ -2878,13 +2930,27 @@ Cases page Components
 }
 
 .hero-cases--sprout {
-  background-image: url("../img/sprout-hero.jpg");
+  background-image: url("../img/sprout_ban1@1x.jpg");
   background-size: cover;
 }
 
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--sprout {
+    background-image: url("../img/sprout_ban1.jpg");
+    background-size: cover;
+  }
+}
+
 .hero-cases--sprout-bot {
-  background-image: url("../img/sprout-big-photo.jpg");
+  background-image: url("../img/sprout_ban_2@1x.jpg");
   background-size: cover;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--sprout-bot {
+    background-image: url("../img/sprout_ban_2.jpg");
+    background-size: cover;
+  }
 }
 
 .hero-cases--msfit {
@@ -2900,13 +2966,27 @@ Cases page Components
 }
 
 .hero-cases--msfit-bot {
-  background-image: url("../img/14fit_ban_2@1x.jpg");
+  background-image: url("../img/14fit_ban_2.jpg");
   background-size: cover;
 }
 
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--msfit-bot {
+    background-image: url("../img/14fit_ban_2.jpg");
+    background-size: cover;
+  }
+}
+
 .hero-cases--life {
-  background-image: url("../img/lfm-hero.png");
+  background-image: url("../img/lfm_ban_1@1x.jpg");
   background-size: cover;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .hero-cases--life {
+    background-image: url("../img/lfm_ban_1.jpg");
+    background-size: cover;
+  }
 }
 
 .hero-cases--lfm-bot {
@@ -2955,7 +3035,7 @@ Cases page Components
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 10px;
 }
 
 .case-article__desc--white {
@@ -3283,6 +3363,115 @@ Cases page Components
   }
 }
 
+.sprout__overview {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .sprout__overview {
+    flex-direction: column;
+  }
+}
+
+.sprout__overview-large-image {
+  box-sizing: border-box;
+  width: 57%;
+  height: 100%;
+  background: url("../img/sprout_1@1x.jpg") no-repeat center center;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .sprout__overview-large-image {
+    background: url("../img/sprout_1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sprout__overview-large-image {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sprout__overview-large-image {
+    height: 50%;
+  }
+}
+
+.sprout__overview-small-images-box {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sprout__overview-small-images-box > div:first-child {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .sprout__overview-small-images-box {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .sprout__overview-small-images-box > div:first-child {
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sprout__overview-small-images-box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sprout__overview-small-images-box > div:first-child {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.sprout__overview-small-image-top {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background: url("../img/sprout_2@1x.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .sprout__overview-small-image-top {
+    background: url("../img/sprout_2.jpg") no-repeat center center;
+    background-size: cover !important;
+  }
+}
+
+.sprout__overview-small-image-bottom {
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background: url("../img/sprout_3@1x.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .sprout__overview-small-image-bottom {
+    background: url("../img/sprout_3.jpg") no-repeat center center;
+    background-size: cover !important;
+  }
+}
+
 .design-proc {
   font-size: 0;
   margin-bottom: 18px;
@@ -3444,7 +3633,14 @@ Cases page Components
   max-height: 100%;
   padding-bottom: 60%;
   background-size: contain !important;
-  background: url("../img/lfm-wireframes.png") no-repeat center center;
+  background: url("../img/lfm_wireframes@1x.jpg") no-repeat center center;
+}
+
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .design-proc__photo.life4me {
+    background: url("../img/lfm_wireframes.jpg") no-repeat center center;
+    background-size: contain !important;
+  }
 }
 
 .design-proc__photo.sprout {
@@ -3452,12 +3648,12 @@ Cases page Components
   max-height: 100%;
   padding-bottom: 60%;
   background-size: contain !important;
-  background: url("../img/sprout-design-proc-2.jpg") no-repeat center center;
+  background: url("../img/sprout_wireframes@1x.jpg") no-repeat center center;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .design-proc__photo.sprout {
-    background: url("../img/sprout-design-proc-1.png") no-repeat center center;
+    background: url("../img/sprout_wireframes.jpg") no-repeat center center;
     background-size: contain !important;
   }
 }
@@ -3468,43 +3664,37 @@ Cases page Components
 
 .chess-list__frame {
   width: 100%;
-  height: 600px;
+  height: 675px;
 }
 
-.chess-list__frame.essential {
-  background: url("../img/msfit_main@1x.png") no-repeat center center;
+.chess-list__frame.msfit-first {
+  background: url("../img/msfit_main.png") no-repeat center center;
   background-size: cover;
 }
 
-@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .chess-list__frame.essential {
-    background: url("../img/msfit_main.png") no-repeat center center;
-    background-size: contain;
-  }
-}
-
-.chess-list__frame.design {
-  background: url("../img/msfit_training@1x.png") no-repeat center center;
+.chess-list__frame.msfit-second {
+  background: url("../img/msfit_training.png") no-repeat center center;
   background-size: cover;
 }
 
-@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .chess-list__frame.design {
-    background: url("../img/msfit_training.png") no-repeat center center;
-    background-size: contain;
-  }
-}
-
-.chess-list__frame.gamification {
-  background: url("../img/msfit_profile@1x.png") no-repeat center center;
+.chess-list__frame.msfit-third {
+  background: url("../img/msfit_profile.png") no-repeat center center;
   background-size: cover;
 }
 
-@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .chess-list__frame.gamification {
-    background: url("../img/msfit_profile.png") no-repeat center center;
-    background-size: contain;
-  }
+.chess-list__frame.sprout-first {
+  background: url("../img/sprout_map.png") no-repeat center center;
+  background-size: cover;
+}
+
+.chess-list__frame.sprout-second {
+  background: url("../img/sprout_account.png") no-repeat center center;
+  background-size: cover;
+}
+
+.chess-list__frame.sprout-third {
+  background: url("../img/sprout_rows.png") no-repeat center center;
+  background-size: cover;
 }
 
 .chess-list__item {
@@ -3722,7 +3912,7 @@ Cases page Components
 }
 
 .chess-list__footer-title--lime {
-  color: #10ad64;
+  color: #40CD8C;
 }
 
 .project-view {
@@ -4911,7 +5101,7 @@ Services page Components
   position: relative;
   display: block;
   width: 100%;
-  padding-bottom: 51%;
+  padding-bottom: 41%;
   background-size: 100%;
   background-repeat: no-repeat;
   max-height: 100%;
@@ -4947,12 +5137,23 @@ Services page Components
 }
 
 .services-hero__title {
-  font-range: 980px 1280px;
   font-weight: 500;
   line-height: 1.33333333;
   font-size: calc(1.9rem + 1.85 * ((100vw - 30rem) / 50));
   margin-bottom: 25px;
   opacity: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .services-hero__title {
+    font-size: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-hero__title {
+    font-size: 1.9rem;
+  }
 }
 
 .services-hero__desc {

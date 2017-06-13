@@ -50,6 +50,43 @@
       transform: rotate(180deg);
     }
   }
+  &__item{
+    &.msfit-first{
+      width: auto;
+      height: 100%;
+      min-height: 600px;
+      background: url("../img/msfit_dash.png")no-repeat center center;
+      background-size: contain;
+    }
+    &.msfit-second{
+      width: auto;
+      height: 100%;
+      min-height: 600px;
+      background: url("../img/msfit_profile_ipad.png")no-repeat center center;
+      background-size: contain;
+    }
+    &.msfit-third{
+      width: auto;
+      height: 100%;
+      min-height: 600px;
+      background: url("../img/msfit_exercise.png")no-repeat center center;
+      background-size: contain;
+    }
+    &.life4me-first{
+      width: auto;
+      height: 100%;
+      min-height: 600px;
+      background: url("../img/lfm-interface-4.png")no-repeat center center;
+      background-size: contain;
+    }
+    &.life4me-second{
+      width: auto;
+      height: 100%;
+      min-height: 600px;
+      background: url("../img/lfm-interface-5.png")no-repeat center center;
+      background-size: contain;
+    }
+  }
 }
 
 
@@ -69,5 +106,12 @@
   }
   & > li.slick-active > button {
     background-color: #486cff;
+  }
+}
+.slick-track {
+  display: flex!important;
+  align-items: center!important;
+  @media (max-width: 640px) {
+    max-height: 275px;
   }
 }

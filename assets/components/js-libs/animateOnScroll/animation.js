@@ -179,6 +179,30 @@
 
         });
     }
+
+    /* Gifs */
+    /* Video Life fot me */
+    var caseGif = document.querySelector('[data-gif]');
+    var imageUrl = "../../img/Big-logo_standart.gif";
+    if (caseGif) {
+        caseGif.style.opacity = "0.5";
+    }
+    var restartAnim = function () {
+        caseGif.style.opacity = "1";
+        caseGif.setAttribute("src", imageUrl);
+    };
+    if (caseGif !== null && typeof (caseGif) !== "undefined") {
+        var gifLifeForMe = new ScrollMagic.Scene({
+            triggerElement: caseGif,
+            triggerHook: 0.9,
+            offset: 0,
+            reverse: false
+        }).addTo(controller).on('start', function () {
+            restartAnim();
+        });
+    }
+
+
     //videoLife.addIndicators();
 
     /* Case hero */

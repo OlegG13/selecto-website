@@ -5,7 +5,7 @@
     position: relative;
     display: block;
     width: 100%;
-    padding-bottom: 51%;
+    padding-bottom: 41%;
     background-size: 100%;
     background-repeat: no-repeat;
     max-height: 100%;
@@ -37,10 +37,10 @@
     }
   }
   &__title {
-    font-range: 980px 1280px;
     font-weight: 500;
     line-height: 1.33333333;
-    font-size: calc(1.9rem + 1.85 * ((100vw - 30rem) / 50));
+    font-size: responsive 1.9rem 3.75rem;
+    font-range: 480px 1280px;
     margin-bottom: 25px;
     opacity: 1;
   }

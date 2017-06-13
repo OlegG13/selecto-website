@@ -121,17 +121,22 @@
       max-height: 100%;
       padding-bottom: 60%;
       background-size: contain!important;
-      background: url("../img/lfm-wireframes.png")no-repeat center center;
+      background: url("../img/lfm_wireframes@1x.jpg")no-repeat center center;
+      @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+        background: url("../img/lfm_wireframes.jpg")no-repeat center center;
+        background-size: contain!important;
+      }
     }
     &.sprout{
       width: 100%;
       max-height: 100%;
       padding-bottom: 60%;
       background-size: contain!important;
-      background: url("../img/sprout-design-proc-2.jpg")no-repeat center center;
+      background: url("../img/sprout_wireframes@1x.jpg")no-repeat center center;
       @media only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi) {
-        background: url("../img/sprout-design-proc-1.png")no-repeat center center;
+        background: url("../img/sprout_wireframes.jpg")no-repeat center center;
         background-size: contain!important;
       }
     }
