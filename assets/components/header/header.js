@@ -1,13 +1,12 @@
-// function resizeHeader () {
-//     var documentToTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-//     var header = document.getElementById("header");
-//     var headerHeight = header.getBoundingClientRect().height;
-//     var defaultHeight = header.getBoundingClientRect().height;
-//     if (documentToTop > 50) {
-//         console.log(headerHeight - 20);
-//         console.log(header.style.height);
-//     } else {
-//         console.log(defaultHeight);
-//     }
-// }
-// window.addEventListener("scroll", resizeHeader);
+var headerWrapper = document.getElementById("header");
+var newHeaderHeight = (headerWrapper.clientHeight - 20) + "px";
+var defaultHeaderHeight = headerWrapper.clientHeight + "px";
+function resizeHeader () {
+    var documentToTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    if (documentToTop > 50) {
+        headerWrapper.style.height = newHeaderHeight;
+    } else {
+        headerWrapper.style.height = defaultHeaderHeight;
+    }
+}
+window.addEventListener("scroll", resizeHeader);

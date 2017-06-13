@@ -18,6 +18,12 @@
     //background-color: $theme-main-color;
     background-color: #0F1315;
     overflow: hidden;
+    &.small-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: height .15s linear;
+    }
     &--white {
       background-color: #fff;
       //border-bottom: 1px solid $third-border-color;
@@ -61,6 +67,7 @@
     margin: 0 auto;
   }
   &__header {
+    width: 100%;
     color: #FFFFFF;
     position: relative;
     z-index: 2;
