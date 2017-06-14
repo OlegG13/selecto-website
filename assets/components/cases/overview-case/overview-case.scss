@@ -7,10 +7,10 @@
     padding: 63px 0 63px 0;
   }
   &__content {
-    //margin-top: 33px;
+    padding-top: 50px;
     margin-bottom: 120px;
     @media (max-width: $screen-md-max) {
-      margin-top: 16px;
+      padding-top: 16px;
       margin-bottom: 60px;
     }
     @media (max-width: $screen-sm-max) {

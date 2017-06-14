@@ -26,8 +26,10 @@
 .case-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
+  //padding-top: 25px;
   height: 0;
+  max-width: 1040px;
+  margin: 0 auto;
   & iframe {
     position: absolute;
     top: 0;

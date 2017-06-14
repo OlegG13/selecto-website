@@ -9,9 +9,6 @@
     position: relative;
     z-index: 2;
     background-color: #fff;
-    @media (max-width: $screen-sm-max) {
-      margin-bottom: 452px;
-    }
   }
   &__top {
     position: relative;

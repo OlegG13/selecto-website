@@ -6,13 +6,10 @@
   max-height: 100%;
   text-align: center;
 
-  //background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  //background-size: cover;
-  &--not-fixed {
-    background-attachment: inherit;
-  }
+  background-size: cover;
+
   &--about {
     background: url("../img/photos.jpg")no-repeat center bottom;
     background-size: contain;
@@ -26,6 +23,7 @@
 
   &--bottom {
     padding-bottom: 30%;
+    background-size: cover;
   }
   &--sprout {
     background-image: url("../img/sprout_ban1@1x.jpg");
@@ -33,12 +31,10 @@
     @media  only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi) {
       background-image: url("../img/sprout_ban1.jpg");
-      background-size: cover;
     }
   }
   &--sprout-bot {
     background-image: url("../img/sprout_ban_2@1x.jpg");
-    background-size: cover;
     @media  only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi) {
       background-image: url("../img/sprout_ban_2.jpg");
@@ -75,7 +71,11 @@
   }
   &--lfm-bot {
     padding-bottom: 26%;
-    background-image: url("../img/lfm-hero-bot.png");
+    background-image: url("../img/lfm_ban_2.jpg");
+    @media (max-width: $screen-xxl-max) {
+      background-image: url("../img/lfm_ban_2@1x.jpg");
+    }
+
   }
   &__img {
     display: inline-block !important;

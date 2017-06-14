@@ -1,62 +1,81 @@
 .chess-list {
-  padding-top: 57px;
+  //padding-top: 57px;
+
   &__frame{
+
+    position: relative;
+    display: block;
     width: 100%;
-    height: 675px;
-    &.msfit-first{
-      background: url("../img/msfit_main.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/msfit_main.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+    max-height: 100%;
+    text-align: center;
+    padding-bottom: 198%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &--life-1 {
+      background-image: url("../img/lfm_map.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/lfm_map@1x.png");
+      }
     }
-    &.msfit-second{
-      background: url("../img/msfit_training.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/msfit_training.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+
+    &--life-2 {
+      background-image: url("../img/lfm_profile.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/lfm_profile@1x.png");
+      }
     }
-    &.msfit-third{
-      background: url("../img/msfit_profile.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/msfit_profile.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+
+    &--life-3 {
+      background-image: url("../img/lfm_tests.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/lfm_tests@1x.png");
+      }
     }
-    &.sprout-first{
-      background: url("../img/sprout_map.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/sprout_map.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+
+    &--msfit-1 {
+      background-image: url("../img/msfit_main.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/msfit_main@1x.png");
+      }
     }
-    &.sprout-second{
-      background: url("../img/sprout_account.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/sprout_account.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+
+    &--msfit-2 {
+      background-image: url("../img/msfit_profile.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/msfit_profile@1x.png");
+      }
     }
-    &.sprout-third{
-      background: url("../img/sprout_rows.png")no-repeat center center;
-      background-size: cover;
-      //@media only screen and (min-device-pixel-ratio: 2),
-      //only screen and (min-resolution: 192dpi) {
-      //  background: url("../img/sprout_rows.png")no-repeat center center;
-      //  background-size: contain;
-      //}
+
+    &--msfit-3 {
+      background-image: url("../img/msfit_training.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/msfit_training@1x.png");
+      }
     }
+
+    &--sprout-1 {
+      background-image: url("../img/sprout_account.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/sprout_account@1x.png");
+      }
+    }
+
+    &--sprout-2 {
+      background-image: url("../img/sprout_map.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/sprout_map@1x.png");
+      }
+    }
+
+    &--sprout-3 {
+      background-image: url("../img/sprout_rows.png");
+      @media (max-width: $screen-xxl-max) {
+        background-image: url("../img/sprout_rows@1x.png");
+      }
+    }
+
   }
   &__item {
     display: flex;
