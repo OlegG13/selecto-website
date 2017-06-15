@@ -759,6 +759,71 @@ body {
   overflow: hidden;
 }
 
+.page__privacy {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.page__privacy--wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 3rem auto;
+  box-sizing: border-box;
+  padding: 0 1rem 0 1rem;
+}
+
+.page__privacy--wrapper.terms {
+  margin: 2rem auto;
+}
+
+.page__privacy--text {
+  box-sizing: border-box;
+  color: #616f75;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .page__privacy--text {
+    text-align: center;
+    font-size: .9rem;
+  }
+}
+
+.page__privacy--title {
+  align-self: center;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page__privacy--title.main {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .page__privacy--title.main {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page__privacy--title {
+    font-size: 1.5rem;
+  }
+}
+
 @keyframes imageAnimation {
   0% {
     opacity: 0;
@@ -782,6 +847,10 @@ body {
   to {
     opacity: 0;
   }
+}
+
+.required_field {
+  color: red;
 }
 
 .btn,
@@ -2334,8 +2403,8 @@ Main page Components
 .technology-list__item {
   text-align: center;
   padding: 0 20px;
-  flex-basis: 200px;
-  max-width: 200px;
+  flex-basis: 275px;
+  max-width: 275px;
 }
 
 .technology-list__title {
@@ -4411,6 +4480,10 @@ Cases page Components
   margin-bottom: 100px;
 }
 
+.cases-list__photo {
+  width: 100%;
+}
+
 @media (min-width: 769px) {
   .cases-list__photo {
     flex-basis: 682px;
@@ -4506,43 +4579,50 @@ Cases page Components
 
 .cases-list__img {
   width: 100%;
-  min-height: 600px;
+  max-height: 100%;
 }
 
 .cases-list__img.pict--fit {
-  background-size: contain;
+  padding-bottom: 65%;
+  background-size: cover !important;
   background: url("../img/ms_fit.png") no-repeat center center;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .cases-list__img.pict--fit {
     background: url("../img/ms_fit@1x.png") no-repeat center center;
-    background-size: contain;
+    background-size: cover !important;
   }
 }
 
 .cases-list__img.pict--lfm {
-  background-size: contain;
+  padding-bottom: 65%;
+  background-size: cover !important;
   background: url("../img/lfm.png") no-repeat center center;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .cases-list__img.pict--lfm {
     background: url("../img/lfm@1x.png") no-repeat center center;
-    background-size: contain;
+    background-size: cover !important;
   }
 }
 
 .cases-list__img.pict--sprout {
-  background-size: contain;
+  padding-bottom: 90%;
+  background-size: cover !important;
   background: url("../img/sprout.png") no-repeat center center;
 }
 
 @media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .cases-list__img.pict--sprout {
     background: url("../img/sprout@1x.png") no-repeat center center;
-    background-size: contain;
+    background-size: cover !important;
   }
+}
+
+.cases-list__frame {
+  width: 100%;
 }
 
 .cases-tags {

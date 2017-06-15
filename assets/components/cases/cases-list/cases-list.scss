@@ -76,6 +76,7 @@
     }
   }
   &__photo {
+    width: 100%;
     @media (min-width: $screen-sm-min) {
       flex-basis: 682px;
     }
@@ -138,33 +139,42 @@
   }
   &__img {
     width: 100%;
-    min-height: 600px;
+    max-height: 100%;
+    //@media screen and (max-width: 1100px){
+    //  padding-bottom: 65%;
+    //}
     &.pict--fit {
-      background-size: contain;
+      padding-bottom: 65%;
+      background-size: cover!important;
       background: url("../img/ms_fit.png")no-repeat center center;
       @media only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi) {
         background: url("../img/ms_fit@1x.png")no-repeat center center;
-        background-size: contain;
+        background-size: cover!important;
       }
     }
     &.pict--lfm {
-      background-size: contain;
+      padding-bottom: 65%;
+      background-size: cover!important;
       background: url("../img/lfm.png")no-repeat center center;
       @media only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi) {
         background: url("../img/lfm@1x.png")no-repeat center center;
-        background-size: contain;
+        background-size: cover!important;
       }
     }
     &.pict--sprout {
-      background-size: contain;
+      padding-bottom: 90%;
+      background-size: cover!important;
       background: url("../img/sprout.png")no-repeat center center;
       @media only screen and (min-device-pixel-ratio: 2),
       only screen and (min-resolution: 192dpi) {
         background: url("../img/sprout@1x.png")no-repeat center center;
-        background-size: contain;
+        background-size: cover!important;
       }
     }
+  }
+  &__frame{
+    width: 100%;
   }
 }

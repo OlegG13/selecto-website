@@ -49,6 +49,7 @@ function sendMail($form) {
 (function (dom) {
     var rules_contact = {
         name: "required",
+        message: "required",
         email: {
             required: true,
             email: true

@@ -63,7 +63,7 @@ if (document.getElementById("joined-life") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 14,
+        count: 200,
         id: "joined-life"
     };
     var joinedLifeCount = new CountUp(joinedLife.id, 0, joinedLife.count, 0, 2.5, joinedLife);
@@ -75,7 +75,7 @@ if (document.getElementById("platforms-life") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 58,
+        count: 3,
         id: "platforms-life"
     };
     var platformsLifeCount = new CountUp(platformsLife.id, 0, platformsLife.count, 0, 2.5, platformsLife);
@@ -87,7 +87,7 @@ if (document.getElementById("people-life") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 3,
+        count: 1,
         id: "people-life"
     };
     var peopleLifeCount = new CountUp(peopleLife.id, 0, peopleLife.count, 0, 2.5, peopleLife);
@@ -99,7 +99,7 @@ if (document.getElementById("publications-life") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 156,
+        count: 7,
         id: "publications-life"
     };
     var publicationsLifeCount = new CountUp(publicationsLife.id, 0, publicationsLife.count, 0, 2.5, publicationsLife);
@@ -136,7 +136,7 @@ if (document.getElementById("people-msfit") !== null) {
         useGrouping: true,
         separator: ',',
         decimal: '.',
-        count: 4,
+        count: 6,
         id: "people-msfit"
     };
     var peopleMsfitCount = new CountUp(peopleMsfit.id, 0, peopleMsfit.count, 0, 2.5, peopleMsfit);

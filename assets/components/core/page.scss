@@ -329,6 +329,56 @@
   &__photo {
     overflow: hidden;
   }
+  &__privacy{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    &--wrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      max-width: 1000px;
+      margin: 3rem auto;
+      box-sizing: border-box;
+      padding: 0 1rem 0 1rem;
+      &.terms{
+        margin: 2rem auto;
+      }
+    }
+    &--text{
+      box-sizing: border-box;
+      color: #616f75;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      @media screen and (max-width: 800px){
+        text-align: center;
+        font-size: .9rem;
+      }
+    }
+    &--title{
+      align-self: center;
+      box-sizing: border-box;
+      color: #000000;
+      font-weight: 400;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      &.main{
+        font-size: 2.8rem;
+        font-weight: 500;
+        @media screen and (max-width: 800px){
+          font-size: 2.3rem;
+        }
+      }
+      @media screen and (max-width: 800px){
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 @keyframes imageAnimation {
@@ -354,4 +404,7 @@
   to {
     opacity: 0
   }
+}
+.required_field{
+  color: red;
 }
