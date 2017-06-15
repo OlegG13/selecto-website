@@ -124,51 +124,83 @@
                         </h2>
                     </div>
                     <div class="single-page__container">
-                        <form action="#" class="popup__content__form js-popup__content__form">
-                            <div class="popup__content--flex">
-                                <div class="field__box">
-                                    <input id="name" name="name" class="material__field" type="text" >
-                                    <label for="name" class="material__label">Your name</label>
-                                </div>
-                                <div class="field__box">
-                                    <input id="email" name="email" class="material__field" type="text">
-                                    <label for="email" class="material__label">Email address</label>
-                                </div>
-                                <div class="field__box">
-                                    <input id="company" name="company" class="material__field" type="text">
-                                    <label for="name" class="material__label">Company</label>
-                                </div>
-                                <div class="field__box">
-                                    <!--<input id="budget" name="budget" class="material__field" type="text">-->
-                                    <div class="select">
-                                        <input type="text" class="select__input" value="0" name="budget" id="budget">
-                                        <div class="select__title">
-                                            <span>Budget (optional)</span>
+                        <div class="form-contact">
+                            <form action="#" class="popup__content__form js-popup__content__form">
+                                <div class="popup__content--flex">
+                                    <div class="field__box">
+                                        <input id="name" name="name" class="material__field" type="text" >
+                                        <label for="name" class="material__label">Your name</label>
+                                    </div>
+                                    <div class="field__box">
+                                        <input id="email" name="email" class="material__field" type="text">
+                                        <label for="email" class="material__label">Email address</label>
+                                    </div>
+                                    <div class="field__box">
+                                        <input id="company" name="company" class="material__field" type="text">
+                                        <label for="name" class="material__label">Company</label>
+                                    </div>
+                                    <div class="field__box">
+                                        <!--<input id="budget" name="budget" class="material__field" type="text">-->
+                                        <div class="select">
+                                            <input type="text" class="select__input" value="0" name="budget" id="budget">
+                                            <div class="select__title">
+                                                <span>Budget (optional)</span>
+                                            </div>
+                                            <ul class="select__drop">
+                                                <li class="select__item" data-select-val="1">
+                                                    up to $15'000
+                                                </li>
+                                                <li class="select__item" data-select-val="2">
+                                                    $15'000 to $40'000
+                                                </li>
+                                                <li class="select__item" data-select-val="3">
+                                                    more then $40'000
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="select__drop">
-                                           <li class="select__item" data-select-val="1">
-                                               up to $15'000
-                                           </li>
-                                            <li class="select__item" data-select-val="2">
-                                                $15'000 to $40'000
-                                            </li>
-                                            <li class="select__item" data-select-val="3">
-                                                more then $40'000
-                                            </li>
-                                        </ul>
+                                    </div>
+                                    <div class="field__box field__box--full">
+                                        <textarea id="message" data-adaptheight class="material__field" name="message" rows="3" cols="40"></textarea>
+                                        <label id="message__label" for="message" class="material__label">Message or question</label>
+                                    </div>
+                                    <div class="field__btn">
+                                        <button type="submit" class="btn-main">
+                                            <span class="btn-main__title">Send message</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="field__box field__box--full">
-                                    <textarea id="message" data-adaptheight class="material__field" name="message" rows="3" cols="40"></textarea>
-                                    <label id="message__label" for="message" class="material__label">Message or question</label>
-                                </div>
-                                <div class="field__btn">
-                                    <button type="submit" class="btn-main">
-                                        <span class="btn-main__title">Send message</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+
+
+                            <!--<div class="form-contact__success">-->
+                                <!--<div class="success">-->
+                                    <!--<div class="success__top">-->
+                                        <!--<i class="success__icon">-->
+                                            <!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="52" height="48" viewBox="0 0 52 48"><path id="SvgjsPath1007" d="M937 426C937 412.74517 947.74517 402 961 402C968.78747 402 975.70865 405.709 980.0934 411.45685L978.37456 413.17569C974.4368999999999 408.19563 968.34164 404.99998999999997 961.5 404.99998999999997C949.62588 404.99998999999997 940 414.62586999999996 940 426.49998999999997C940 438.37411 949.62588 447.99998999999997 961.5 447.99998999999997C973.37412 447.99998999999997 983 438.37411 983 426.49998999999997C983 424.08113999999995 982.60056 421.75559 981.86404 419.5857L983.5858000000001 417.86393999999996C984.5011400000001 420.40451999999993 985.0000000000001 423.14399999999995 985.0000000000001 425.99998999999997C985.0000000000001 439.25482 974.2548300000001 449.99998999999997 961.0000000000001 449.99998999999997C947.7451700000001 449.99998999999997 937.0000000000001 439.25482 937.0000000000001 425.99998999999997ZM988.19 410.3L960.6400000000001 437.85L945.19 422.39000000000004L947.4300000000001 420.15000000000003L960.6400000000001 433.36L985.95 408.06Z " fill-opacity="1" transform="matrix(1,0,0,1,-937,-402)"></path></svg>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="success__title">-->
+                                        <!--Your message was sent-->
+                                    <!--</div>-->
+                                    <!--<div class="success__info">-->
+                                        <!--Thank you for contacting us, we will answer you as soon as possible-->
+                                    <!--</div>-->
+                                    <!--<div class="success__bottom">-->
+                                        <!--<a class="btn-transparent btn-transparent&#45;&#45;black" href="../">-->
+                                            <!--<span class="btn-transparent__title btn-transparent__title&#45;&#45;black">-->
+                                                <!--Back to Homepage-->
+                                            <!--</span>-->
+                                        <!--</a>-->
+                                    <!--</div>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -180,11 +212,11 @@
                 <div class="contact-information">
                     <div class="contact-information__item">
                         <div class="contact-information__title">
-                            Say hello
+                            Career
                         </div>
                         <ul class="contact-information__list">
                             <li class="contact-information__info">
-                                <a href="mailto:info@selectoglobal.com" class="contact-information__link">info@selectoglobal.com</a>
+                                <a href="mailto:hr@selectoglobal.com" class="contact-information__link">hr@selectoglobal.com</a>
                             </li>
                         </ul>
                     </div>
@@ -206,11 +238,11 @@
                     </div>
                     <div class="contact-information__item">
                         <div class="contact-information__title">
-                            Career
+                            Say hello
                         </div>
                         <ul class="contact-information__list">
                             <li class="contact-information__info">
-                                <a href="mailto:hr@selectoglobal.com" class="contact-information__link">hr@selectoglobal.com</a>
+                                <a href="mailto:info@selectoglobal.com" class="contact-information__link">info@selectoglobal.com</a>
                             </li>
                         </ul>
                     </div>

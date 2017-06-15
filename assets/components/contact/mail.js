@@ -27,9 +27,10 @@ function sendMail($form) {
 
                 app.dom.$alert.html('Success');
 
-                setTimeout(() => {
-                    TweenMax.to(app.dom.$alert, 0.3, {y: '-100%', opacity: 0});
-                }, 3000);
+                // setTimeout(() => {
+                //     TweenMax.to(app.dom.$alert, 0.3, {y: '-100%', opacity: 0});
+                // }, 3000);
+
             } else {
             TweenMax.fromTo(app.dom.$alert, 0.3, {
                 display: 'none',
