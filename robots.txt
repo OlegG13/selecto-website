@@ -1,3 +1,3 @@
 User-agent: *
-
-Host: http://selectoglobal.com/
+Sitemap: https://selectoglobal.com/sitemap.xml
+Host: https://selectoglobal.com
