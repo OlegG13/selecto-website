@@ -37,7 +37,7 @@ gulp.task('default', ['watch']);
 
 /* Call at first start, after changes in bower.json or in gulp.js */
 gulp.task('build', function (cb) {
-  runSequence('svg', 'font', 'img', 'sprite', 'cssbuild', 'libs', 'jsbuild', 'rucksack', cb);
+  runSequence('font', 'img', 'sprite', 'cssbuild', 'libs', 'jsbuild', 'rucksack', cb);
 });
 
 
