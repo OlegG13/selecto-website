@@ -13,7 +13,7 @@ RewriteRule ^(.*)index\.(php|html|htm)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # redirects
 Redirect 301 /index-new.html /
-Redirect 301 /pages/tempate.html /
+Redirect 301 /pages/template.html /
 # end redirects
 
 # 404
