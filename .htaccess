@@ -1,14 +1,20 @@
 Options +FollowSymLinks
 Options -Indexes
 
+# http -> https
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# index.(php|html|htm) redirect to main
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/ 
 RewriteRule ^(.*)index\.(php|html|htm)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
+# redirects
 Redirect 301 /index-new.html /
+Redirect 301 /pages/tempate.html /
+# end redirects
 
+# 404
 ErrorDocument 404 https://%{HTTP_HOST}/404.php
