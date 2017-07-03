@@ -1,5 +1,6 @@
 ;(function () {
 
+
     var sliders = $('[data-slider="review"]');
 
     sliders.each(function () {
