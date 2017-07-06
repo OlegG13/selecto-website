@@ -5940,7 +5940,17 @@ Mobile responsive
 --------------------------------------------------
 */
 
+.visible-only-mobile {
+  display: none !important;
+}
+
 @media screen and (max-width: 1024px) {
+  /*
+--------------------------------------------------
+  WORK PAGE
+--------------------------------------------------
+*/
+
   .cases-list__title {
     text-align: left;
     font-size: 2rem;
@@ -6011,6 +6021,289 @@ Mobile responsive
     order: 2;
   }
 
+  .header-mobile {
+    transition: all 0.4s ease !important;
+  }
+
+  .header-mobile.nav-up {
+    transform: translateY(-100%);
+  }
+
+  .header-mobile .header__container--white {
+    padding: 12px 0;
+  }
+
+  .header-mobile + .case-container {
+    padding-top: 50px;
+  }
+
+  .page__header {
+    width: 100% !important;
+  }
+
+  .page__header--menu-open {
+    top: 5px;
+  }
+
+  .page__header--menu-open #Selecto-logo {
+    fill: #fff;
+  }
+
+  /*
+--------------------------------------------------
+  SPROUT
+--------------------------------------------------
+*/
+
+  .main-article {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-article__title {
+    color: #101517;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+
+  .main-article__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  .hero-cases--sprout {
+    height: 632px;
+    background-size: 165%;
+    background-position: 50% 30% !important;
+  }
+
+  .case-article__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+
+  .case-article__desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .overview-case {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .overview-case__content {
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .case-prop__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0;
+    margin-bottom: 8px;
+    order: 2;
+  }
+
+  .case-prop__item:nth-child(2) {
+    order: 3;
+  }
+
+  .case-prop__name {
+    padding-left: 25px;
+    font-weight: 300;
+  }
+
+  .case-prop__value {
+    max-width: 55%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .sprout__overview {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .sprout__overview-large-image {
+    margin-right: 8px;
+  }
+
+  .sprout__overview-large-image,
+  .sprout__overview-small-images-box {
+    height: 200px;
+  }
+
+  .sprout__overview-large-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .sprout__overview-small-images-box {
+    width: 136px;
+  }
+
+  .sprout__overview-small-images-box > div {
+    overflow: hidden;
+  }
+
+  .sprout__overview-small-images-box > div:first-child {
+    margin-bottom: 8px;
+  }
+
+  .page__section--ui-design.page__section--grey {
+    padding-top: 56px;
+  }
+
+  .page__section--ui-design {
+    padding-bottom: 40px;
+  }
+
+  .interface-slide-sprout {
+    font-size: 14px !important;
+    padding-bottom: 20px;
+  }
+
+  .interface-slide-sprout__img {
+    max-width: 190px;
+    width: 100%;
+    margin: 0 auto;
+    height: 376px;
+    background-size: contain;
+  }
+
+  .interface-slide-sprout__title {
+    color: #101517;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+
+  .interface-slide-sprout__text {
+    color: #101517;
+    font-size: 8px !important;
+    font-weight: 300;
+    line-height: 16px;
+  }
+
+  .mobile-slider--sprout {
+    background-color: #f5f5f5;
+  }
+
+  .mobile-slider--sprout .slider__arrow {
+    top: 25%;
+  }
+
+  .mobile-slider--sprout .slick-dots {
+    display: none !important;
+  }
+
+  .page__section--landing,
+  .page__section--development {
+    padding-top: 56px;
+  }
+
+  .page__section--development .case-article__desc {
+    margin-bottom: 0;
+  }
+
+  .page__section--photo {
+    min-height: 160px;
+  }
+
+  .page__section--photo .hero-cases--bottom {
+    height: 100%;
+    padding-bottom: 44%;
+  }
+
+  .page__section--review {
+    padding-top: 56px;
+  }
+
+  .page__section--review .review__head {
+    margin-bottom: 24px;
+  }
+
+  .page__section--review .review__footer {
+    margin-bottom: 0;
+  }
+
+  .page__section--result {
+    padding-top: 56px;
+  }
+
+  .page__section--result .count-up__list {
+    display: flex;
+  }
+
+  .page__section--result .count-up__item {
+    flex: 1 1;
+  }
+
+  .page__section--result .count-up__number {
+    letter-spacing: 1px;
+  }
+
+  .page__section--result .count-up__ico {
+    margin: 0;
+  }
+
+  .page__section--result .count-up__name {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .page__section--result .count-up__number {
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: -1px;
+  }
+
+  .page__section--result .case-article__footer {
+    margin-top: 40px;
+  }
+
+  /*
+  --------------------------------------------------
+    COMMON STYLE
+  --------------------------------------------------
+  */
+
+  br {
+    display: none;
+  }
+
+  .page__container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .visible-only-mobile {
+    display: block !important;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .font-size-none {
+    font-size: 0;
+  }
+
   .offset-bottom--lg {
     margin-bottom: 56px;
   }
@@ -6042,24 +6335,16 @@ Mobile responsive
   .offset-top--xs {
     margin-top: 16px;
   }
+}
 
-  .hidden-if-mobile {
-    display: none;
+@media screen and (max-width: 600px) {
+  .hero-cases--sprout {
+    height: 432px;
+    background-size: 315%;
+    background-position: 50% 30% !important;
   }
+}
 
-  .header-mobile {
-    transition: all 0.4s ease !important;
-  }
-
-  .header-mobile.nav-up {
-    transform: translateY(-100%);
-  }
-
-  .header-mobile .header__container--white {
-    padding: 12px 0;
-  }
-
-  .header-mobile + .case-container {
-    padding-top: 50px;
-  }
+.hidden-if-mobile {
+  display: none !important;
 }
