@@ -6307,6 +6307,18 @@ Mobile responsive
     transform: scale(1.4);
   }
 
+  .case-article__content .slider__arrow {
+    display: none;
+  }
+
+  .case-article__content .slider__inner {
+    padding: 0;
+  }
+
+  .case-article__content .slider__item--bg {
+    padding-bottom: 70%;
+  }
+
   /*
   --------------------------------------------------
     COMMON STYLE

@@ -405,6 +405,18 @@
   .footer-soc__list {
     transform: scale(1.4);
   }
+
+  .case-article__content {
+    .slider__arrow {
+      display: none;
+    }
+    .slider__inner {
+      padding: 0;
+    }
+    .slider__item--bg {
+      padding-bottom: 70%;
+    }
+  }
     /*
   --------------------------------------------------
     COMMON STYLE
