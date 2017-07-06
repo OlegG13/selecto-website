@@ -1,0 +1,112 @@
+@media screen and (max-width: 1024px) {
+  //============================================================
+  //====================CASES
+  //============================================================
+  .cases-list {
+    &__title {
+      text-align: left;
+    }
+    &__info {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+    &__item {
+      padding-bottom: 56px;
+    }
+    &__desc {
+      margin-bottom: 0;
+    }
+  }
+
+  .cases-tags {
+    &__link {
+      font-size: 0.75rem;
+      padding: 4px 20px;
+    }
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .cases-list {
+    &__item {
+      &:nth-child(2n+2) {
+        .cases-list {
+          &__photo {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  //============================================================
+  //====================OFFSETS
+  //============================================================
+  .offset-bottom {
+    &--lg {
+      margin-bottom: 56px;
+    }
+
+    &--md {
+      margin-bottom: 40px;
+    }
+
+    &--sm {
+      margin-bottom: 24px;
+    }
+
+    &--xs {
+      margin-bottom: 16px;
+    }
+  }
+
+  .offset-top {
+    &--lg {
+      margin-top: 56px;
+    }
+
+    &--md {
+      margin-top: 40px;
+    }
+
+    &--sm {
+      margin-top: 24px;
+    }
+
+    &--xs {
+      margin-top: 16px;
+    }
+  }
+
+  .hidden-if-mobile {
+    display: none;
+  }
+
+  //============================================================
+  //==================== HEADER
+  //============================================================
+  .header-mobile {
+    transition: all 0.4s ease !important;
+    &.nav-down {
+
+    }
+
+    &.nav-up {
+      transform: translateY(-100%);
+    }
+
+    .header__container--white {
+      padding: 12px 0;
+    }
+
+    + .case-container {
+      padding-top: 50px;
+    }
+  }
+
+
+
+}

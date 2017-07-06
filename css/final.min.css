@@ -4400,6 +4400,12 @@ Cases page Components
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .cases-list__item {
+    padding-top: 56px;
+  }
+}
+
 @media (max-width: 768px) {
   .cases-list__item {
     flex-direction: column;
@@ -5926,4 +5932,96 @@ About Us page Components
   opacity: 0;
   transition: all 0.2s ease-in-out 0.1s;
   vertical-align: middle;
+}
+
+/*
+--------------------------------------------------
+Mobile responsive
+--------------------------------------------------
+*/
+
+@media screen and (max-width: 1024px) {
+  .cases-list__title {
+    text-align: left;
+  }
+
+  .cases-list__info {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .cases-list__item {
+    padding-bottom: 56px;
+  }
+
+  .cases-list__desc {
+    margin-bottom: 0;
+  }
+
+  .cases-tags__link {
+    font-size: 0.75rem;
+    padding: 4px 20px;
+  }
+
+  .cases-tags__item {
+    margin-bottom: 0;
+  }
+
+  .cases-list__item:nth-child(2n+2) .cases-list__photo {
+    margin-bottom: 8px;
+  }
+
+  .offset-bottom--lg {
+    margin-bottom: 56px;
+  }
+
+  .offset-bottom--md {
+    margin-bottom: 40px;
+  }
+
+  .offset-bottom--sm {
+    margin-bottom: 24px;
+  }
+
+  .offset-bottom--xs {
+    margin-bottom: 16px;
+  }
+
+  .offset-top--lg {
+    margin-top: 56px;
+  }
+
+  .offset-top--md {
+    margin-top: 40px;
+  }
+
+  .offset-top--sm {
+    margin-top: 24px;
+  }
+
+  .offset-top--xs {
+    margin-top: 16px;
+  }
+
+  .hidden-if-mobile {
+    display: none;
+  }
+
+  .header-mobile {
+    transition: all 0.4s ease !important;
+  }
+
+  .header-mobile.nav-up {
+    transform: translateY(-100%);
+  }
+
+  .header-mobile .header__container--white {
+    padding: 12px 0;
+  }
+
+  .header-mobile + .case-container {
+    padding-top: 50px;
+  }
 }
