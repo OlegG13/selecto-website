@@ -183,6 +183,7 @@
       font-weight: 600;
       line-height: 48px;
       margin-bottom: 24px;
+      letter-spacing: -1px;
     }
 
     &__desc {
@@ -293,7 +294,7 @@
 
     &__title {
       color: #101517;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 32px;
       margin-top: 24px;
@@ -397,6 +398,13 @@
     background-position: 100% !important;
   }
 
+  .slick-track {
+    margin: 0 auto;
+  }
+
+  .footer-soc__list {
+    transform: scale(1.4);
+  }
     /*
   --------------------------------------------------
     COMMON STYLE

@@ -1035,7 +1035,7 @@ body {
 
 .btn-transparent--black:hover {
   background: #101517;
-  border-color: #101517;
+  border-color: #101517 !important;
 }
 
 .btn-transparent--black:hover .btn-transparent__title {
@@ -1137,6 +1137,10 @@ body {
 .cases-list__item--sprout .btn-cases:hover .btn-cases_icon {
   color: #799c0a;
   fill: #799c0a;
+}
+
+.btn-transparent.btn-transparent--black:hover {
+  border-color: #838586;
 }
 
 .slider {
@@ -6087,6 +6091,7 @@ Mobile responsive
     font-weight: 600;
     line-height: 48px;
     margin-bottom: 24px;
+    letter-spacing: -1px;
   }
 
   .case-article__desc {
@@ -6195,7 +6200,7 @@ Mobile responsive
 
   .interface-slide-sprout__title {
     color: #101517;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 32px;
     margin-top: 24px;
@@ -6292,6 +6297,14 @@ Mobile responsive
 
   .hero-cases.hero-cases--lfm-bot {
     background-position: 100% !important;
+  }
+
+  .slick-track {
+    margin: 0 auto;
+  }
+
+  .footer-soc__list {
+    transform: scale(1.4);
   }
 
   /*

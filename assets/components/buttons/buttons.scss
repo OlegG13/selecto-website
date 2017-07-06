@@ -153,7 +153,7 @@
   &--black {
     &:hover {
       background: #101517;
-      border-color: #101517;
+      border-color: #101517 !important;
       & .btn-transparent__title {
         color: #fff;
       }
@@ -251,4 +251,8 @@
 .cases-list__item--sprout .btn-cases:hover .btn-cases__name, .cases-list__item--sprout .btn-cases:hover .btn-cases_icon {
   color: $sprout;
   fill: $sprout;
+}
+
+.btn-transparent.btn-transparent--black:hover {
+  border-color: #838586;
 }
