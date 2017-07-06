@@ -5943,12 +5943,15 @@ Mobile responsive
 @media screen and (max-width: 1024px) {
   .cases-list__title {
     text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 48px;
   }
 
   .cases-list__info {
     font-size: 0.875rem;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 24px;
     margin-bottom: 0;
   }
 
@@ -5960,6 +5963,18 @@ Mobile responsive
     margin-bottom: 0;
   }
 
+  .cases-list__photo {
+    width: 80%;
+  }
+
+  .cases-list__item:nth-child(2) .cases-list__photo {
+    margin-bottom: 8px;
+  }
+
+  .cases-list__item:nth-child(2n+2) .cases-list__photo {
+    margin-bottom: 8px;
+  }
+
   .cases-tags__link {
     font-size: 0.75rem;
     padding: 4px 20px;
@@ -5969,8 +5984,31 @@ Mobile responsive
     margin-bottom: 0;
   }
 
-  .cases-list__item:nth-child(2n+2) .cases-list__photo {
-    margin-bottom: 8px;
+  .action-project {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .action-project__name {
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 1px;
+  }
+
+  .action-project__arrow {
+    display: none;
+  }
+
+  .footer__item--cr {
+    font-size: 14px;
+    margin-bottom: 0;
+    order: 3;
+  }
+
+  .footer__item--soc {
+    order: 2;
   }
 
   .offset-bottom--lg {

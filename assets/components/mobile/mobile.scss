@@ -5,11 +5,14 @@
   .cases-list {
     &__title {
       text-align: left;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 48px;
     }
     &__info {
       font-size: 0.875rem;
       font-weight: 300;
-      line-height: 1.5;
+      line-height: 24px;
       margin-bottom: 0;
     }
     &__item {
@@ -17,6 +20,25 @@
     }
     &__desc {
       margin-bottom: 0;
+    }
+    &__photo {
+      width: 80%;
+    }
+    &__item {
+      &:nth-child(2) {
+        .cases-list {
+          &__photo {
+            margin-bottom: 8px;
+          }
+        }
+      }
+      &:nth-child(2n+2) {
+        .cases-list {
+          &__photo {
+            margin-bottom: 8px;
+          }
+        }
+      }
     }
   }
 
@@ -30,14 +52,34 @@
     }
   }
 
-  .cases-list {
+
+  //============================================================
+  //==================== FOOTER
+  //============================================================
+  .action-project {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    &__name {
+      color: #f5f5f5;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: 1px;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+
+  .footer {
     &__item {
-      &:nth-child(2n+2) {
-        .cases-list {
-          &__photo {
-            margin-bottom: 8px;
-          }
-        }
+      &--cr {
+        font-size: 14px;
+        margin-bottom: 0;
+        order: 3;
+      }
+      &--soc {
+        order: 2;
       }
     }
   }
