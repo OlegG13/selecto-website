@@ -229,7 +229,7 @@
                     <div class="case-article__desc">
                         Since the application is meant to help HIV+ people undergo the treatment and communicate with the doctor easily, the design was supposed to contribute to those goals.
                     </div>
-                    <div class="case-article__content">
+                    <div class="case-article__content hidden-if-mobile">
                         <ul class="chess-list">
                             <li class="chess-list__item">
                                 <div class="chess-list__photo">
@@ -343,6 +343,72 @@
             </div>
         </section>
 
+        <!--MOBILE-->
+        <section class="mobile-slider mobile-slider--sprout visible-only-mobile">
+            <div class="review" data-slider="review" data-animation='review'>
+                <div class="slider">
+                    <div class="slider__inner" data-slider-slides="1,1,1,1">
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--life-1"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        Dashboard with a purpose
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        We created a coherent dashboard that allows navigating through the app easily and induces the user to communicate with the doctor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--life-2"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        Simple graphs for quick evaluation
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        All test results are compiled in coherent graphs, thus allowing the patient to quickly assess the dynamics and effectiveness of the treatment.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--life-3"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        More than just a map
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        The map is not only informative but also interactive. By tapping pins, the patient receives information about clinics and their doctors, as well as pharmacies that have necessary medications.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__arrow slider__arrow--left slider__arrow--hidden" data-slider-arrow-left>
+                        <i class="slider__icon slider__icon--left">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16" viewBox="0 0 17 16"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M1422 4897.92893L1429.07107 4905L1422 4912.07107L1420.675 4910.74607L1425.59107 4905.83H1413V4904.32H1425.59036L1420.5996499999999 4899.32929Z " fill-opacity="1" transform="matrix(1,0,0,1,-1413,-4897)"></path></svg>
+                        </i>
+                    </div>
+                    <div class="slider__arrow slider__arrow--right slider__arrow--hidden" data-slider-arrow-right>
+                        <i class="slider__icon slider__icon--right">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16" viewBox="0 0 17 16"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M1422 4897.92893L1429.07107 4905L1422 4912.07107L1420.675 4910.74607L1425.59107 4905.83H1413V4904.32H1425.59036L1420.5996499999999 4899.32929Z " fill-opacity="1" transform="matrix(1,0,0,1,-1413,-4897)"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End: MOBILE-->
+
         <section class="page__section page__section--ui-design page__section--grey">
             <div class="page__container">
                 <div class="case-article">
@@ -430,25 +496,6 @@
             <div class="hero-cases hero-cases--lfm-bot hero-cases--bottom animate-block__photo">
             </div>
         </div>
-        <!--
-        <section class="page__section page__section--review">
-            <div class="page__container">
-                <div class="case-review">
-                    <div class="case-review__head">
-                        <div class="case-review__photo">
-                            <img src="../../img/sprout-customer.png" alt="sprout" title="sprout" class="case-review__img">
-                        </div>
-                    </div>
-                    <div class="case-review__body">
-                        Working with Selecto was an absolute pleasure. The team went over every last detail and then went over them again. There is no room for error. I was absolutely blown away by the care they put into their work. The creative team, UI/UX, and designers exude fun. I can tell that they are self-expressed and value individuality, as any creative does. It was amazing to see all the pieces of the puzzle come together as a functioning product.
-                    </div>
-                    <div class="case-review__footer">
-                        George Willson, CEO
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
 
         <section class="page__section page__section--white page__section--review">
             <div class="page__container">
@@ -566,7 +613,21 @@
             </div>
         </section>
 
-        <section class="page__section page__section--grey page__section--similar">
+
+        <!--MOBILE-->
+        <section class="visible-only-mobile">
+            <div class="offset-bottom--md offset-top--md text-center font-size-none">
+                <a href="/work.html" class="btn-transparent">
+                    <span
+                            class="btn-transparent__title  btn-transparent__title--black">
+                        Check other work
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!--End: MOBILE-->
+        <section
+                class="page__section page__section--grey page__section--similar hidden-if-mobile">
             <div class="page__container">
                 <div class="case-article">
                     <div class="case-article__content">

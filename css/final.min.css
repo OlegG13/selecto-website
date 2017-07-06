@@ -6132,35 +6132,43 @@ Mobile responsive
     text-align: left;
   }
 
-  .sprout__overview {
+  .sprout__overview,
+  .msfit__overview {
     flex-direction: row;
     height: auto;
   }
 
-  .sprout__overview-large-image {
+  .sprout__overview-large-image,
+  .msfit__overview-large-image {
     margin-right: 8px;
   }
 
   .sprout__overview-large-image,
-  .sprout__overview-small-images-box {
+  .sprout__overview-small-images-box,
+  .msfit__overview-large-image,
+  .msfit__overview-small-images-box {
     height: 200px;
   }
 
-  .sprout__overview-large-image {
+  .sprout__overview-large-image,
+  .msfit__overview-large-image {
     width: 200px;
     height: 200px;
     margin-bottom: 0;
   }
 
-  .sprout__overview-small-images-box {
+  .sprout__overview-small-images-box,
+  .msfit__overview-small-images-box {
     width: 136px;
   }
 
-  .sprout__overview-small-images-box > div {
+  .sprout__overview-small-images-box > div,
+  .msfit__overview-small-images-box > div {
     overflow: hidden;
   }
 
-  .sprout__overview-small-images-box > div:first-child {
+  .sprout__overview-small-images-box > div:first-child,
+  .msfit__overview-small-images-box > div:first-child {
     margin-bottom: 8px;
   }
 
@@ -6277,6 +6285,15 @@ Mobile responsive
     margin-top: 40px;
   }
 
+  .hero-cases--msfit-bot,
+  .hero-cases--lfm-bot {
+    background-size: 100% !important;
+  }
+
+  .hero-cases.hero-cases--lfm-bot {
+    background-position: 100% !important;
+  }
+
   /*
   --------------------------------------------------
     COMMON STYLE
@@ -6294,6 +6311,10 @@ Mobile responsive
 
   .visible-only-mobile {
     display: block !important;
+  }
+
+  .hidden-if-mobile {
+    display: none !important;
   }
 
   .text-center {
@@ -6338,13 +6359,14 @@ Mobile responsive
 }
 
 @media screen and (max-width: 600px) {
-  .hero-cases--sprout {
+  .hero-cases {
     height: 432px;
     background-size: 315%;
     background-position: 50% 30% !important;
   }
-}
 
-.hidden-if-mobile {
-  display: none !important;
+  .hero-cases--life {
+    background-size: 274%;
+    background-position: 57% 36% !important;
+  }
 }

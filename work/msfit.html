@@ -189,22 +189,6 @@
                         </ul>
                     </div>
 
-                    <div class="overview-case__gallery">
-                        <div class="masonry">
-                            <div class="masonry__item masonry__item--lg">
-                                <div class="masonry__large">
-                                </div>
-                            </div>
-                            <div class="masonry__item masonry__item--sm">
-                                <div class="masonry__half-height">
-                                    <div class="masonry__small first">
-                                    </div>
-                                    <div class="masonry__small second">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="msfit__overview">
                         <div class="msfit__overview-large-image"></div>
                         <div class="msfit__overview-small-images-box">
@@ -294,7 +278,7 @@
                     <div class="case-article__desc">
                         Ms Fit is a multifunctional fitness app with dozens of features and possibilities. Our task was to present a clean and intuitive look that would contribute to the goals of the app.
                     </div>
-                    <div class="case-article__content">
+                    <div class="case-article__content hidden-if-mobile">
                         <ul class="chess-list">
                             <li class="chess-list__item">
                                 <div class="chess-list__photo">
@@ -384,6 +368,71 @@
                 </div>
             </div>
         </section>
+        <!--MOBILE-->
+        <section class="mobile-slider mobile-slider--sprout visible-only-mobile">
+            <div class="review" data-slider="review" data-animation='review'>
+                <div class="slider">
+                    <div class="slider__inner" data-slider-slides="1,1,1,1">
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--msfit-1"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        Essentials in one place
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        The main screen is a navigator through the whole app. But besides that, it allows to quickly access all important things like exercises that need to be done and meals to be eaten, etc.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--msfit-2"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        Design that contributes to the goals
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        We have created an aesthetically pleasing look that reinforces the goals of the application. Every detail is thought through very well. All together they lead the user and tell what exactly she has to do.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" data-slider-slide>
+                            <div class="interface-slide-sprout">
+                                <div
+                                        class="interface-slide-sprout__img chess-list__frame--msfit-3"></div>
+
+                                <div class="interface-slide-sprout__head">
+                                    <div class="interface-slide-sprout__title">
+                                        Gamification as a way of motivation
+                                    </div>
+                                    <div class="interface-slide-sprout__text">
+                                        People like to be rewarded for their efforts. For each completed training program, user receives a ribbon, This way the app supports and motivates women to workout and keep using Ms Fit
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__arrow slider__arrow--left slider__arrow--hidden" data-slider-arrow-left>
+                        <i class="slider__icon slider__icon--left">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16" viewBox="0 0 17 16"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M1422 4897.92893L1429.07107 4905L1422 4912.07107L1420.675 4910.74607L1425.59107 4905.83H1413V4904.32H1425.59036L1420.5996499999999 4899.32929Z " fill-opacity="1" transform="matrix(1,0,0,1,-1413,-4897)"></path></svg>
+                        </i>
+                    </div>
+                    <div class="slider__arrow slider__arrow--right slider__arrow--hidden" data-slider-arrow-right>
+                        <i class="slider__icon slider__icon--right">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="17" height="16" viewBox="0 0 17 16"><defs id="SvgjsDefs1021"></defs><path id="SvgjsPath1022" d="M1422 4897.92893L1429.07107 4905L1422 4912.07107L1420.675 4910.74607L1425.59107 4905.83H1413V4904.32H1425.59036L1420.5996499999999 4899.32929Z " fill-opacity="1" transform="matrix(1,0,0,1,-1413,-4897)"></path></svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End: MOBILE-->
 
         <section class="page__section page__section--ui-design page__section--grey">
             <div class="page__container">
@@ -432,7 +481,7 @@
                     <div class="case-article__desc">
                         Both iPhone apps were developed in the X-code environment using the flexible and dynamic Objective C. For the web part we used Angular 2 (Front-end) and PHP/Laravel (Back-end). Ms Fit is integrated with Twitter and Instagram, thus allowing users create accounts using the data from corresponding media. Last but not least, we build an integration with Hyper Pay to enable payments for coach's services with Visa and MasterCard.
                     </div>
-                    <div class="case-article__content">
+                    <div class="case-article__content hidden-if-mobile">
                         <ul class="development-net">
                             <li class="development-net__item development-net__item--b-r development-net__item--b-b">
                                 <div class="development-net__inner">
@@ -609,7 +658,20 @@
             </div>
         </section>
 
-        <section class="page__section page__section--grey page__section--similar">
+        <!--MOBILE-->
+        <section class="visible-only-mobile">
+            <div class="offset-bottom--md offset-top--md text-center font-size-none">
+                <a href="/work.html" class="btn-transparent">
+                    <span
+                            class="btn-transparent__title  btn-transparent__title--black">
+                        Check other work
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!--End: MOBILE-->
+        <section
+                class="page__section page__section--grey page__section--similar hidden-if-mobile">
             <div class="page__container">
                 <div class="case-article">
                     <div class="case-article__content">

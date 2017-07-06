@@ -232,7 +232,7 @@
     }
   }
 
-  .sprout {
+  .sprout, .msfit {
 
     &__overview {
       flex-direction: row;
@@ -389,6 +389,14 @@
       margin-top: 40px;
     }
   }
+
+  .hero-cases--msfit-bot, .hero-cases--lfm-bot {
+    background-size: 100% !important;
+  }
+  .hero-cases.hero-cases--lfm-bot {
+    background-position: 100% !important;
+  }
+
     /*
   --------------------------------------------------
     COMMON STYLE
@@ -405,7 +413,11 @@
   .visible-only-mobile {
     display: block !important;
   }
-  
+
+  .hidden-if-mobile {
+    display: none !important;
+  }
+
   .text-center {
     text-align: center;
   }
@@ -455,14 +467,12 @@
 }
 @media screen and (max-width: 600px) {
   .hero-cases {
-    &--sprout {
-      height: 432px;
-      background-size: 315%;
-      background-position: 50% 30% !important;
+    height: 432px;
+    background-size: 315%;
+    background-position: 50% 30% !important;
+    &--life {
+      background-size: 274%;
+      background-position: 57% 36% !important;
     }
   }
-}
-
-.hidden-if-mobile {
-  display: none !important;
 }
