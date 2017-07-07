@@ -417,6 +417,162 @@
       padding-bottom: 70%;
     }
   }
+
+  //============================================================
+  //====================CONTACT PAGE
+  //============================================================
+  .page__contact {
+
+    .single-page {
+
+      &__title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+      }
+
+      &__top {
+        margin-bottom: 32px;
+      }
+    }
+
+    .single-page {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  .page__contact-info {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+
+  .contact-information {
+
+    &__item {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+
+    &__info {
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+
+  .page__contact-item--offices {
+    padding-top: 56px;
+  }
+
+  .contact-item {
+
+    &__title {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 48px;
+    }
+
+    .main-soc__list {
+      transform: scale(0.7);
+    }
+  }
+
+  .page__contact-item--follow {
+    padding: 64px 0;
+
+    .contact-item {
+
+      &__head {
+        margin-bottom: 24px;
+      }
+
+      &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .offices {
+
+    &__bottom {
+      padding: 16px 0;
+    }
+
+    &__img, &__frame {
+      height: 184px;
+    }
+
+    &__city {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-bottom: 1px;
+    }
+
+    &__address {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+
+  .form-contact {
+    padding-top: 48px;
+  }
+
+  .response-popup {
+
+    .success {
+
+      &__top {
+        margin-bottom: 30px;
+      }
+
+      &__bottom {
+        font-size: 0;
+        margin-bottom: 16px;
+      }
+
+      &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__info {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding-bottom: 32px;
+      }
+
+      &__icon {
+        svg {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+  }
+
     /*
   --------------------------------------------------
     COMMON STYLE

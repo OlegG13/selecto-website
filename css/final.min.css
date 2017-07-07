@@ -4973,6 +4973,7 @@ select {
 
 .form-contact {
   display: block;
+  position: relative;
   max-width: 1160px;
   margin: 0 auto;
   box-shadow: 0 22px 24px #ededed;
@@ -5023,6 +5024,80 @@ select {
   padding-bottom: 74px;
   width: 355px;
   margin: 0 auto;
+}
+
+.spinningCircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0);
+  border-top-color: 4px solid #486CFF;
+  border-right-color: 4px solid #486CFF;
+  -webkit-animation: single2 4s infinite linear;
+  animation: single2 2s infinite linear;
+}
+
+@-webkit-keyframes single2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+
+  50% {
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+
+  100% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+}
+
+@keyframes single2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+
+  50% {
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+
+  100% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+}
+
+.spinner-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-container .spinningCircle {
+  margin-top: -100px;
+}
+
+.hidden-block {
+  display: none;
 }
 
 .contact-information {
@@ -6317,6 +6392,133 @@ Mobile responsive
 
   .case-article__content .slider__item--bg {
     padding-bottom: 70%;
+  }
+
+  .page__contact .single-page__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  .page__contact .single-page__top {
+    margin-bottom: 32px;
+  }
+
+  .page__contact .single-page {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .page__contact-info {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+
+  .contact-information__item {
+    margin-bottom: 32px;
+  }
+
+  .contact-information__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact-information__title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .contact-information__info {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .page__contact-item--offices {
+    padding-top: 56px;
+  }
+
+  .contact-item__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  .contact-item .main-soc__list {
+    transform: scale(0.7);
+  }
+
+  .page__contact-item--follow {
+    padding: 64px 0;
+  }
+
+  .page__contact-item--follow .contact-item__head {
+    margin-bottom: 24px;
+  }
+
+  .page__contact-item--follow .contact-item__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .offices__bottom {
+    padding: 16px 0;
+  }
+
+  .offices__img,
+  .offices__frame {
+    height: 184px;
+  }
+
+  .offices__city {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 1px;
+  }
+
+  .offices__address {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .form-contact {
+    padding-top: 48px;
+  }
+
+  .response-popup .success__top {
+    margin-bottom: 30px;
+  }
+
+  .response-popup .success__bottom {
+    font-size: 0;
+    margin-bottom: 16px;
+  }
+
+  .response-popup .success__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .response-popup .success__info {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 32px;
+  }
+
+  .response-popup .success__icon svg {
+    transform: scale(1.2);
   }
 
   /*

@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
 }
+
 .popup__content__absolute {
   position: absolute;
   top: 0;
@@ -15,6 +16,7 @@
     text-align: center;
   }
 }
+
 .popup {
   z-index: 999;
   padding-top: 80px;
@@ -124,7 +126,6 @@
   position: relative;
 }
 
-
 .material {
   &__field {
     background-color: transparent;
@@ -149,7 +150,7 @@
       height: 2.25rem;
       margin: 0 0 0px 0;
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1024px) {
       &:focus:not([readonly]) {
         //border-bottom: 1px solid $theme-secondary-color;
         + label {
@@ -184,9 +185,11 @@
     }
   }
 }
+
 textarea.material__field + .material__label {
   top: 0.25rem;
 }
+
 textarea[data-adaptheight] {
   transition: none;
 }
@@ -220,6 +223,7 @@ select {
 
 .form-contact {
   display: block;
+  position: relative;
   max-width: 1160px;
   margin: 0 auto;
   box-shadow: 0 22px 24px #ededed;
@@ -257,4 +261,74 @@ select {
     width: 355px;
     margin: 0 auto;
   }
+}
+
+.spinningCircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0);
+  border-top-color: 4px solid #486CFF;
+  border-right-color: 4px solid #486CFF;
+  -webkit-animation: single2 4s infinite linear;
+  animation: single2 2s infinite linear;
+}
+
+@-webkit-keyframes single2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+  50% {
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+}
+
+@keyframes single2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+  50% {
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+    border-top-color: #486CFF;
+    border-right-color: #486CFF;
+  }
+}
+
+.spinner-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  z-index: 777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinningCircle {
+    margin-top: -100px;
+  }
+}
+
+.hidden-block {
+  display: none;
 }

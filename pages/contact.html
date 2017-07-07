@@ -26,7 +26,8 @@
     <title>Contact Us | Selecto</title>
     <meta name="description" content="Contact Us">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="../css/final.min.css?1">
 
 </head>
@@ -124,7 +125,9 @@
                     </div>
                     <div class="single-page__container">
                         <div class="form-contact">
-                            <form action="#" class="popup__content__form js-popup__content__form">
+                            <!--FORM-->
+                            <form action="#"
+                                  class="popup__content__form js-popup__content__form">
                                 <div class="popup__content--flex">
                                     <div class="field__box">
                                         <input id="name" name="name" class="material__field" type="text">
@@ -169,33 +172,69 @@
                                     </div>
                                 </div>
                             </form>
+                            <!--End: FORM-->
+
+                            <!--PRELOADER-->
+                            <div class="spinner-container hidden-block js-preloader">
+                                <div class="spinningCircle"></div>
+                            </div>
+                            <!--End: PRELOADER-->
+
+                            <!--SUCCESS-->
+                            <div
+                                    class="form-contact__success hidden-block js-success-response">
+                                <div class="response-popup success">
+                                    <div class="success__top">
+                                        <i class="success__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="52" height="48" viewBox="0 0 52 48"><path id="SvgjsPath1007" d="M937 426C937 412.74517 947.74517 402 961 402C968.78747 402 975.70865 405.709 980.0934 411.45685L978.37456 413.17569C974.4368999999999 408.19563 968.34164 404.99998999999997 961.5 404.99998999999997C949.62588 404.99998999999997 940 414.62586999999996 940 426.49998999999997C940 438.37411 949.62588 447.99998999999997 961.5 447.99998999999997C973.37412 447.99998999999997 983 438.37411 983 426.49998999999997C983 424.08113999999995 982.60056 421.75559 981.86404 419.5857L983.5858000000001 417.86393999999996C984.5011400000001 420.40451999999993 985.0000000000001 423.14399999999995 985.0000000000001 425.99998999999997C985.0000000000001 439.25482 974.2548300000001 449.99998999999997 961.0000000000001 449.99998999999997C947.7451700000001 449.99998999999997 937.0000000000001 439.25482 937.0000000000001 425.99998999999997ZM988.19 410.3L960.6400000000001 437.85L945.19 422.39000000000004L947.4300000000001 420.15000000000003L960.6400000000001 433.36L985.95 408.06Z " fill-opacity="1" transform="matrix(1,0,0,1,-937,-402)"></path></svg>
+                                        </i>
+                                    </div>
+                                    <div class="success__title offset-bottom--sm">
+                                        Your message was sent
+                                    </div>
+                                    <div class="success__info">
+                                        Thank you for contacting us, we will answer you as soon as possible
+                                    </div>
+                                    <div class="success__bottom">
+                                        <a class="btn-transparent btn-transparent--black" href="/">
+                                            <span class="btn-transparent__title btn-transparent__title--black">
+                                                Back to Homepage
+                                            </span>
+                                        </a>
+                                    </div>
 
 
-                            <!--<div class="form-contact__success">-->
-                                <!--<div class="success">-->
-                                    <!--<div class="success__top">-->
-                                        <!--<i class="success__icon">-->
-                                            <!--<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="52" height="48" viewBox="0 0 52 48"><path id="SvgjsPath1007" d="M937 426C937 412.74517 947.74517 402 961 402C968.78747 402 975.70865 405.709 980.0934 411.45685L978.37456 413.17569C974.4368999999999 408.19563 968.34164 404.99998999999997 961.5 404.99998999999997C949.62588 404.99998999999997 940 414.62586999999996 940 426.49998999999997C940 438.37411 949.62588 447.99998999999997 961.5 447.99998999999997C973.37412 447.99998999999997 983 438.37411 983 426.49998999999997C983 424.08113999999995 982.60056 421.75559 981.86404 419.5857L983.5858000000001 417.86393999999996C984.5011400000001 420.40451999999993 985.0000000000001 423.14399999999995 985.0000000000001 425.99998999999997C985.0000000000001 439.25482 974.2548300000001 449.99998999999997 961.0000000000001 449.99998999999997C947.7451700000001 449.99998999999997 937.0000000000001 439.25482 937.0000000000001 425.99998999999997ZM988.19 410.3L960.6400000000001 437.85L945.19 422.39000000000004L947.4300000000001 420.15000000000003L960.6400000000001 433.36L985.95 408.06Z " fill-opacity="1" transform="matrix(1,0,0,1,-937,-402)"></path></svg>-->
-                                        <!--</i>-->
-                                    <!--</div>-->
-                                    <!--<div class="success__title">-->
-                                        <!--Your message was sent-->
-                                    <!--</div>-->
-                                    <!--<div class="success__info">-->
-                                        <!--Thank you for contacting us, we will answer you as soon as possible-->
-                                    <!--</div>-->
-                                    <!--<div class="success__bottom">-->
-                                        <!--<a class="btn-transparent btn-transparent&#45;&#45;black" href="../">-->
-                                            <!--<span class="btn-transparent__title btn-transparent__title&#45;&#45;black">-->
-                                                <!--Back to Homepage-->
-                                            <!--</span>-->
-                                        <!--</a>-->
-                                    <!--</div>-->
+                                </div>
+                            </div>
+                            <!--End: SUCCESS-->
+
+                            <!--ERROR-->
+                            <div
+                                    class="form-contact__error js-error-response hidden-block">
+                                <div class="response-popup error">
+                                    <div class="success__top">
+                                        <i class="success__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="52" height="48" viewBox="0 0 52 48"><path id="SvgjsPath1007" d="M937 426C937 412.74517 947.74517 402 961 402C968.78747 402 975.70865 405.709 980.0934 411.45685L978.37456 413.17569C974.4368999999999 408.19563 968.34164 404.99998999999997 961.5 404.99998999999997C949.62588 404.99998999999997 940 414.62586999999996 940 426.49998999999997C940 438.37411 949.62588 447.99998999999997 961.5 447.99998999999997C973.37412 447.99998999999997 983 438.37411 983 426.49998999999997C983 424.08113999999995 982.60056 421.75559 981.86404 419.5857L983.5858000000001 417.86393999999996C984.5011400000001 420.40451999999993 985.0000000000001 423.14399999999995 985.0000000000001 425.99998999999997C985.0000000000001 439.25482 974.2548300000001 449.99998999999997 961.0000000000001 449.99998999999997C947.7451700000001 449.99998999999997 937.0000000000001 439.25482 937.0000000000001 425.99998999999997ZM988.19 410.3L960.6400000000001 437.85L945.19 422.39000000000004L947.4300000000001 420.15000000000003L960.6400000000001 433.36L985.95 408.06Z " fill-opacity="1" transform="matrix(1,0,0,1,-937,-402)"></path></svg>
+                                        </i>
+                                    </div>
+                                    <div class="success__title">
+                                        Your message was sent
+                                    </div>
+                                    <div class="success__info">
+                                        Thank you for contacting us, we will answer you as soon as possible
+                                    </div>
+                                    <div class="success__bottom">
+                                        <a class="btn-transparent btn-transparent--black" href="/">
+                                            <span class="btn-transparent__title btn-transparent__title--black">
+                                                Back to Homepage
+                                            </span>
+                                        </a>
+                                    </div>
 
 
-                                <!--</div>-->
-                            <!--</div>-->
-
+                                </div>
+                            </div>
+                            <!--End: ERROR-->
                         </div>
 
 
@@ -253,7 +292,7 @@
             <div class="page__container">
                 <div class="contact-item">
                     <div class="contact-item__head contact-item__head--sm">
-                        <div class="contact-item__title">
+                        <div class="contact-item__title offset-bottom--sm">
                             Our office
                         </div>
                     </div>
