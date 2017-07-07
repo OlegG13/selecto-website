@@ -6533,9 +6533,7 @@ Mobile responsive
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../img/hero.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background: url("../img/hero.jpg") no-repeat 50% 50%;
     background-size: cover;
   }
 
@@ -6589,51 +6587,6 @@ Mobile responsive
     line-height: 48px;
   }
 
-  .main-container .main-article {
-    padding-top: 64px;
-    padding-bottom: 50px;
-  }
-
-  .main-container .main-article__title {
-    letter-spacing: -1px;
-    margin-bottom: 24px;
-  }
-
-  .main-container .main-article__paragraph {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 28px;
-  }
-
-  .main-container .main-article__footer {
-    margin-top: 32px;
-  }
-
-  .main-container .main-article .count-up {
-    width: 100%;
-  }
-
-  .main-container .main-article .count-up__number {
-    letter-spacing: 0;
-  }
-
-  .main-container .main-article .count-up__ico {
-    margin: 0;
-  }
-
-  .main-container .main-article .count-up__list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .main-container .main-article .count-up__name {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 16px;
-    padding-bottom: 0;
-  }
-
   .main-container .info-table {
     margin-top: 48px;
   }
@@ -6669,6 +6622,7 @@ Mobile responsive
   .main-container .more-services .btn-main {
     margin-left: auto;
     margin-right: auto;
+    font-size: 100%;
   }
 
   .main-container .case-box-mobile .main-article {
@@ -6787,6 +6741,147 @@ Mobile responsive
     height: 157px;
   }
 
+  .main-article {
+    padding-top: 64px;
+    padding-bottom: 50px;
+  }
+
+  .main-article__title {
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+
+  .main-article__paragraph {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .main-article__footer {
+    margin-top: 32px;
+  }
+
+  .main-article__container {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .main-article .count-up {
+    width: 100%;
+  }
+
+  .main-article .count-up__number {
+    letter-spacing: 0;
+  }
+
+  .main-article .count-up__ico {
+    margin: 0;
+  }
+
+  .main-article .count-up__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-article .count-up__name {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-bottom: 0;
+  }
+
+  .about-container .main-article {
+    padding-bottom: 64px;
+  }
+
+  .about-container .page__section--photo .hero-cases--about {
+    background-image: url("../img/about-photos-m.png");
+    background-size: contain;
+    height: 235px;
+  }
+
+  .about-container .page__hero--header-photo {
+    height: 310px;
+  }
+
+  .about-container .hero-cases {
+    background-position: 50% -2% !important;
+  }
+
+  .about-container .columns__item {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .about-container .columns__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-container .hero__title {
+    padding-bottom: 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+
+  .about-container .hero__container {
+    padding-bottom: 75%;
+  }
+
+  .about-container .page__section--map {
+    background-color: #161c26;
+  }
+
+  .about-container .page__section--map .map {
+    height: 208px;
+    padding-bottom: 0;
+  }
+
+  .about-container .page__section--principles .principles__top {
+    margin-bottom: 24px;
+  }
+
+  .about-container .page__section--principles .principles__icon {
+    transform: scale(1.5);
+  }
+
+  .about-container .page__section--principles .principles__item {
+    flex-basis: auto;
+    margin-bottom: 40px;
+  }
+
+  .about-container .page__section--principles .principles__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-container .page__section--principles .principles__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .about-container .page__section--principles .principles__desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .about-container .main-article__count-up {
+    opacity: 1 !important;
+  }
+
+  .about-bottom-img {
+    width: 100%;
+    height: 286px;
+    background: url("../img/about-bottom-img.png") no-repeat 50% 50%;
+  }
+
   /*
 --------------------------------------------------
   COMMON STYLE
@@ -6867,5 +6962,23 @@ Mobile responsive
 @media only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2) {
   .banner-box-main {
     background-image: url("../img/hero@1x.jpg");
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .latest-projects {
+    flex-wrap: nowrap;
+  }
+
+  .page__content .hero__inner {
+    margin-top: 0;
+  }
+
+  .page__content .hero__title {
+    padding-bottom: 60px;
+  }
+
+  .about-container .hero__container {
+    padding-bottom: 51%;
   }
 }

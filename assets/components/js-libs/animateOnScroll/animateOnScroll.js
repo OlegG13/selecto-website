@@ -80,7 +80,6 @@
                     ourSolutionText: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": -100, "reverse": false } } }',
                     ourSolutionCount: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": 0, "reverse": false } } }',
                     ourSolutionBtn: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--count", "offset": 100, "reverse": false } } }',
-
                     workWithHead: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--our-work", "offset": -200, "reverse": false } } }',
                     tableInfo: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--our-work", "offset": 0, "reverse": false } } }',
                     technologyList: '{"tween": { "duration": 0.5, "options": { "opacity": 1, "y": 0 } }, "scene": { "options": { "triggerElement": ".page__section--our-work", "offset": 500, "reverse": false } } }',
