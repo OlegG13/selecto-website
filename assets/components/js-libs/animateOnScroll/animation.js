@@ -254,4 +254,28 @@
     });
 
 
+    /* About us */
+    var aboutUsCounts = $('[data-about-count]');
+
+    if (aboutUsCounts !== null && typeof (aboutUsCounts) !== "undefined") {
+        var aboutUsScene = new ScrollMagic.Scene({
+            triggerElement: '[data-about-count]',
+            triggerHook: 0.75,
+            offset: 0,
+            reverse: false
+        }).addTo(controller).on('start', function () {
+
+            setTimeout(projectCount.start.bind(projectCount), 100);
+            setTimeout(yearsCount.start.bind(yearsCount), 400);
+            setTimeout(countryCount.start.bind(countryCount), 700);
+            setTimeout(officesCount.start.bind(officesCount), 1000);
+
+
+        });
+
+        //aboutUsScene.addIndicators();
+
+    }
+
+
 }(jQuery));

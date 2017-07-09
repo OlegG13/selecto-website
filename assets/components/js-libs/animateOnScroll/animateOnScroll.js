@@ -28,8 +28,8 @@
                 if (element.getAttribute("data-animation") === 'ourSolutionCount') {
                     setTimeout(projectCount.start.bind(projectCount), 100);
                     setTimeout(yearsCount.start.bind(yearsCount), 400);
-                    setTimeout(peopleCount.start.bind(peopleCount), 700);
-                    setTimeout(officesCount.start.bind(officesCount), 1000);
+                    setTimeout(peopleCount.start.bind(peopleCount), 100);
+                    setTimeout(officesCount.start.bind(officesCount), 400);
                 }
                 if (element.getAttribute("data-animation") === 'ourSolution') {
                     setTimeout(projectCount.start.bind(projectCount), 100);
@@ -56,7 +56,6 @@
                     setTimeout(peopleSproutCount.start.bind(peopleSproutCount), 700);
                     setTimeout(publicationsSproutCount.start.bind(publicationsSproutCount), 1000);
                 }
-
 
             });
             //scene.addIndicators();
