@@ -67,6 +67,10 @@
   height: 100%;
 }
 
+.response-popup {
+  text-align: center;
+}
+
 /*
 --------------------------------------------------
 Reset and normalize default browser styles
@@ -6492,6 +6496,10 @@ Mobile responsive
 
   .form-contact {
     padding-top: 48px;
+  }
+
+  .response-popup {
+    text-align: center;
   }
 
   .response-popup .success__top {
