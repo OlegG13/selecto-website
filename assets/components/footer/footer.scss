@@ -31,5 +31,6 @@
   }
   &__link {
     @include main-link;
+    margin-left: 10px;
   }
 }
